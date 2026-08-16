@@ -1,0 +1,10 @@
+targets:
+  - name: "Seneweb FB"
+    platform: "facebook"
+    country: "SN"
+    url: "https://www.facebook.com/Senewebcom"
+
+  - name: "France 24"
+    platform: "twitter"
+    url: "https://x.com/france24_fr"
+  
