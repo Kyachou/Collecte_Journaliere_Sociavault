@@ -1,0 +1,14 @@
+# Environnements Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets locaux
+*.env
+service-account*.json
+google-credentials*.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
