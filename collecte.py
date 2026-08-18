@@ -44,18 +44,20 @@ HEADERS = {
 
 WINDOW_HOURS = 24
 
-SEUIL_COMMENTAIRES = 10
-
-# --- Règles du pending ---
-# Durée max qu'un item peut rester en pending avant décision finale.
-PENDING_MAX_DAYS = 3
-# Si le délai de PENDING_MAX_DAYS est écoulé, on accepte quand même
-# l'item s'il a atteint ce seuil réduit (au lieu de SEUIL_COMMENTAIRES).
-SEUIL_COMMENTAIRES_APRES_DELAI = 5
+# --- Règle de revérification (remplace l'ancien système de seuil) ---
+# Chaque post/tweet est capturé immédiatement, quel que soit son nombre
+# de commentaires (aucun post n'est jamais exclu). Il est ensuite
+# revérifié UNE SEULE FOIS, ce nombre d'heures après sa première capture,
+# pour rafraîchir les chiffres une dernière fois.
+RECHECK_DELAY_HOURS = 72
 
 # Facebook
-MAX_FACEBOOK_PAGES = 10
-MAX_OLD_CONSECUTIVE = 3
+# MAX_FACEBOOK_PAGES n'est plus une vraie limite métier : c'est un filet
+# de sécurité très haut, pour éviter une boucle infinie en cas de bug de
+# pagination (cursor qui ne se termine jamais, etc.). L'arrêt réel se fait
+# sur MAX_OLD_CONSECUTIVE (posts hors fenêtre 24h rencontrés à la suite).
+MAX_FACEBOOK_PAGES = 200
+MAX_OLD_CONSECUTIVE = 2
 
 # Réponses aux commentaires Facebook (thread niveau 1 uniquement)
 # On ne va chercher les réponses que si reply_count >= ce seuil,
@@ -63,7 +65,10 @@ MAX_OLD_CONSECUTIVE = 3
 REPLIES_MIN_COUNT = 7
 
 # Twitter / X
-MAX_TWITTER_TWEET_PAGES = 3       # pagination de la liste de tweets d'un profil
+# Même logique que Facebook : MAX_TWITTER_TWEET_PAGES est un filet de
+# sécurité, pas une limite métier. L'arrêt réel se fait sur
+# MAX_OLD_CONSECUTIVE (même compteur que Facebook, réutilisé ici).
+MAX_TWITTER_TWEET_PAGES = 200
 MAX_TWITTER_REPLIES_PAGES = 5     # pagination des réponses à un tweet donné
 
 REQUEST_TIMEOUT = 30
@@ -558,6 +563,21 @@ def extract_tweets_from_timeline(data):
     return tweets
 
 
+def get_tweet_date(tweet):
+    """
+    Date d'un tweet brut (avant normalisation), à partir de
+    legacy.created_at (format Twitter classique).
+    """
+    legacy = tweet.get("legacy", {}) or {}
+    created_at = legacy.get("created_at")
+    if not created_at:
+        return None
+    try:
+        return datetime.strptime(created_at, "%a %b %d %H:%M:%S %z %Y").astimezone(timezone.utc)
+    except Exception:
+        return None
+
+
 def get_twitter_recent_tweets(profile_url):
     handle = profile_url.rstrip("/").split("/")[-1]
 
@@ -569,6 +589,10 @@ def get_twitter_recent_tweets(profile_url):
     all_tweets = []
     cursor = None
     page = 1
+    old_consecutive = 0
+    cutoff = cutoff_24h()
+
+    print(f"   🕐 Recherche des tweets depuis {cutoff.isoformat()}")
 
     while page <= MAX_TWITTER_TWEET_PAGES:
         params = {"user_id": rest_id}
@@ -586,11 +610,38 @@ def get_twitter_recent_tweets(profile_url):
             if not batch:
                 break
 
-            all_tweets.extend(batch)
+            page_recent = 0
+            page_old = 0
+
+            for tweet in batch:
+                tweet_date = get_tweet_date(tweet)
+
+                if not tweet_date:
+                    # Date inexploitable : on garde le tweet mais on ne
+                    # le compte ni comme récent ni comme ancien.
+                    all_tweets.append(tweet)
+                    continue
+
+                if tweet_date >= cutoff:
+                    all_tweets.append(tweet)
+                    page_recent += 1
+                    old_consecutive = 0
+                else:
+                    page_old += 1
+                    old_consecutive += 1
+
+            print(f"   📊 Page {page} : {page_recent} récent(s), {page_old} ancien(s)")
 
             cursor_data = data.get("cursor", {})
             cursor = cursor_data.get("bottom") if isinstance(cursor_data, dict) else None
+
             if not cursor:
+                print("   🛑 Aucun cursor suivant.")
+                break
+
+            if old_consecutive >= MAX_OLD_CONSECUTIVE:
+                print(f"   🛑 {MAX_OLD_CONSECUTIVE} tweets anciens consécutifs rencontrés.")
+                print("   🛑 Arrêt de la pagination Twitter.")
                 break
 
             page += 1
@@ -756,8 +807,10 @@ def fetch_comments_for(platform, post):
 
 def process_item(post, target_name, target_url, platform, pending, target_data):
     """
-    Applique la logique de seuil (SEUIL_COMMENTAIRES) à un post Facebook
-    OU un tweet normalisé, de façon identique.
+    Capture IMMÉDIATEMENT le post/tweet, quel que soit son nombre de
+    commentaires (aucun post n'est exclu, y compris les petits).
+    Programme ensuite une revérification unique ~RECHECK_DELAY_HOURS
+    plus tard pour rafraîchir les chiffres une dernière fois.
     """
     post_id = get_post_id(post)
     post_url = get_post_url(post)
@@ -782,55 +835,25 @@ def process_item(post, target_name, target_url, platform, pending, target_data):
 
     post["_target_url"] = target_url
 
-    comment_count = post.get("commentCount", 0)
-    if comment_count is None:
-        comment_count = 0
-    try:
-        comment_count = int(comment_count)
-    except Exception:
-        comment_count = 0
-
-    print(f"      💬 Compteur annoncé : {comment_count}")
-
-    # ------------------------------------------------------------
-    # NIVEAU 1 : sous le seuil -> pending
-    # ------------------------------------------------------------
-    if comment_count < SEUIL_COMMENTAIRES:
-        print(f"      ⏳ < {SEUIL_COMMENTAIRES} → pending")
-        add_to_pending(pending, post, target_name, platform, target_url)
-        return
-
-    # ------------------------------------------------------------
-    # NIVEAU 2 : seuil atteint -> on va chercher le détail
-    # ------------------------------------------------------------
-    print(f"      🎯 Seuil de {SEUIL_COMMENTAIRES} atteint.")
+    print("      💬 Récupération des commentaires (1ère capture)")
     comments = fetch_comments_for(platform, post)
-    print(f"      📥 Total récupéré : {len(comments)} commentaire(s)/réponse(s)")
-
-    if len(comments) < SEUIL_COMMENTAIRES:
-        print(f"      ⚠️ Seulement {len(comments)} réellement récupéré(s).")
-        print("      ⏳ Conservation en pending.")
-        add_to_pending(pending, post, target_name, platform, target_url)
-        return
-
-    # ------------------------------------------------------------
-    # NIVEAU 3 : validé -> corpus
-    # ------------------------------------------------------------
-    print("      ✅ Item validé → ajout au corpus")
+    print(f"      📥 {len(comments)} commentaire(s)/réponse(s) récupéré(s)")
 
     detail_key = "post_details" if platform == "facebook" else "tweet_details"
 
     target_data["posts_collectes"].append({
         detail_key: post,
         "comments_count": len(comments),
-        "comments": comments
+        "comments": comments,
+        "recheck_status": "initial"
     })
 
-    remove_from_pending(pending, post_id or post_url)
+    print(f"      🕐 Revérification programmée dans ~{RECHECK_DELAY_HOURS}h")
+    add_to_pending(pending, post, target_name, platform, target_url)
 
 
 # ============================================================
-# RETEST DES PENDING (générique, toutes plateformes)
+# REVÉRIFICATION UNIQUE (générique, toutes plateformes)
 # ============================================================
 
 def get_or_create_target_data(corpus, target_name, platform, target_url):
@@ -848,7 +871,7 @@ def get_or_create_target_data(corpus, target_name, platform, target_url):
     return target_data
 
 
-def commit_pending_item_to_corpus(corpus, item, post, comments, current_count):
+def commit_pending_item_to_corpus(corpus, item, post, comments, current_count, status="final"):
     target_name = item.get("target_name", "Unknown")
     target_url = item.get("target_url") or post.get("_target_url")
     platform = item.get("platform", "facebook")
@@ -861,32 +884,35 @@ def commit_pending_item_to_corpus(corpus, item, post, comments, current_count):
     target_data["posts_collectes"].append({
         detail_key: post,
         "comments_count": current_count,
-        "comments": comments
+        "comments": comments,
+        "recheck_status": status
     })
 
 
 def process_pending(pending, corpus):
     """
-    Reteste chaque item en attente.
+    Reteste chaque item programmé pour revérification.
 
-    Règles :
-      - >= SEUIL_COMMENTAIRES (10) commentaires  -> pris, retiré du pending
-      - < SEUIL_COMMENTAIRES et pending depuis moins de PENDING_MAX_DAYS (3j)
-            -> reste en pending, on retente au prochain run
-      - < SEUIL_COMMENTAIRES et pending depuis >= PENDING_MAX_DAYS (3j) :
-            - >= SEUIL_COMMENTAIRES_APRES_DELAI (5) -> pris quand même, retiré
-            - sinon -> abandonné, retiré définitivement (pas ajouté au corpus)
+    Règle unique : un item n'est revérifié qu'UNE SEULE FOIS, environ
+    RECHECK_DELAY_HOURS après sa première capture (mesuré sur 'added_at').
 
-    L'ancienneté est mesurée sur 'added_at' (date d'ajout au pending),
-    PAS sur la date de publication du post/tweet.
+    - Avant ce délai : on patiente, rien ne se passe, l'item reste dans
+      la file.
+    - Une fois le délai atteint : on récupère le nombre de commentaires/
+      réponses à jour, on l'ajoute au corpus du jour avec
+      "recheck_status": "final", et on retire l'item de la file —
+      plus JAMAIS revérifié après ça, quel que soit le résultat.
+
+    Aucun post n'est abandonné : même à 0 ou 1 commentaire, il est
+    capturé (une première fois par process_item, une seconde fois ici).
     """
     if not pending:
-        print("⏳ Aucun post en attente.")
+        print("⏳ Aucun post à revérifier.")
         return
 
     print()
     print("====================================================")
-    print("🔄 RETEST DES POSTS EN ATTENTE")
+    print("🔄 REVÉRIFICATION DES POSTS PROGRAMMÉS")
     print("====================================================")
 
     for item in list(pending):
@@ -897,60 +923,34 @@ def process_pending(pending, corpus):
         platform = item.get("platform", "facebook")
 
         print()
-        print(f"🔄 Pending : {post_id or post_url}")
+        print(f"🔄 En file : {post_id or post_url}")
         print(f"   🎯 Cible : {target_name} ({platform})")
         print(f"   🔗 URL : {post_url}")
 
         if not post_url:
-            print("   ⚠️ URL absente → suppression du pending")
+            print("   ⚠️ URL absente → suppression de la file")
             remove_from_pending(pending, pending_key(item))
             continue
 
         added_at = parse_datetime(item.get("added_at")) or now_utc()
         age = now_utc() - added_at
-        age_days = age.total_seconds() / 86400
-        delai_ecoule = age >= timedelta(days=PENDING_MAX_DAYS)
+        age_hours = age.total_seconds() / 3600
+        delai_ecoule = age >= timedelta(hours=RECHECK_DELAY_HOURS)
 
-        print(f"   🕐 En pending depuis {age_days:.1f} jour(s) "
-              f"({'délai écoulé' if delai_ecoule else f'< {PENDING_MAX_DAYS}j'})")
+        print(f"   🕐 Capturé il y a {age_hours:.1f}h "
+              f"({'délai atteint' if delai_ecoule else f'< {RECHECK_DELAY_HOURS}h, on patiente'})")
 
-        print(f"   💬 Appel Sociavault ({platform})")
+        if not delai_ecoule:
+            continue  # reste dans la file, on retentera au prochain run
+
+        print(f"   💬 Revérification finale ({platform})")
         comments = fetch_comments_for(platform, post)
         current_count = len(comments)
-        print(f"   📊 Commentaires actuellement récupérés : {current_count}")
+        print(f"   📊 Commentaires/réponses au final : {current_count}")
 
-        # ------------------------------------------------------------
-        # CAS 1 : seuil normal atteint -> pris, quel que soit l'âge
-        # ------------------------------------------------------------
-        if current_count >= SEUIL_COMMENTAIRES:
-            print(f"   🎯 Seuil de {SEUIL_COMMENTAIRES} atteint ! Déplacement vers le corpus")
-            commit_pending_item_to_corpus(corpus, item, post, comments, current_count)
-            remove_from_pending(pending, pending_key(item))
-            print("   ✅ Post retiré de pending")
-            time.sleep(SLEEP_BETWEEN_REQUESTS)
-            continue
-
-        # ------------------------------------------------------------
-        # CAS 2 : sous le seuil, délai de 3 jours pas encore écoulé
-        # -> on patiente
-        # ------------------------------------------------------------
-        if not delai_ecoule:
-            print(f"   ⏳ Toujours < {SEUIL_COMMENTAIRES}, délai pas écoulé → reste en pending")
-            time.sleep(SLEEP_BETWEEN_REQUESTS)
-            continue
-
-        # ------------------------------------------------------------
-        # CAS 3 : délai de 3 jours écoulé
-        # ------------------------------------------------------------
-        if current_count >= SEUIL_COMMENTAIRES_APRES_DELAI:
-            print(f"   🎯 Délai écoulé mais seuil réduit ({SEUIL_COMMENTAIRES_APRES_DELAI}) "
-                  f"atteint → pris quand même")
-            commit_pending_item_to_corpus(corpus, item, post, comments, current_count)
-        else:
-            print(f"   🗑️ Délai écoulé et < {SEUIL_COMMENTAIRES_APRES_DELAI} commentaires "
-                  f"→ abandonné définitivement")
-
+        commit_pending_item_to_corpus(corpus, item, post, comments, current_count, status="final")
         remove_from_pending(pending, pending_key(item))
+        print("   ✅ Revérifié une fois → retiré de la file définitivement")
         time.sleep(SLEEP_BETWEEN_REQUESTS)
 
 
@@ -1051,7 +1051,7 @@ def main():
     print("🚀 SOCIAVAULT COLLECTOR")
     print("====================================================")
     print(f"Fenêtre : dernières {WINDOW_HOURS}h")
-    print(f"Seuil commentaires : {SEUIL_COMMENTAIRES}")
+    print(f"Revérification unique : ~{RECHECK_DELAY_HOURS}h après capture")
     print("====================================================")
 
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -1104,9 +1104,9 @@ def main():
     print("🎉 COLLECTE TERMINÉE")
     print("====================================================")
     print(f"📄 Posts/tweets dans le corpus : {total_posts}")
-    print(f"⏳ Posts en attente : {len(pending)}")
+    print(f"⏳ Posts en attente de revérification (~{RECHECK_DELAY_HOURS}h) : {len(pending)}")
     print(f"💾 Corpus : {OUTPUT_JSON}")
-    print(f"💾 Pending : {PENDING_FILE}")
+    print(f"💾 File de revérification : {PENDING_FILE}")
     print("====================================================")
 
 

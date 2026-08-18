@@ -1,0 +1,50 @@
+name: Collecte Sociavault quotidienne
+
+on:
+  schedule:
+    # Tous les jours à 6h00 UTC (= 7h00 ou 8h00 en France selon l'heure d'été/hiver)
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    # Ajoute un bouton "Run workflow" dans l'onglet Actions de GitHub,
+    # pour lancer manuellement sans attendre le lendemain matin.
+
+permissions:
+  contents: write   # nécessaire pour que le job puisse recommitter data/
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code du repo
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Lancer la collecte
+        env:
+          SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
+        run: python collecte.py
+
+      # --- ÉTAPE TEMPORAIREMENT DÉSACTIVÉE ---
+      # À réactiver (décommenter) une fois GOOGLE_SERVICE_ACCOUNT_JSON
+      # et GOOGLE_DRIVE_FOLDER_ID configurés dans les secrets du repo.
+      # - name: Uploader le corpus vers Google Drive
+      #   env:
+      #     GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+      #     GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+      #   run: python drive_upload.py
+
+      - name: Sauvegarder les résultats dans le repo (corpus + pending)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --quiet --cached || git commit -m "Collecte automatique du $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
