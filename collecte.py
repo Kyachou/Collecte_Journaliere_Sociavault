@@ -171,7 +171,7 @@ def pending_key(item):
     return item.get("post_url") or post.get("url") or post.get("permalink")
 
 
-def add_to_pending(pending, post, target_name, platform, target_url):
+def add_to_pending(pending, post, target_name, platform, target_url,country_code):
     post_id = get_post_id(post)
     post["_target_url"] = target_url
     item = {
@@ -181,6 +181,7 @@ def add_to_pending(pending, post, target_name, platform, target_url):
         "target_name": target_name,
         "target_url": target_url,
         "platform": platform,
+        "country_code":country_code,
         "added_at": now_utc().isoformat()
     }
     new_key = pending_key(item)
@@ -669,6 +670,7 @@ def process_item(post, target_name, target_url, platform, pending, target_data):
     post_id = get_post_id(post)
     post_url = get_post_url(post)
     post_date = get_post_date(post)
+    country_code = target_data.get("country_code")
 
     print()
     print(f"    Item : {post_id or 'ID inconnu'}")
@@ -700,10 +702,10 @@ def process_item(post, target_name, target_url, platform, pending, target_data):
     })
 
     print(f"       Revérification programmée dans ~{RECHECK_DELAY_HOURS}h")
-    add_to_pending(pending, post, target_name, platform, target_url)
+    add_to_pending(pending, post, target_name, platform, target_url,country_code)
 
 
-def get_or_create_target_data(corpus, target_name, platform, target_url):
+def get_or_create_target_data(corpus, target_name, platform, target_url,country_code):
     for target in corpus:
         if target.get("target_name") == target_name and target.get("platform") == platform:
             return target
@@ -711,6 +713,7 @@ def get_or_create_target_data(corpus, target_name, platform, target_url):
         "target_name": target_name,
         "platform": platform,
         "target_url": target_url,
+        "country_code":country_code,
         "posts_collectes": []
     }
     corpus.append(target_data)
@@ -721,6 +724,7 @@ def commit_pending_item_to_corpus(corpus, item, post, comments, current_count, s
     target_name = item.get("target_name", "Unknown")
     target_url = item.get("target_url") or post.get("_target_url")
     platform = item.get("platform", "facebook")
+    country_code = item.get("country_code")
     post["_target_url"] = target_url
     target_data = get_or_create_target_data(corpus, target_name, platform, target_url)
     detail_key = "post_details" if platform == "facebook" else "tweet_details"
@@ -784,6 +788,7 @@ def process_pending(pending, corpus):
 def process_facebook_target(target, pending, corpus):
     name = target.get("name", "Sans nom")
     url = target.get("url")
+    country_code = target.get("country_code")
 
     print()
     print("----------------------------------------------------")
@@ -798,6 +803,7 @@ def process_facebook_target(target, pending, corpus):
         "target_name": name,
         "platform": "facebook",
         "target_url": url,
+        "country_code": country_code,
         "posts_collectes": []
     }
 
@@ -818,7 +824,7 @@ def process_twitter_target(target, pending, corpus):
     name = target.get("name", "Sans nom")
     url = target.get("url")
     platform = str(target.get("platform", "twitter")).lower()
-
+    country_code = target.get("country_code")
     print()
     print("----------------------------------------------------")
     print(f" TWITTER / X : {name}")
@@ -832,6 +838,7 @@ def process_twitter_target(target, pending, corpus):
         "target_name": name,
         "platform": platform,
         "target_url": url,
+        "country_code": country_code,
         "posts_collectes": []
     }
 
@@ -908,7 +915,7 @@ def main():
     print("====================================================")
     print(" COLLECTE TERMINÉE")
     print("====================================================")
-    print(f" Posts/tweets dans le raw.csv : {total_posts}")
+    print(f" Posts/tweets dans le raw Json : {total_posts}")
     print(f" Posts en attente de revérification (~{RECHECK_DELAY_HOURS}h) : {len(pending)}")
     print(f" Sociavault_raw : {OUTPUT_JSON}")
     print(f" File de revérification : {PENDING_FILE}")
