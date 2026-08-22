@@ -1,7 +1,6 @@
 import os
 import glob
-import json
-from google.oauth2 import service_account
+from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
@@ -11,25 +10,42 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 SCOPES = ["https://www.googleapis.com/auth/drive.file"]
 
 GOOGLE_DRIVE_FOLDER_ID = os.environ.get("GOOGLE_DRIVE_FOLDER_ID")
-GOOGLE_SERVICE_ACCOUNT_JSON = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
+GOOGLE_OAUTH_CLIENT_ID = os.environ.get("GOOGLE_OAUTH_CLIENT_ID")
+GOOGLE_OAUTH_CLIENT_SECRET = os.environ.get("GOOGLE_OAUTH_CLIENT_SECRET")
+GOOGLE_OAUTH_REFRESH_TOKEN = os.environ.get("GOOGLE_OAUTH_REFRESH_TOKEN")
 
-if not GOOGLE_DRIVE_FOLDER_ID:
-    raise RuntimeError("❌ GOOGLE_DRIVE_FOLDER_ID n'est pas défini.")
+REQUIRED_VARS = {
+    "GOOGLE_DRIVE_FOLDER_ID": GOOGLE_DRIVE_FOLDER_ID,
+    "GOOGLE_OAUTH_CLIENT_ID": GOOGLE_OAUTH_CLIENT_ID,
+    "GOOGLE_OAUTH_CLIENT_SECRET": GOOGLE_OAUTH_CLIENT_SECRET,
+    "GOOGLE_OAUTH_REFRESH_TOKEN": GOOGLE_OAUTH_REFRESH_TOKEN,
+}
 
-if not GOOGLE_SERVICE_ACCOUNT_JSON:
-    raise RuntimeError("❌ GOOGLE_SERVICE_ACCOUNT_JSON n'est pas défini.")
+for name, value in REQUIRED_VARS.items():
+    if not value:
+        raise RuntimeError(f"❌ {name} n'est pas défini.")
 
 
 def get_drive_service():
     """
-    Construit le client Drive à partir du JSON du compte de service.
-    GOOGLE_SERVICE_ACCOUNT_JSON contient le CONTENU du fichier JSON
-    (pas un chemin de fichier), pour rester compatible avec les secrets
-    GitHub Actions (qui sont des chaînes de texte).
+    Construit le client Drive à partir des identifiants OAuth du compte
+    .org dédié (ex: automation-sociavault@polaris-asso.org, ou celui
+    utilisé temporairement).
+
+    Le refresh_token a été généré UNE SEULE FOIS en local via
+    generate_refresh_token.py, avec l'app OAuth configurée en mode
+    "Internal" (donc sans expiration côté Google Workspace).
+
+    google-auth rafraîchit automatiquement le token d'accès à partir
+    du refresh_token à chaque appel, pas besoin de le faire à la main.
     """
-    info = json.loads(GOOGLE_SERVICE_ACCOUNT_JSON)
-    credentials = service_account.Credentials.from_service_account_info(
-        info, scopes=SCOPES
+    credentials = Credentials(
+        token=None,
+        refresh_token=GOOGLE_OAUTH_REFRESH_TOKEN,
+        client_id=GOOGLE_OAUTH_CLIENT_ID,
+        client_secret=GOOGLE_OAUTH_CLIENT_SECRET,
+        token_uri="https://oauth2.googleapis.com/token",
+        scopes=SCOPES,
     )
     return build("drive", "v3", credentials=credentials)
 
@@ -45,7 +61,7 @@ def find_latest_corpus_file():
     if not files:
         raise RuntimeError(f"❌ Aucun fichier corpus trouvé dans {DATA_DIR}")
 
-    files.sort()  # le nom contient la date/heure, donc l'ordre alphabétique = ordre chronologique
+    files.sort()
     return files[-1]
 
 

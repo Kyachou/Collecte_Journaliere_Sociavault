@@ -1,10 +1,107 @@
 targets:
-  - name: "Seneweb FB"
+  - name: "Leral"
     platform: "facebook"
-    country: "SN"
+    country_code: "SN"
+    url: "https://www.facebook.com/leralpointnet"
+
+  - name: "Seneweb"
+    platform: "facebook"
+    country_code: "SN"
     url: "https://www.facebook.com/Senewebcom"
 
-  - name: "France 24"
-    platform: "twitter"
-    url: "https://x.com/france24_fr"
+  - name: "Dakarbuzz"
+    platform: "facebook"
+    country_code: "SN"
+    url: "https://www.facebook.com/Dakarbuzz"
+
+  - name: "Senegal7"
+    platform: "facebook"
+    country_code: "SN"
+    url: "https://www.facebook.com/senegal7officiel"
+
+
+  - name: "2STV"
+    platform: "facebook"
+    country_code: "SN"
+    url: "https://www.facebook.com/2stvsenegal"
+
+  - name: "Sans Limites"
+    platform: "facebook"
+    country_code: "SN"
+    url: "https://www.facebook.com/sanslimitesn"
+
+
+  - name: "Koulouba Actu"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/Koulouba1"
+
+  - name: "Mali Actu"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/maliactu"
+
+  - name: "ORTM"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/ortmofficiel"
+
+  - name: "Bamako Bamada"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/Bamada.net"
+
   
+  - name: "AIB Burkina"
+    platform: "facebook"
+    country_code: "BF"
+    url: "https://www.facebook.com/aib.infos"
+
+  - name: "Sidwaya"
+    platform: "facebook"
+    country_code: "BF"
+    url: "https://www.facebook.com/ESidwaya"
+
+  - name: "BF1 TV"
+    platform: "facebook"
+    country_code: "BF"
+    url: "https://www.facebook.com/BF1TV"
+
+  
+  - name: "RTN"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/rtnniger"
+
+
+  - name: "Studio Kalangou"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/StudioKalangou"
+
+  - name: "Air Info Agadez"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/PAirInfoAgadez"
+
+  - name: "L'Essor"
+    platform: "twitter"
+    country_code: "ML"
+    url: "https://x.com/l_essor"
+
+  - name: "Journal du Mali"
+    platform: "twitter"
+    country_code: "ML"
+    url: "https://x.com/jourdumali"
+
+ 
+  - name: "Lefaso.net"
+    platform: "twitter"
+    country_code: "BF"
+    url: "https://x.com/lefaso_net"
+
+  - name: "Burkina 24"
+    platform: "twitter"
+    country_code: "BF"
+    url: "https://x.com/burkina24"
+
