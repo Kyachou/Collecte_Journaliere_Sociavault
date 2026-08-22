@@ -726,7 +726,7 @@ def commit_pending_item_to_corpus(corpus, item, post, comments, current_count, s
     platform = item.get("platform", "facebook")
     country_code = item.get("country_code")
     post["_target_url"] = target_url
-    target_data = get_or_create_target_data(corpus, target_name, platform, target_url)
+    target_data = get_or_create_target_data(corpus, target_name, platform, target_url,country_code)
     detail_key = "post_details" if platform == "facebook" else "tweet_details"
     target_data["posts_collectes"].append({
         detail_key: post,
