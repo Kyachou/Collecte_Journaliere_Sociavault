@@ -30,6 +30,21 @@ targets:
     country_code: "SN"
     url: "https://www.facebook.com/sanslimitesn"
 
+  - name: "Telefutursmedias TFM"
+    platform: "facebook"
+    country_code: "SN"
+    url: "https://www.facebook.com/TelefutursmediasTFM"
+
+  - name: "Sonko Officiel"
+    platform: "facebook"
+    country_code: "SN"
+    url: "https://www.facebook.com/SonkoOfficiel"
+
+  - name: "PR Diomaye"
+    platform: "facebook"
+    country_code: "SN"
+    url: "https://www.facebook.com/PRDiomaye"
+
 
   - name: "Koulouba Actu"
     platform: "facebook"
@@ -105,3 +120,203 @@ targets:
     country_code: "BF"
     url: "https://x.com/burkina24"
 
+    
+  - name: "Malick Konate"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/malick.konate.56"
+
+  - name: "Quotidien du Mali"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/QuotidienDuMali"
+
+  - name: "Info du Desert"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/infodudesert"
+
+  - name: "Abdoulaye Traore"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/abdoulaye.traore.927980"
+
+  - name: "Kisaitigui"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/Kisaitigui"
+
+  - name: "Cheick Oumar Doumbia"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/CheickOumarDoumbiaCOD"
+
+  - name: "NGTV Officielle"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/ngtvofficielle"
+
+  - name: "Jeremie Dione"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/jeremiedione"
+
+  - name: "Panafricanoste"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/Panafricanoste"
+
+  - name: "Master Infos"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/mastertinfos"
+
+  - name: "Fama Info"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/famainfo"
+
+  - name: "Dicko Oumou"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/dicko.oumou.96"
+
+  - name: "Forces Armees Maliennes"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/LesForcesArmeesMaliennes"
+
+  - name: "Choguel Kokalla Maiga"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/ChoguelKokallaMaiga"
+
+  - name: "Appels Sur L'Actualite"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/AppelsSurLactualite"
+
+  - name: "Niger CNSP"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/Nigercnsp"
+
+  - name: "Mahamadou Moctar"
+    platform: "tiktok"
+    country_code: "NE"
+    url: "https://www.tiktok.com/@mahamadou.moctar61"
+
+  - name: "Ameldadany2"
+    platform: "tiktok"
+    country_code: "NE"
+    url: "https://www.tiktok.com/@ameldadany2"
+
+  - name: "Echos du Niger"
+    platform: "tiktok"
+    country_code: "NE"
+    url: "https://www.tiktok.com/@echos_du_niger"
+
+  - name: "Actu Niger"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/actuniger"
+
+  - name: "Mohamed Yahaya"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/mohamed.yahaya.3"
+
+  - name: "Wadata Radio"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/WadataRadio"
+
+  - name: "KAZA2016"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/KAZA2016"
+
+  - name: "Samira Sabou (Officiel)"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/OfficielSamiraSabou"
+
+  - name: "Tarka Fadama"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/tarka.fadama"
+
+  - name: "Hamid Amadou Ngade"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/hamid.amadoungade"
+
+  - name: "Youssouphe Makhmar Maiga"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/profile.php?id=100064853173690"
+
+  - name: "Arouna le sage malien"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/profile.php?id=100069582473978"
+
+  - name: "Kamite Media"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/profile.php?id=100063983201742"
+
+  - name: "CDR Media"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/profile.php?id=100063624447238"
+
+  - name: "La Joie d'Afrique"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/profile.php?id=61553098517812"
+
+  - name: "Mali Jolies Dew"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/profile.php?id=61565489733828"
+
+  - name: "Free Africa"
+    platform: "facebook"
+    country_code: "ML"
+    url: "https://www.facebook.com/profile.php?id=61552420807255"
+
+  - name: "La Voix de l'AES"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/profile.php?id=100057323505032"
+
+  - name: "L'Oeil Nigerien"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/profile.php?id=100063485029483"
+
+  - name: "Presi Lota"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/profile.php?id=61563239229422"
+
+  - name: "Mu Duba Mu Gani"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/profile.php?id=61552513198266"
+
+  - name: "Hamza Malam Oumarou"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/profile.php?id=61563450733480"
+
+  - name: "Abdou Pagoui"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/profile.php?id=1330466339"
+
+  - name: "Boubacar Seyni Souley"
+    platform: "facebook"
+    country_code: "NE"
+    url: "https://www.facebook.com/share/19UfRBjyz2"
