@@ -2,7 +2,7 @@ name: Collecte Sociavault quotidienne
 
 on:
   schedule:
-    # Tous les jours à 6h00 UTC (= 7h00 ou 8h00 en France selon l'heure d'été/hiver)
+    # Tous les jours à 22h00 UTC (= 23h00 ou 00h00 en France selon l'heure d'été/hiver)
     - cron: "0 22 * * *"
   workflow_dispatch:
     # Ajoute un bouton "Run workflow" dans l'onglet Actions de GitHub,
