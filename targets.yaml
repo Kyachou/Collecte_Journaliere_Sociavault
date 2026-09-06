@@ -320,3 +320,54 @@ targets:
     platform: "facebook"
     country_code: "NE"
     url: "https://www.facebook.com/share/19UfRBjyz2"
+    
+ - name: "Macky Sall"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/Macky_Sall"
+ 
+  - name: "PunchTchineur"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/Nabyleu"
+ 
+  - name: "RTS Senegal"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/RTS1_Senegal"
+ 
+  - name: "Dior Gueye Senegal"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/DiorfallGueye2"
+ 
+  - name: "Pape Ale Niang"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/papealeniang"
+ 
+  - name: "Lady Evah"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/mc_evah"
+ 
+  - name: "Latyr Diouf"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/LatyrDiouff"
+ 
+  - name: "Abdou Toure"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/TontonVert"
+ 
+  - name: "Alioune Tine"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/aliounetine16"
+ 
+  - name: "Demba Gueye"
+    platform: "twitter"
+    country_code: "SN"
+    url: "https://x.com/dembagueye"
+ 
