@@ -320,8 +320,8 @@ targets:
     platform: "facebook"
     country_code: "NE"
     url: "https://www.facebook.com/share/19UfRBjyz2"
-    
- - name: "Macky Sall"
+
+  - name: "Macky Sall"
     platform: "twitter"
     country_code: "SN"
     url: "https://x.com/Macky_Sall"
