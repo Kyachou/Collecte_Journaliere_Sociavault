@@ -31,7 +31,12 @@ jobs:
         env:
           SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         run: python collecte.py
-
+        
+      - name: Lancer la collecte internationale
+        env:
+          SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
+        run: python collecte_international.py
+        
       - name: Uploader le corpus vers Google Drive
         env:
           GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
