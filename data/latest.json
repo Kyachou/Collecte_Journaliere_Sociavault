@@ -3,11 +3,21 @@
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "SN"
     ],
-    "titre": "Mali: des bébés siamois séparés par une opération chirurgicale à Bamako, une première pour le pays rfi",
-    "url": "https://x.com/RFIAfrique/status/2098077292086108639",
-    "published_at": "2026-09-10T16:08:41Z"
+    "titre": "Sénégal, Soudan, Israël et Allemagne rfi",
+    "url": "https://x.com/RFIAfrique/status/2098463116057280840",
+    "published_at": "2026-09-11T18:10:43Z"
+  },
+  {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "Disparition de Moussa Kaka au Niger: «Nous appelons à sa libération», lance un patron de presse camerounais rfi",
+    "url": "https://x.com/RFIAfrique/status/2098449951823196540",
+    "published_at": "2026-09-11T17:10:43Z"
   },
   {
     "media": "Le Monde Afrique",
@@ -25,9 +35,9 @@
     "pays": [
       "BF"
     ],
-    "titre": "La une d’al-Naba pour les affrontements avec le JNIM au Burkina Faso « +200 morts des milices d’al-Qaeda » 6 8 29 5",
+    "titre": "La une d’al-Naba pour les affrontements avec le JNIM au Burkina Faso « +200 morts des milices d’al-Qaeda » 8 12 83 14K",
     "url": "https://x.com/SimNasr/status/2098133786554728819",
-    "published_at": "2026-09-10T20:08:41Z"
+    "published_at": "2026-09-10T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -93,21 +103,13 @@
     "media": "RT en français",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "SN",
+      "ML",
+      "NE"
     ],
-    "titre": "🇲🇱 #Mali : plus d’un millier de terroristes neutralisés en août Les autorités maliennes dressent le bilan d’un mois d’opérations intensives contre les groupes armés en août",
-    "url": "https://x.com/RTenfrancais/status/2098154555217166638",
-    "published_at": "2026-09-10T21:02:41Z"
-  },
-  {
-    "media": "Brut Afrique",
-    "plateforme": "TikTok",
-    "pays": [
-      "ML"
-    ],
-    "titre": "🇲🇱À #Bamako, une équipe médicale du CHU Gabriel Touré a réussi à séparer chirurgicalement deux bébés siamois",
-    "url": "https://www.tiktok.com/@brutafrique/video/7683997959800802582",
-    "published_at": "2026-09-10T19:56:02Z"
+    "titre": "♟️🌍 L’ÉCHIQUIER AFRICAIN #NIGER, #MALI, #SÉNÉGAL : L’AFRIQUE FACE AUX INGÉRENCES ET AUX PIÈGES DE LA DETTE vk",
+    "url": "https://x.com/RTenfrancais/status/2098509385186107882",
+    "published_at": "2026-09-11T20:33:43Z"
   },
   {
     "media": "AJ+ français",
