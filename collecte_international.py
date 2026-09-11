@@ -3,7 +3,7 @@ import re
 import json
 import time
 from datetime import datetime, timezone, timedelta
- 
+
 from collecte import (
     api_get,
     BASE_URL,
@@ -15,27 +15,26 @@ from collecte import (
     SLEEP_BETWEEN_REQUESTS,
     RECHECK_DELAY_HOURS,
 )
- 
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
- 
+
 # Chemin du fichier depose par l'agent de curation (synchronise depuis GitHub).
 # Adapter si le fichier est syncrhonise ailleurs que a cote de ce script.
 URLS_DU_JOUR_PATH = os.environ.get(
-    "URLS_DU_JOUR_PATH", os.path.join(BASE_DIR, "urls_du_jour.json")
+    "URLS_DU_JOUR_PATH", os.path.join(DATA_DIR, "urls_du_jour.json")
 )
- 
+
 PENDING_MEDIAS_FILE = os.path.join(DATA_DIR, "pending_medias_internationaux.json")
 OUTPUT_JSON = os.path.join(
     DATA_DIR,
     f"sociavault_medias_internationaux_raw{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json",
 )
-DEBUG_TIKTOK_RAW = os.path.join(DATA_DIR, "debug_tiktok_raw_response.json")
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Chargement de la liste d'URLs du jour
 # ---------------------------------------------------------------------------
- 
+
 def load_urls_du_jour(path):
     if not os.path.exists(path):
         print(f" Fichier introuvable : {path}")
@@ -43,8 +42,8 @@ def load_urls_du_jour(path):
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     return data if isinstance(data, list) else []
- 
- 
+
+
 def load_pending():
     if not os.path.exists(PENDING_MEDIAS_FILE):
         return []
@@ -55,24 +54,24 @@ def load_pending():
     except Exception as e:
         print(f" Impossible de lire pending_medias_internationaux.json : {e}")
         return []
- 
- 
+
+
 def save_pending(pending):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(PENDING_MEDIAS_FILE, "w", encoding="utf-8") as f:
         json.dump(pending, f, ensure_ascii=False, indent=2)
- 
- 
+
+
 def save_corpus(corpus):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(corpus, f, ensure_ascii=False, indent=2)
- 
- 
+
+
 def pending_key(item):
     return item.get("url")
- 
- 
+
+
 def _country_code_value(pays):
     """
     Normalise le champ 'pays' (liste) vers ce qu'attend le format collect.py
@@ -87,8 +86,8 @@ def _country_code_value(pays):
             return pays[0]
         return pays
     return pays
- 
- 
+
+
 def _append_or_merge_target(corpus, target_name, platform, target_url, country_code,
                              detail_key, post_detail, comments, recheck_status):
     """
@@ -110,25 +109,111 @@ def _append_or_merge_target(corpus, target_name, platform, target_url, country_c
             "recheck_status": recheck_status,
         }],
     })
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Extraction d'identifiants depuis les URLs
 # ---------------------------------------------------------------------------
- 
+
 TWEET_ID_RE = re.compile(r"status/(\d+)")
- 
- 
+
+
 def extract_tweet_id(url):
     m = TWEET_ID_RE.search(url or "")
     return m.group(1) if m else None
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Collecte TikTok (absente de collect.py, ajoutee ici)
 # ---------------------------------------------------------------------------
- 
+
+# Seuil au-dela duquel on paie l'appel "Comment Replies" (1 credit/appel).
+# Sous ce seuil, on laisse les reponses de ce commentaire de cote plutot que
+# de depenser un credit pour 1 ou 2 reponses. A ajuster selon le budget.
+TIKTOK_REPLIES_MIN_COUNT = 3
+
+
+def get_tiktok_comment_replies(video_url, comment_id):
+    """
+    Recupere les reponses a UN commentaire TikTok donne.
+
+    Endpoint : GET /v1/scrape/tiktok/comment-replies?comment_id=...&url=...
+    (1 credit par appel, cf. catalogue SociaVault "Comment Replies"). Chemin
+    confirme via l'URL du playground officiel SociaVault (tiret, ni underscore
+    ni slash comme les tentatives precedentes).
+
+    Forme de reponse CONFIRMEE par un test reel (endpoint: "tiktok/comment_replies"
+    dans la reponse) : meme enveloppe maison que /scrape/tiktok/comments
+    (data.comments dict indexe par cle numerique-string, has_more, cursor).
+    """
+    endpoint = f"{BASE_URL}/scrape/tiktok/comment-replies"
+    all_replies = []
+    seen_ids = set()
+    cursor = 0
+    page = 1
+    first_response_logged = False
+
+    while True:
+        params = {"comment_id": comment_id, "url": video_url, "cursor": cursor}
+        try:
+            res = api_get(endpoint, params=params, timeout=30)
+            if res is None:
+                break
+            if res.status_code != 200:
+                print(f"          Erreur TikTok replies HTTP {res.status_code} : {res.text[:300]}")
+                break
+
+            response = res.json()
+            first_response_logged = True
+
+            data = response.get("data", {}) if isinstance(response.get("data"), dict) else response
+            replies_data = data.get("comments", data.get("replies", []))
+            has_more = bool(data.get("has_more", False))
+            next_cursor = data.get("cursor")
+
+            if isinstance(replies_data, dict):
+                batch = list(replies_data.values())
+            elif isinstance(replies_data, list):
+                batch = replies_data
+            else:
+                batch = []
+
+            for r in batch:
+                if not isinstance(r, dict):
+                    continue
+                rid = r.get("cid") or r.get("comment_id") or r.get("id")
+                if rid and rid in seen_ids:
+                    continue
+                if rid:
+                    seen_ids.add(rid)
+                all_replies.append(r)
+
+            if not has_more or next_cursor is None or next_cursor == cursor:
+                break
+            cursor = next_cursor
+            page += 1
+            time.sleep(SLEEP_BETWEEN_REQUESTS)
+
+        except requests_exceptions_safe() as e:
+            print(f"          Erreur reseau TikTok replies : {e}")
+            break
+        except Exception as e:
+            print(f"          Erreur TikTok replies : {e}")
+            break
+
+    return all_replies
+
+
 def tiktok_comment_to_comment_like(c):
+    if not isinstance(c, dict):
+        # Certains elements de reply_comment/replies ne sont pas des objets
+        # complets (ex. simple chaine) selon les posts. On ignore proprement
+        # plutot que de planter tout le run pour un post.
+        return {
+            "id": None, "text": None, "created_at": None,
+            "reply_count": 0, "like_count": 0,
+            "author": {}, "replies": [],
+        }
     user = c.get("user") or {}
     created = c.get("create_time")
     created_iso = None
@@ -137,6 +222,11 @@ def tiktok_comment_to_comment_like(c):
             created_iso = datetime.fromtimestamp(created, tz=timezone.utc).isoformat()
         except Exception:
             created_iso = None
+    raw_replies = c.get("reply_comment") or c.get("replies") or []
+    if isinstance(raw_replies, dict):
+        # Meme convention que le champ "comments" racine : dict indexe par
+        # cle numerique-string ("0","1",...), pas une liste.
+        raw_replies = list(raw_replies.values())
     return {
         "id": c.get("cid") or c.get("comment_id") or c.get("id"),
         "text": c.get("text"),
@@ -147,46 +237,46 @@ def tiktok_comment_to_comment_like(c):
             "name": user.get("nickname"),
             "username": user.get("unique_id"),
         },
-        # Certaines reponses TikTok embarquent directement les reponses au
-        # commentaire (pas d'appel separe necessaire, contrairement a Facebook).
         "replies": [
-            tiktok_comment_to_comment_like(r)
-            for r in (c.get("reply_comment") or c.get("replies") or [])
+            tiktok_comment_to_comment_like(r) for r in raw_replies if isinstance(r, dict)
         ],
     }
- 
- 
+
+
 def _dump_debug_once(response_json):
-    """Ecrit la toute premiere reponse brute recue pour verification manuelle."""
-    if os.path.exists(DEBUG_TIKTOK_RAW):
-        return
-    os.makedirs(DATA_DIR, exist_ok=True)
-    with open(DEBUG_TIKTOK_RAW, "w", encoding="utf-8") as f:
-        json.dump(response_json, f, ensure_ascii=False, indent=2)
-    print(f"       Reponse brute TikTok sauvegardee pour verification : {DEBUG_TIKTOK_RAW}")
- 
- 
+    """
+    No-op conserve pour compatibilite avec les appels existants (get_all_tiktok_comments
+    l'appelle encore). Les formats de reponse TikTok (/comments et
+    /comment-replies) ont ete confirmes par des tests reels, plus besoin
+    d'ecrire de fichier de debug a chaque run.
+    """
+    return
+
+
 def get_all_tiktok_comments(video_url):
     """
     Recupere tous les commentaires d'une video TikTok.
- 
+
     Endpoint : GET /v1/scrape/tiktok/comments?url=...&cursor=...
-    Enveloppe de reponse NON CONFIRMEE avec certitude (voir avertissement en
-    tete de fichier) : on tente successivement le format maison SociaVault
-    (success/data/has_next_page/cursor, comme Facebook) puis un format plat
-    (comments/hasMore/cursor).
+
+    Format de pagination CONFIRME via test reel : {"has_more": 0|1, "cursor":
+    <entier>, "total": N}, PAS has_next_page/cursor comme sur Facebook.
+
+    reply_comment est souvent `null` ou incomplet sur les commentaires racine
+    meme quand reply_comment_total > 0 : les reponses completes sont
+    recuperees separement via get_tiktok_comment_replies (endpoint
+    /scrape/tiktok/comment-replies) au-dela du seuil TIKTOK_REPLIES_MIN_COUNT,
+    voir plus bas dans cette fonction.
     """
     endpoint = f"{BASE_URL}/scrape/tiktok/comments"
     all_comments = []
     seen_ids = set()
-    cursor = None
+    cursor = 0
     page = 1
     first_response_logged = False
- 
+
     while True:
-        params = {"url": video_url}
-        if cursor is not None:
-            params["cursor"] = cursor
+        params = {"url": video_url, "cursor": cursor}
         try:
             print(f"       TikTok commentaires page {page}")
             res = api_get(endpoint, params=params, timeout=30)
@@ -196,67 +286,78 @@ def get_all_tiktok_comments(video_url):
             if res.status_code != 200:
                 print(f"       Erreur TikTok : {res.text[:500]}")
                 break
- 
+
             response = res.json()
             if not first_response_logged:
                 _dump_debug_once(response)
                 first_response_logged = True
- 
-            # Tentative 1 : enveloppe maison SociaVault (comme Facebook)
-            if "data" in response and isinstance(response.get("data"), dict):
-                data = response["data"]
-                comments_data = data.get("comments", [])
-                has_next_page = data.get("has_next_page", False)
-                next_cursor = data.get("cursor")
-            else:
-                # Tentative 2 : enveloppe plate (comments / hasMore / cursor)
-                data = response
-                comments_data = response.get("comments", [])
-                has_next_page = response.get("hasMore", False)
-                next_cursor = response.get("cursor")
- 
+
+            data = response.get("data", {}) if isinstance(response.get("data"), dict) else response
+            comments_data = data.get("comments", [])
+            has_more = bool(data.get("has_more", False))
+            next_cursor = data.get("cursor")
+
             if isinstance(comments_data, dict):
                 comments_batch = list(comments_data.values())
             elif isinstance(comments_data, list):
                 comments_batch = comments_data
             else:
                 comments_batch = []
- 
-            print(f"          {len(comments_batch)} commentaire(s)")
+
+            print(f"          {len(comments_batch)} commentaire(s) (total annonce : {data.get('total')})")
             for c in comments_batch:
+                if not isinstance(c, dict):
+                    continue
                 cid = c.get("cid") or c.get("comment_id") or c.get("id")
                 if cid and cid in seen_ids:
                     continue
                 if cid:
                     seen_ids.add(cid)
                 all_comments.append(c)
- 
-            if not has_next_page or next_cursor is None:
+
+            if not has_more or next_cursor is None or next_cursor == cursor:
                 print("          Fin des commentaires TikTok")
                 break
             cursor = next_cursor
             page += 1
             time.sleep(SLEEP_BETWEEN_REQUESTS)
- 
+
         except requests_exceptions_safe() as e:
             print(f"       Erreur reseau TikTok : {e}")
             break
         except Exception as e:
             print(f"       Erreur TikTok : {e}")
             break
- 
+
+    print(f"       {len(all_comments)} commentaire(s) racine au total pour cette video")
+
+    for c in all_comments:
+        if not isinstance(c, dict):
+            continue
+        reply_total = c.get("reply_comment_total", 0) or 0
+        if reply_total < TIKTOK_REPLIES_MIN_COUNT:
+            continue
+        cid = c.get("cid") or c.get("comment_id") or c.get("id")
+        if not cid:
+            continue
+        print(f"       {reply_total} reponse(s) annoncee(s) pour le commentaire {cid}")
+        replies = get_tiktok_comment_replies(video_url, cid)
+        print(f"          {len(replies)} reponse(s) recuperee(s)")
+        c["reply_comment"] = replies
+        time.sleep(SLEEP_BETWEEN_REQUESTS)
+
     return [tiktok_comment_to_comment_like(c) for c in all_comments]
- 
- 
+
+
 def requests_exceptions_safe():
     import requests
     return requests.RequestException
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Dispatch par plateforme
 # ---------------------------------------------------------------------------
- 
+
 def fetch_comments_for_media_post(plateforme, url):
     plateforme_norm = (plateforme or "").strip().lower()
     if plateforme_norm in ("x", "twitter"):
@@ -270,12 +371,12 @@ def fetch_comments_for_media_post(plateforme, url):
         return get_all_tiktok_comments(url)
     print(f" Plateforme non geree : {plateforme}")
     return []
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Traitement d'une entree urls_du_jour.json
 # ---------------------------------------------------------------------------
- 
+
 def process_entry(entry, pending, corpus):
     url = entry.get("url")
     media = entry.get("media", "Media inconnu")
@@ -283,27 +384,27 @@ def process_entry(entry, pending, corpus):
     pays = entry.get("pays", [])  # liste : un post peut concerner plusieurs pays
     titre = entry.get("titre", "")
     published_at = entry.get("published_at")
- 
+
     if not url:
         print(" Entree sans URL, ignoree.")
         return
- 
+
     print()
     print(f"    Post : {media} ({plateforme}) · pays={pays}")
     print(f"      URL : {url}")
- 
+
     print("       Recuperation des commentaires (1ere capture)")
     comments = fetch_comments_for_media_post(plateforme, url)
     print(f"       {len(comments)} commentaire(s) recupere(s)")
- 
+
     plateforme_norm = (plateforme or "").strip().lower()
     detail_key = "tweet_details" if plateforme_norm in ("x", "twitter") else "tiktok_details"
- 
+
     _append_or_merge_target(corpus, target_name=media, platform=plateforme_norm,
         target_url=url, country_code=pays, detail_key=detail_key,
         post_detail={"url": url, "title": titre, "published_at": published_at},
         comments=comments, recheck_status="initial")
- 
+
     item = {
         "url": url,
         "media": media,
@@ -316,70 +417,70 @@ def process_entry(entry, pending, corpus):
     if not any(pending_key(p) == url for p in pending):
         pending.append(item)
         print(f"       Reverification programmee dans ~{RECHECK_DELAY_HOURS}h")
- 
- 
+
+
 def process_pending(pending, corpus):
     if not pending:
         print(" Aucun post media a reverifier.")
         return
- 
+
     print()
     print("====================================================")
     print(" REVERIFICATION DES POSTS MEDIAS PROGRAMMES")
     print("====================================================")
- 
+
     for item in list(pending):
         url = item.get("url")
         added_at = parse_datetime(item.get("added_at")) or now_utc()
         age = now_utc() - added_at
         age_hours = age.total_seconds() / 3600
         delai_ecoule = age >= timedelta(hours=RECHECK_DELAY_HOURS)
- 
+
         print()
         print(f" En file : {url}")
         print(f"    Capture il y a {age_hours:.1f}h "
               f"({'delai atteint' if delai_ecoule else f'< {RECHECK_DELAY_HOURS}h, on patiente'})")
- 
+
         if not delai_ecoule:
             continue
- 
+
         print(f"    Reverification finale ({item.get('plateforme')})")
         comments = fetch_comments_for_media_post(item.get("plateforme"), url)
         print(f"    Commentaires au final : {len(comments)}")
- 
+
         plateforme_norm = (item.get("plateforme") or "").strip().lower()
         detail_key = "tweet_details" if plateforme_norm in ("x", "twitter") else "tiktok_details"
- 
+
         _append_or_merge_target(corpus, target_name=item.get("media"), platform=plateforme_norm,
             target_url=url, country_code=item.get("pays", []), detail_key=detail_key,
             post_detail={"url": url, "title": item.get("titre"), "published_at": item.get("published_at")},
             comments=comments, recheck_status="final")
- 
+
         pending[:] = [p for p in pending if pending_key(p) != url]
         print("    Reverifie une fois -> retire de la file definitivement")
         time.sleep(SLEEP_BETWEEN_REQUESTS)
- 
- 
+
+
 def main():
     print()
     print("====================================================")
     print(" COLLECTE MEDIAS INTERNATIONAUX (X + TikTok)")
     print("====================================================")
- 
+
     entries = load_urls_du_jour(URLS_DU_JOUR_PATH)
     print(f" {len(entries)} URL(s) trouvee(s) dans {URLS_DU_JOUR_PATH}")
- 
+
     pending = load_pending()
     print(f"⏳ {len(pending)} post(s) deja en attente de reverification.")
- 
+
     corpus = []
- 
+
     process_pending(pending, corpus)
     save_pending(pending)
     save_corpus(corpus)
- 
+
     already_seen_urls = {p.get("url") for p in pending} | {c.get("url") for c in corpus}
- 
+
     for entry in entries:
         url = entry.get("url")
         if url in already_seen_urls:
@@ -389,14 +490,14 @@ def main():
         save_pending(pending)
         save_corpus(corpus)
         time.sleep(SLEEP_BETWEEN_REQUESTS)
- 
+
     save_pending(pending)
     save_corpus(corpus)
- 
+
     total_comments = sum(
         p.get("comments_count", 0) for c in corpus for p in c.get("posts_collectes", [])
     )
- 
+
     print()
     print("====================================================")
     print(" COLLECTE MEDIAS INTERNATIONAUX TERMINEE")
@@ -406,8 +507,7 @@ def main():
     print(f" Posts en attente de reverification (~{RECHECK_DELAY_HOURS}h) : {len(pending)}")
     print(f" Sortie : {OUTPUT_JSON}")
     print("====================================================")
- 
- 
+
+
 if __name__ == "__main__":
     main()
- 

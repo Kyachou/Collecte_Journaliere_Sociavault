@@ -454,27 +454,28 @@ def get_twitter_user_rest_id(handle):
 
 def extract_tweets_from_timeline(data):
     tweets = []
-    instructions = data.get("result", {}).get("timeline", {}).get("instructions", [])
-    for instr in instructions:
-        instr_type = instr.get("type")
-        if instr_type == "TimelinePinEntry":
-            entry = instr.get("entry", {})
-            tweet_result = (
-                entry.get("content", {}).get("itemContent", {})
-                .get("tweet_results", {}).get("result")
-            )
-            if tweet_result:
-                tweets.append(tweet_result)
-        elif instr_type == "TimelineAddEntries":
-            for entry in instr.get("entries", []):
-                tweet_result = (
-                    entry.get("content", {}).get("itemContent", {})
-                    .get("tweet_results", {}).get("result")
-                )
-                if tweet_result:
-                    tweets.append(tweet_result)
-    return tweets
+    seen_ids = set()
 
+    def walk(node):
+        if isinstance(node, dict):
+            tr = node.get("tweet_results")
+            if isinstance(tr, dict):
+                result = tr.get("result")
+                if isinstance(result, dict):
+                    legacy = result.get("legacy") or {}
+                    rest_id = result.get("rest_id") or legacy.get("id_str")
+                    if rest_id and rest_id not in seen_ids:
+                        seen_ids.add(rest_id)
+                        tweets.append(result)
+            for value in node.values():
+                walk(value)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+
+    instructions = data.get("result", {}).get("timeline", {}).get("instructions", [])
+    walk(instructions)
+    return tweets
 
 def get_tweet_date(tweet):
     legacy = tweet.get("legacy", {}) or {}
