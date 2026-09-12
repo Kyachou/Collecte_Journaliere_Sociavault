@@ -1,0 +1,85 @@
+[
+  {
+    "target_name": "RFI Afrique",
+    "platform": "x",
+    "target_url": "https://x.com/RFIAfrique/status/2098463116057280840",
+    "country_code": "SN",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/RFIAfrique/status/2098463116057280840",
+          "title": "Sénégal, Soudan, Israël et Allemagne rfi",
+          "published_at": "2026-09-11T18:10:43Z"
+        },
+        "comments_count": 2,
+        "comments": [
+          {
+            "id": "2098544379937935546",
+            "text": "@RFIAfrique https://t.co/1GN5a5cmzc",
+            "created_at": "Fri Sep 11 22:49:03 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "Alerte Sahel",
+              "screen_name": "AlerteSahel"
+            }
+          },
+          {
+            "id": "2098465152806932672",
+            "text": "@RFIAfrique #LUBUMBASHI 🇨🇩 : 𝐋𝐚 𝐦𝐚𝐫𝐜𝐡𝐞 𝐝𝐞 𝐥𝐚 𝐜𝐨𝐚𝐥𝐢𝐭𝐢𝐨𝐧 𝐂64 𝐢𝐧𝐭𝐞𝐫𝐝𝐢𝐭𝐞\n\n#La maire ad intérim de #Lubumbashi, #Joyce_Tunda_Kazadi, a réservé, jeudi 10 septembre 2026, une suite défavorable à la demande de la coalition #C64 d’organiser une marche dans la ville le",
+            "created_at": "Fri Sep 11 17:34:14 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "Ken Masini",
+              "screen_name": "KaneMuamba35"
+            }
+          }
+        ],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "RFI Afrique",
+    "platform": "x",
+    "target_url": "https://x.com/RFIAfrique/status/2098449951823196540",
+    "country_code": "NE",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/RFIAfrique/status/2098449951823196540",
+          "title": "Disparition de Moussa Kaka au Niger: «Nous appelons à sa libération», lance un patron de presse camerounais rfi",
+          "published_at": "2026-09-11T17:10:43Z"
+        },
+        "comments_count": 0,
+        "comments": [],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "RT en français",
+    "platform": "x",
+    "target_url": "https://x.com/RTenfrancais/status/2098509385186107882",
+    "country_code": [
+      "SN",
+      "ML",
+      "NE"
+    ],
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/RTenfrancais/status/2098509385186107882",
+          "title": "♟️🌍 L’ÉCHIQUIER AFRICAIN #NIGER, #MALI, #SÉNÉGAL : L’AFRIQUE FACE AUX INGÉRENCES ET AUX PIÈGES DE LA DETTE vk",
+          "published_at": "2026-09-11T20:33:43Z"
+        },
+        "comments_count": 0,
+        "comments": [],
+        "recheck_status": "initial"
+      }
+    ]
+  }
+]
