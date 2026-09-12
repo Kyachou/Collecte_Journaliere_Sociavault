@@ -38,7 +38,7 @@ MAX_OLD_CONSECUTIVE = 1
 REPLIES_MIN_COUNT = 5
 MAX_TWITTER_TWEET_PAGES = 200
 MAX_TWITTER_REPLIES_PAGES = 5
-
+TWITTER_REPLIES_MIN_COUNT = 5
 REQUEST_TIMEOUT = 30
 SLEEP_BETWEEN_REQUESTS = 1
 RATE_LIMIT_BACKOFF_SECONDS = [5, 10, 15]
@@ -298,7 +298,7 @@ def get_all_facebook_comments(post_url):
     seen_ids = set()
     cursor = None
     page = 1
-
+ 
     while True:
         params = {"url": post_url}
         if cursor:
@@ -307,17 +307,24 @@ def get_all_facebook_comments(post_url):
             print(f"       Commentaires page {page}")
             res = api_get(endpoint, params=params, timeout=REQUEST_TIMEOUT)
             if res is None:
+                if page == 1:
+                    print("       Echec reseau des la 1ere page -- resultat non fiable")
+                    return None
                 break
             print(f"         ↳ HTTP {res.status_code}")
             if res.status_code != 200:
                 print(f"       Erreur Sociavault : {res.text[:500]}")
+                if page == 1:
+                    return None
                 break
-
+ 
             response = res.json()
             if not response.get("success"):
                 print("       Sociavault success=false")
+                if page == 1:
+                    return None
                 break
-
+ 
             data = response.get("data", {})
             comments_data = data.get("comments", {})
             if isinstance(comments_data, dict):
@@ -326,7 +333,7 @@ def get_all_facebook_comments(post_url):
                 comments_batch = comments_data
             else:
                 comments_batch = []
-
+ 
             print(f"          {len(comments_batch)} commentaire(s)")
             for c in comments_batch:
                 cid = c.get("id")
@@ -335,28 +342,33 @@ def get_all_facebook_comments(post_url):
                 if cid:
                     seen_ids.add(cid)
                 all_comments.append(c)
-
+ 
             has_next_page = data.get("has_next_page", False)
             next_cursor = data.get("cursor")
             if not has_next_page:
                 print("          Fin des commentaires")
                 break
             if not next_cursor:
-                print("          Page suivante annoncée mais cursor absent")
+                print("          Page suivante annoncee mais cursor absent")
                 break
             cursor = next_cursor
             page += 1
             time.sleep(SLEEP_BETWEEN_REQUESTS)
-
+ 
         except requests.RequestException as e:
-            print(f"       Erreur réseau commentaires : {e}")
+            print(f"       Erreur reseau commentaires : {e}")
+            if page == 1:
+                return None
             break
         except Exception as e:
             print(f"       Erreur commentaires : {e}")
+            if page == 1:
+                return None
             break
-
+ 
     return enrich_comments_with_replies(all_comments)
-
+ 
+ 
 
 def get_comment_replies(feedback_id, expansion_token):
     endpoint = f"{BASE_URL}/scrape/facebook/comment/replies"
@@ -562,28 +574,33 @@ def get_tweet_replies(tweet_id):
     seen_ids = set()
     cursor = None
     page = 1
-
+ 
     while page <= MAX_TWITTER_REPLIES_PAGES:
         params = {"query": f"conversation_id:{tweet_id}"}
         if cursor:
             params["cursor"] = cursor
         try:
-            print(f"       Réponses Twitter page {page}")
+            print(f"       Reponses Twitter page {page}")
             res = api_get(endpoint, params=params, timeout=REQUEST_TIMEOUT)
             if res is None:
+                if page == 1:
+                    print("       Echec reseau des la 1ere page -- resultat non fiable")
+                    return None
                 break
             print(f"         ↳ HTTP {res.status_code}")
             if res.status_code != 200:
                 print(f"       Erreur replies Twitter HTTP {res.status_code}")
+                if page == 1:
+                    return None
                 break
-
+ 
             payload = res.json()
             data = payload.get("data", {})
             batch = extract_tweets_from_timeline(data)
             if not batch:
-                print("          Fin des réponses")
+                print("          Fin des reponses")
                 break
-
+ 
             for tweet in batch:
                 legacy = tweet.get("legacy", {}) or {}
                 rest_id = tweet.get("rest_id") or legacy.get("id_str")
@@ -594,23 +611,24 @@ def get_tweet_replies(tweet_id):
                 if rest_id:
                     seen_ids.add(rest_id)
                 all_replies.append(tweet)
-
-            print(f"          {len(all_replies)} réponse(s) cumulée(s)")
-
+ 
+            print(f"          {len(all_replies)} reponse(s) cumulee(s)")
+ 
             cursor_data = data.get("cursor", {})
             cursor = cursor_data.get("bottom") if isinstance(cursor_data, dict) else None
             if not cursor:
                 break
             page += 1
             time.sleep(SLEEP_BETWEEN_REQUESTS)
-
+ 
         except Exception as e:
             print(f"       Erreur replies Twitter : {e}")
+            if page == 1:
+                return None
             break
-
+ 
     return all_replies
-
-
+ 
 def tweet_to_comment_like(tweet):
     legacy = tweet.get("legacy", {}) or {}
     user = (
@@ -661,12 +679,16 @@ def fetch_comments_for(platform, post):
     if platform == "facebook":
         return get_all_facebook_comments(get_post_url(post))
     if platform in ("twitter", "x"):
+        declared_replies = post.get("commentCount", 0) or 0
+        if declared_replies < TWITTER_REPLIES_MIN_COUNT:
+            return []
         tweet_id = post.get("id")
         replies = get_tweet_replies(tweet_id)
+        if replies is None:
+            return None
         return [tweet_to_comment_like(r) for r in replies]
     return []
-
-
+ 
 def process_item(post, target_name, target_url, platform, pending, target_data):
     post_id = get_post_id(post)
     post_url = get_post_url(post)
@@ -692,8 +714,9 @@ def process_item(post, target_name, target_url, platform, pending, target_data):
 
     print("       Récupération des commentaires (1ère capture)")
     comments = fetch_comments_for(platform, post)
+    if comments is None:
+        comments = []
     print(f"       {len(comments)} commentaire(s)/réponse(s) récupéré(s)")
-
     detail_key = "post_details" if platform == "facebook" else "tweet_details"
     target_data["posts_collectes"].append({
         detail_key: post,
@@ -777,6 +800,13 @@ def process_pending(pending, corpus):
 
         print(f"    Revérification finale ({platform})")
         comments = fetch_comments_for(platform, post)
+
+        if comments is None:
+            print("    Echec reseau au recheck -- on reessaiera au prochain run, "
+          "pas retire du pending.")
+            time.sleep(SLEEP_BETWEEN_REQUESTS)
+            continue
+
         current_count = len(comments)
         print(f"    Commentaires/réponses au final : {current_count}")
 
@@ -784,7 +814,6 @@ def process_pending(pending, corpus):
         remove_from_pending(pending, pending_key(item))
         print("    Revérifié une fois → retiré de la file définitivement")
         time.sleep(SLEEP_BETWEEN_REQUESTS)
-
 
 def process_facebook_target(target, pending, corpus):
     name = target.get("name", "Sans nom")
