@@ -3,21 +3,21 @@
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "NE"
     ],
-    "titre": "Sénégal, Soudan, Israël et Allemagne rfi",
-    "url": "https://x.com/RFIAfrique/status/2098463116057280840",
-    "published_at": "2026-09-11T18:10:43Z"
+    "titre": "Niger: le général Abdourahamane Tiani procède à un remaniement à la tête de l'armée rfi",
+    "url": "https://x.com/RFIAfrique/status/2098850088961647043",
+    "published_at": "2026-09-12T19:06:58Z"
   },
   {
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "BF"
     ],
-    "titre": "Disparition de Moussa Kaka au Niger: «Nous appelons à sa libération», lance un patron de presse camerounais rfi",
-    "url": "https://x.com/RFIAfrique/status/2098449951823196540",
-    "published_at": "2026-09-11T17:10:43Z"
+    "titre": "Milices numériques anti-journalistes au Burkina Faso rfi",
+    "url": "https://x.com/RFIAfrique/status/2098764337343283390",
+    "published_at": "2026-09-12T14:06:58Z"
   },
   {
     "media": "Le Monde Afrique",
@@ -28,16 +28,6 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "La une d’al-Naba pour les affrontements avec le JNIM au Burkina Faso « +200 morts des milices d’al-Qaeda » 8 12 83 14K",
-    "url": "https://x.com/SimNasr/status/2098133786554728819",
-    "published_at": "2026-09-10T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -103,13 +93,43 @@
     "media": "RT en français",
     "plateforme": "X",
     "pays": [
-      "SN",
+      "SN"
+    ],
+    "titre": "🇸🇳 🔥Pape Ibrahima Ndiaye revient sur la présentation de la flamme des Jeux olympiques de la jeunesse de #Dakar",
+    "url": "https://x.com/RTenfrancais/status/2098867997024870901",
+    "published_at": "2026-09-12T20:17:58Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
       "ML",
+      "BF",
       "NE"
     ],
-    "titre": "♟️🌍 L’ÉCHIQUIER AFRICAIN #NIGER, #MALI, #SÉNÉGAL : L’AFRIQUE FACE AUX INGÉRENCES ET AUX PIÈGES DE LA DETTE vk",
-    "url": "https://x.com/RTenfrancais/status/2098509385186107882",
-    "published_at": "2026-09-11T20:33:43Z"
+    "titre": "L'Ukraine forme des terroristes au Mali et au Soudan, selon un média américain Une quinzaine d’instructeurs ukrainiens déployés au Mali collaborent avec le Front de libération de l’Azawad, indique une",
+    "url": "https://x.com/sputnik_afrique/status/2098849626455507038",
+    "published_at": "2026-09-12T19:06:58Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "Au Niger, le général Abdourahamane Tiani réorganise la haute hiérarchie militaire, deux semaines après les événements survenus à la base 101 de Niamey",
+    "url": "https://x.com/trtafrikaFR/status/2098803864795255130",
+    "published_at": "2026-09-12T16:06:58Z"
+  },
+  {
+    "media": "Brut Afrique",
+    "plateforme": "TikTok",
+    "pays": [
+      "BF"
+    ],
+    "titre": "\"On avait un modèle parfait de féminisme, ici-même, au Burkina Faso",
+    "url": "https://www.tiktok.com/@brutafrique/video/7684725754055183638",
+    "published_at": "2026-09-12T19:00:02Z"
   },
   {
     "media": "AJ+ français",
