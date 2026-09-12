@@ -139,21 +139,18 @@ def main():
             print(f"⚠️  Aucun fichier trouvé pour {label} (motif {pattern}), on passe.")
             continue
         print(f"📄 Fichier trouvé ({label}) : {latest_file}")
-        found_files.append(latest_file)
+        found_files.append((latest_file, label))
 
     if not found_files:
         raise RuntimeError(f"❌ Aucun fichier corpus trouvé dans {DATA_DIR}")
 
-    if len(found_files) == 1:
-        # Un seul type de corpus disponible ce run : pas de fusion a faire,
-        # on uploade tel quel pour ne pas produire un doublon inutile.
-        print("ℹ️  Un seul corpus disponible ce run, upload direct sans fusion.")
-        upload_file_to_drive(found_files[0], GOOGLE_DRIVE_FOLDER_ID)
-        return
-
-    print("🔀 Fusion des corpus avant upload...")
-    merged_path = merge_corpus_files(found_files)
-    upload_file_to_drive(merged_path, GOOGLE_DRIVE_FOLDER_ID)
+    # Fusion temporairement desactivee : elle produisait des entrees vides/
+    # incoherentes cote corpus domestique, encore en cours d'investigation.
+    # En attendant, on uploade chaque fichier separement vers Drive, tel quel.
+    print(f"ℹ️  Fusion desactivee pour l'instant -- upload separe de {len(found_files)} fichier(s).")
+    for filepath, label in found_files:
+        print(f"⬆️  Upload ({label}) : {os.path.basename(filepath)}")
+        upload_file_to_drive(filepath, GOOGLE_DRIVE_FOLDER_ID)
 
 
 if __name__ == "__main__":
