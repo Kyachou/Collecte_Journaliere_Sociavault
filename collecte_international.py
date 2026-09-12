@@ -130,7 +130,7 @@ def extract_tweet_id(url):
 # Seuil au-dela duquel on paie l'appel "Comment Replies" (1 credit/appel).
 # Sous ce seuil, on laisse les reponses de ce commentaire de cote plutot que
 # de depenser un credit pour 1 ou 2 reponses. A ajuster selon le budget.
-TIKTOK_REPLIES_MIN_COUNT = 3
+TIKTOK_REPLIES_MIN_COUNT = 6
 
 
 def get_tiktok_comment_replies(video_url, comment_id):
