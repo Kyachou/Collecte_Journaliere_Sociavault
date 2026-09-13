@@ -1,0 +1,429 @@
+[
+  {
+    "target_name": "RFI Afrique",
+    "platform": "x",
+    "target_url": "https://x.com/RFIAfrique/status/2098850088961647043",
+    "country_code": "NE",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/RFIAfrique/status/2098850088961647043",
+          "title": "Niger: le général Abdourahamane Tiani procède à un remaniement à la tête de l'armée rfi",
+          "published_at": "2026-09-12T19:06:58Z"
+        },
+        "comments_count": 3,
+        "comments": [
+          {
+            "id": "2098853078074085765",
+            "text": "@RFIAfrique https://t.co/KTldPbJ0ZC",
+            "created_at": "Sat Sep 12 19:15:43 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "Alerte Sahel",
+              "screen_name": "AlerteSahel"
+            }
+          },
+          {
+            "id": "2098875972388806738",
+            "text": "@RFIAfrique https://t.co/6wK2vZpeqB",
+            "created_at": "Sat Sep 12 20:46:41 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "Afwo est là !",
+              "screen_name": "LaAfwo"
+            }
+          },
+          {
+            "id": "2098868262859923928",
+            "text": "@RFIAfrique Il sera aussi remanié par ces nouvelles nominations",
+            "created_at": "Sat Sep 12 20:16:03 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "Ali Moussa🇳🇪",
+              "screen_name": "AliMous56350509"
+            }
+          }
+        ],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "RFI Afrique",
+    "platform": "x",
+    "target_url": "https://x.com/RFIAfrique/status/2098764337343283390",
+    "country_code": "BF",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/RFIAfrique/status/2098764337343283390",
+          "title": "Milices numériques anti-journalistes au Burkina Faso rfi",
+          "published_at": "2026-09-12T14:06:58Z"
+        },
+        "comments_count": 3,
+        "comments": [
+          {
+            "id": "2098802841842266327",
+            "text": "@RFIAfrique https://t.co/rg9N7VB83C",
+            "created_at": "Sat Sep 12 15:56:06 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 1,
+            "retweet_count": 0,
+            "author": {
+              "name": "Le Grand Baobab",
+              "screen_name": "ChevalierNyssi"
+            }
+          },
+          {
+            "id": "2098858119593877953",
+            "text": "@RFIAfrique Fake news \nPrenez les gens au sérieux \nQui vous écoute meme en 2026 \nSi y’a une milice numérique c’est bien radio fausse information (RFI )",
+            "created_at": "Sat Sep 12 19:35:45 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 3,
+            "retweet_count": 0,
+            "author": {
+              "name": "guiré zakaria",
+              "screen_name": "guirezakaria1"
+            }
+          },
+          {
+            "id": "2098793454578876575",
+            "text": "@RFIAfrique https://t.co/JoSwEfccZu",
+            "created_at": "Sat Sep 12 15:18:47 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "Alerte Sahel",
+              "screen_name": "AlerteSahel"
+            }
+          }
+        ],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "RT en français",
+    "platform": "x",
+    "target_url": "https://x.com/RTenfrancais/status/2098867997024870901",
+    "country_code": "SN",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/RTenfrancais/status/2098867997024870901",
+          "title": "🇸🇳 🔥Pape Ibrahima Ndiaye revient sur la présentation de la flamme des Jeux olympiques de la jeunesse de #Dakar",
+          "published_at": "2026-09-12T20:17:58Z"
+        },
+        "comments_count": 0,
+        "comments": [],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "Sputnik Afrique",
+    "platform": "x",
+    "target_url": "https://x.com/sputnik_afrique/status/2098849626455507038",
+    "country_code": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/sputnik_afrique/status/2098849626455507038",
+          "title": "L'Ukraine forme des terroristes au Mali et au Soudan, selon un média américain Une quinzaine d’instructeurs ukrainiens déployés au Mali collaborent avec le Front de libération de l’Azawad, indique une",
+          "published_at": "2026-09-12T19:06:58Z"
+        },
+        "comments_count": 0,
+        "comments": [],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "TRT Afrika Français",
+    "platform": "x",
+    "target_url": "https://x.com/trtafrikaFR/status/2098803864795255130",
+    "country_code": "NE",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/trtafrikaFR/status/2098803864795255130",
+          "title": "Au Niger, le général Abdourahamane Tiani réorganise la haute hiérarchie militaire, deux semaines après les événements survenus à la base 101 de Niamey",
+          "published_at": "2026-09-12T16:06:58Z"
+        },
+        "comments_count": 0,
+        "comments": [],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "Brut Afrique",
+    "platform": "tiktok",
+    "target_url": "https://www.tiktok.com/@brutafrique/video/7684725754055183638",
+    "country_code": "BF",
+    "posts_collectes": [
+      {
+        "tiktok_details": {
+          "url": "https://www.tiktok.com/@brutafrique/video/7684725754055183638",
+          "title": "\"On avait un modèle parfait de féminisme, ici-même, au Burkina Faso",
+          "published_at": "2026-09-12T19:00:02Z"
+        },
+        "comments_count": 20,
+        "comments": [
+          {
+            "id": "7684734747192886024",
+            "text": "la patrie ou la mort",
+            "created_at": "2026-09-12T19:35:54+00:00",
+            "reply_count": 1,
+            "like_count": 38,
+            "author": {
+              "name": "Pha-al Le R",
+              "username": "phaaller"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684730918594790151",
+            "text": "",
+            "created_at": "2026-09-12T19:21:00+00:00",
+            "reply_count": 1,
+            "like_count": 84,
+            "author": {
+              "name": "NH Billionnaire 🪙",
+              "username": "burkina.biiga2"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684746613887386375",
+            "text": "En fait, la femme occupe une très grande place dans notre famille. Je félicite d'ailleurs ma mère pour l'éducation qu'elle m'a inculquée.\nVive les Femmes, vive nos Mamans.\n❤️❤️❤️",
+            "created_at": "2026-09-12T20:22:02+00:00",
+            "reply_count": 0,
+            "like_count": 8,
+            "author": {
+              "name": "Sankara Ibrahim🇧🇫🇹🇷",
+              "username": "sank_ibra"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684743224699912980",
+            "text": "Nos femmes sans crédits 🤣❤️",
+            "created_at": "2026-09-12T20:08:56+00:00",
+            "reply_count": 0,
+            "like_count": 5,
+            "author": {
+              "name": "Za🌀lil⚽",
+              "username": "zalil898"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684778885079286549",
+            "text": "thomas Sankara est un plus grand féminisme que les féministes de maintenant 😁😁",
+            "created_at": "2026-09-12T22:31:52+00:00",
+            "reply_count": 0,
+            "like_count": 2,
+            "author": {
+              "name": "junior 🌟 🙏❤️",
+              "username": "juniorouedraogo762"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684727222644982546",
+            "text": "L'homme fort de l'Afrique",
+            "created_at": "2026-09-12T19:06:38+00:00",
+            "reply_count": 0,
+            "like_count": 5,
+            "author": {
+              "name": "Abdoul89 Dan Tahoua",
+              "username": "mahamadousalaabdou"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684744366246494984",
+            "text": "C’est fort 💪",
+            "created_at": "2026-09-12T20:13:09+00:00",
+            "reply_count": 0,
+            "like_count": 1,
+            "author": {
+              "name": "@LUNIC 734",
+              "username": "lunic.516"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684745451514626838",
+            "text": "Thomas sankara",
+            "created_at": "2026-09-12T20:17:40+00:00",
+            "reply_count": 0,
+            "like_count": 1,
+            "author": {
+              "name": "Le_Kangs | Actualité Afrique",
+              "username": "le.kangs"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684734795057955592",
+            "text": "mossi est la romantique",
+            "created_at": "2026-09-12T19:36:02+00:00",
+            "reply_count": 0,
+            "like_count": 3,
+            "author": {
+              "name": "Pha-al Le R",
+              "username": "phaaller"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684745941728035592",
+            "text": "Mon Oncle 🙏🏾",
+            "created_at": "2026-09-12T20:19:19+00:00",
+            "reply_count": 0,
+            "like_count": 1,
+            "author": {
+              "name": "Sankara Ibrahim🇧🇫🇹🇷",
+              "username": "sank_ibra"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684735211012391700",
+            "text": "Quelle homme!\nMais sa fin est tellement malheureuse, il a fini en Tomate Sankara 😢",
+            "created_at": "2026-09-12T19:41:14+00:00",
+            "reply_count": 1,
+            "like_count": 4,
+            "author": {
+              "name": "ZONO Saïdou",
+              "username": "zono.sadou2"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684726862803731220",
+            "text": "Il avait il a et il auras toujours raison. La patrie ou la mort …✊🏽",
+            "created_at": "2026-09-12T19:05:18+00:00",
+            "reply_count": 0,
+            "like_count": 3,
+            "author": {
+              "name": "Jordan_23",
+              "username": "jordantoe23"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684743680259949330",
+            "text": "@RÉDEMPTION🤍✝️ ça c'est pour toi",
+            "created_at": "2026-09-12T20:10:26+00:00",
+            "reply_count": 2,
+            "like_count": 1,
+            "author": {
+              "name": "coeurdonnier✝️🇻🇦",
+              "username": "coeurdonnier13"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684774575716696853",
+            "text": "♥️♥️♥️",
+            "created_at": "2026-09-12T22:10:43+00:00",
+            "reply_count": 0,
+            "like_count": 0,
+            "author": {
+              "name": "dannaclass",
+              "username": "dannaclass"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684730102475653895",
+            "text": "💪💪💪",
+            "created_at": "2026-09-12T19:17:51+00:00",
+            "reply_count": 0,
+            "like_count": 0,
+            "author": {
+              "name": "✨💫ال حسن",
+              "username": "allassanesoumahoro14"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684745004594774785",
+            "text": "🥰🥰🥰",
+            "created_at": "2026-09-12T20:15:45+00:00",
+            "reply_count": 0,
+            "like_count": 0,
+            "author": {
+              "name": "Mass Oude Dahani",
+              "username": "mass.oude.dahani"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684774614031237908",
+            "text": "@Imjulzbaby",
+            "created_at": "2026-09-12T22:10:42+00:00",
+            "reply_count": 0,
+            "like_count": 0,
+            "author": {
+              "name": "Narilba",
+              "username": "moustaphaouedrao40"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684775796615660309",
+            "text": "@Culture dorée (Britanie)",
+            "created_at": "2026-09-12T22:15:21+00:00",
+            "reply_count": 0,
+            "like_count": 0,
+            "author": {
+              "name": "Narilba",
+              "username": "moustaphaouedrao40"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684727025454203655",
+            "text": "😊😊😊",
+            "created_at": "2026-09-12T19:05:54+00:00",
+            "reply_count": 0,
+            "like_count": 0,
+            "author": {
+              "name": "Benjamin 🐟🌈",
+              "username": "jeandedieu418"
+            },
+            "replies": []
+          },
+          {
+            "id": "7684761040098673424",
+            "text": "ne comparez pas l'émancipation de la femme révolutionnaire à votre féministe 2.0 là",
+            "created_at": "2026-09-12T21:18:40+00:00",
+            "reply_count": 0,
+            "like_count": 4,
+            "author": {
+              "name": "🆁🅰🅳🅸🅲🅰🅻 🅳🅾🆂🆂🅾🆄🅽",
+              "username": "dossounfisdedo"
+            },
+            "replies": []
+          }
+        ],
+        "recheck_status": "initial"
+      }
+    ]
+  }
+]
