@@ -233,5 +233,27 @@
     "titre": "\"On avait un modèle parfait de féminisme, ici-même, au Burkina Faso",
     "published_at": "2026-09-12T19:00:02Z",
     "added_at": "2026-09-13T00:17:21.913598+00:00"
+  },
+  {
+    "url": "https://x.com/RFIAfrique/status/2099179128776020214",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Sénégal: les exportations à la hausse, dopées par le pétrole rfi",
+    "published_at": "2026-09-13T17:07:20Z",
+    "added_at": "2026-09-14T00:09:39.588138+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2099201361170620854",
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Édouard Mendy met un terme à sa carrière internationale avec le Sénégal après huit années sous le maillot des Lions de la Teranga",
+    "published_at": "2026-09-13T19:07:20Z",
+    "added_at": "2026-09-14T00:09:43.569879+00:00"
   }
 ]

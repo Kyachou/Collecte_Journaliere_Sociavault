@@ -1,0 +1,63 @@
+[
+  {
+    "target_name": "RFI Afrique",
+    "platform": "x",
+    "target_url": "https://x.com/RFIAfrique/status/2099179128776020214",
+    "country_code": "SN",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/RFIAfrique/status/2099179128776020214",
+          "title": "Sénégal: les exportations à la hausse, dopées par le pétrole rfi",
+          "published_at": "2026-09-13T17:07:20Z"
+        },
+        "comments_count": 2,
+        "comments": [
+          {
+            "id": "2099189676510699603",
+            "text": "@RFIAfrique https://t.co/fmpeOhNR2u",
+            "created_at": "Sun Sep 13 17:33:14 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "Alerte Sahel",
+              "screen_name": "AlerteSahel"
+            }
+          },
+          {
+            "id": "2099227388622119230",
+            "text": "@RFIAfrique Le prix du pétrole que les 🇸🇳 peinent à voir, car détourné par le régime populiste en place: @SonkoOfficiel et ses sbires, en 2 ans et demi ont multiplié les scandales financiers, les uns plus gros que les autres: ASER, COSMOS ENERGY, Fonds pour la Casamance… etc. Ils ont mis à https://t.co/vjOzpJ0DiG",
+            "created_at": "Sun Sep 13 20:03:05 +0000 2026",
+            "reply_count": 0,
+            "favorite_count": 0,
+            "retweet_count": 0,
+            "author": {
+              "name": "🏴‍☠️ laRhubarbe #Resist 🇸🇳🇫🇷🇺🇦",
+              "screen_name": "Sarkddine"
+            }
+          }
+        ],
+        "recheck_status": "initial"
+      }
+    ]
+  },
+  {
+    "target_name": "TRT Afrika Français",
+    "platform": "x",
+    "target_url": "https://x.com/trtafrikaFR/status/2099201361170620854",
+    "country_code": "SN",
+    "posts_collectes": [
+      {
+        "tweet_details": {
+          "url": "https://x.com/trtafrikaFR/status/2099201361170620854",
+          "title": "Édouard Mendy met un terme à sa carrière internationale avec le Sénégal après huit années sous le maillot des Lions de la Teranga",
+          "published_at": "2026-09-13T19:07:20Z"
+        },
+        "comments_count": 0,
+        "comments": [],
+        "recheck_status": "initial"
+      }
+    ]
+  }
+]
