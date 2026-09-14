@@ -130,7 +130,7 @@ def extract_tweet_id(url):
 # Seuil au-dela duquel on paie l'appel "Comment Replies" (1 credit/appel).
 # Sous ce seuil, on laisse les reponses de ce commentaire de cote plutot que
 # de depenser un credit pour 1 ou 2 reponses. A ajuster selon le budget.
-TIKTOK_REPLIES_MIN_COUNT = 6
+TIKTOK_REPLIES_MIN_COUNT = 3
 
 
 def get_tiktok_comment_replies(video_url, comment_id):
@@ -145,26 +145,34 @@ def get_tiktok_comment_replies(video_url, comment_id):
     Forme de reponse CONFIRMEE par un test reel (endpoint: "tiktok/comment_replies"
     dans la reponse) : meme enveloppe maison que /scrape/tiktok/comments
     (data.comments dict indexe par cle numerique-string, has_more, cursor).
+
+    Retourne None (au lieu de []) si le tout premier appel echoue (timeout,
+    erreur reseau, HTTP non-200) : signale "resultat non fiable, a reessayer"
+    plutot que de laisser croire a un vrai zero confirme. Si l'echec survient
+    apres au moins une page reussie, on garde ce qui a deja ete recupere.
     """
     endpoint = f"{BASE_URL}/scrape/tiktok/comment-replies"
     all_replies = []
     seen_ids = set()
     cursor = 0
     page = 1
-    first_response_logged = False
 
     while True:
         params = {"comment_id": comment_id, "url": video_url, "cursor": cursor}
         try:
             res = api_get(endpoint, params=params, timeout=30)
             if res is None:
+                if page == 1:
+                    print("          Echec reseau des la 1ere page -- resultat non fiable")
+                    return None
                 break
             if res.status_code != 200:
                 print(f"          Erreur TikTok replies HTTP {res.status_code} : {res.text[:300]}")
+                if page == 1:
+                    return None
                 break
 
             response = res.json()
-            first_response_logged = True
 
             data = response.get("data", {}) if isinstance(response.get("data"), dict) else response
             replies_data = data.get("comments", data.get("replies", []))
@@ -196,9 +204,13 @@ def get_tiktok_comment_replies(video_url, comment_id):
 
         except requests_exceptions_safe() as e:
             print(f"          Erreur reseau TikTok replies : {e}")
+            if page == 1:
+                return None
             break
         except Exception as e:
             print(f"          Erreur TikTok replies : {e}")
+            if page == 1:
+                return None
             break
 
     return all_replies
@@ -267,6 +279,10 @@ def get_all_tiktok_comments(video_url):
     recuperees separement via get_tiktok_comment_replies (endpoint
     /scrape/tiktok/comment-replies) au-dela du seuil TIKTOK_REPLIES_MIN_COUNT,
     voir plus bas dans cette fonction.
+
+    Retourne None (au lieu de []) si le tout premier appel de la page
+    racine echoue : signale "pas verifie, a reessayer" plutot qu'un faux
+    zero confirme.
     """
     endpoint = f"{BASE_URL}/scrape/tiktok/comments"
     all_comments = []
@@ -281,10 +297,15 @@ def get_all_tiktok_comments(video_url):
             print(f"       TikTok commentaires page {page}")
             res = api_get(endpoint, params=params, timeout=30)
             if res is None:
+                if page == 1:
+                    print("       Echec reseau des la 1ere page -- resultat non fiable")
+                    return None
                 break
             print(f"         ↳ HTTP {res.status_code}")
             if res.status_code != 200:
                 print(f"       Erreur TikTok : {res.text[:500]}")
+                if page == 1:
+                    return None
                 break
 
             response = res.json()
@@ -324,9 +345,13 @@ def get_all_tiktok_comments(video_url):
 
         except requests_exceptions_safe() as e:
             print(f"       Erreur reseau TikTok : {e}")
+            if page == 1:
+                return None
             break
         except Exception as e:
             print(f"       Erreur TikTok : {e}")
+            if page == 1:
+                return None
             break
 
     print(f"       {len(all_comments)} commentaire(s) racine au total pour cette video")
@@ -342,8 +367,11 @@ def get_all_tiktok_comments(video_url):
             continue
         print(f"       {reply_total} reponse(s) annoncee(s) pour le commentaire {cid}")
         replies = get_tiktok_comment_replies(video_url, cid)
-        print(f"          {len(replies)} reponse(s) recuperee(s)")
-        c["reply_comment"] = replies
+        if replies is None:
+            print("          Echec reseau sur cette recuperation -- reply_comment d'origine conserve")
+        else:
+            print(f"          {len(replies)} reponse(s) recuperee(s)")
+            c["reply_comment"] = replies
         time.sleep(SLEEP_BETWEEN_REQUESTS)
 
     return [tiktok_comment_to_comment_like(c) for c in all_comments]
@@ -366,6 +394,8 @@ def fetch_comments_for_media_post(plateforme, url):
             print(f"       Impossible d'extraire l'ID du tweet depuis : {url}")
             return []
         replies = get_tweet_replies(tweet_id)
+        if replies is None:
+            return None
         return [tweet_to_comment_like(r) for r in replies]
     if plateforme_norm == "tiktok":
         return get_all_tiktok_comments(url)
@@ -395,6 +425,8 @@ def process_entry(entry, pending, corpus):
 
     print("       Recuperation des commentaires (1ere capture)")
     comments = fetch_comments_for_media_post(plateforme, url)
+    if comments is None:
+        comments = []
     print(f"       {len(comments)} commentaire(s) recupere(s)")
 
     plateforme_norm = (plateforme or "").strip().lower()
@@ -446,6 +478,13 @@ def process_pending(pending, corpus):
 
         print(f"    Reverification finale ({item.get('plateforme')})")
         comments = fetch_comments_for_media_post(item.get("plateforme"), url)
+
+        if comments is None:
+            print("    Echec reseau au recheck -- on reessaiera au prochain run, "
+                  "pas retire du pending.")
+            time.sleep(SLEEP_BETWEEN_REQUESTS)
+            continue
+
         print(f"    Commentaires au final : {len(comments)}")
 
         plateforme_norm = (item.get("plateforme") or "").strip().lower()
@@ -479,7 +518,7 @@ def main():
     save_pending(pending)
     save_corpus(corpus)
 
-    already_seen_urls = {p.get("url") for p in pending} | {c.get("url") for c in corpus}
+    already_seen_urls = {p.get("url") for p in pending} | {c.get("target_url") for c in corpus}
 
     for entry in entries:
         url = entry.get("url")
