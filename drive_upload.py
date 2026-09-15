@@ -55,7 +55,13 @@ def get_drive_service():
 def find_latest_corpus_file(pattern_name):
     """
     Trouve le fichier le plus récent correspondant au motif donné
-    dans data/, en se basant sur le nom (horodaté) du fichier.
+    dans data/, en se basant sur sa date de MODIFICATION réelle sur disque
+    (pas sur un tri alphabétique du nom de fichier) : un tri alphabétique
+    est fragile dès qu'un fichier au nommage légèrement différent traîne
+    dans data/ (ex. un vieux sociavault_raw_complet_*.json issu d'une
+    fusion desactivee depuis -- son "_" se classe apres les chiffres d'une
+    date, donc un tri alphabetique le faisait ressortir comme "le plus
+    recent" a tort).
     Retourne None si aucun fichier ne correspond (au lieu de lever une
     erreur) : avec plusieurs sources à fusionner, l'absence de l'une
     d'elles ne doit pas empêcher de traiter les autres.
@@ -64,7 +70,7 @@ def find_latest_corpus_file(pattern_name):
     files = glob.glob(pattern)
     if not files:
         return None
-    files.sort()
+    files.sort(key=os.path.getmtime)
     return files[-1]
 
 
