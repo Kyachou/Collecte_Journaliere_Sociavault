@@ -1,108 +1,5 @@
 [
   {
-    "url": "https://x.com/RFIAfrique/status/2098463116057280840",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Sénégal, Soudan, Israël et Allemagne rfi",
-    "published_at": "2026-09-11T18:10:43Z",
-    "added_at": "2026-09-12T01:02:12.202406+00:00"
-  },
-  {
-    "url": "https://x.com/RFIAfrique/status/2098449951823196540",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "Disparition de Moussa Kaka au Niger: «Nous appelons à sa libération», lance un patron de presse camerounais rfi",
-    "published_at": "2026-09-11T17:10:43Z",
-    "added_at": "2026-09-12T01:02:16.305194+00:00"
-  },
-  {
-    "url": "https://x.com/RTenfrancais/status/2098509385186107882",
-    "media": "RT en français",
-    "plateforme": "X",
-    "pays": [
-      "SN",
-      "ML",
-      "NE"
-    ],
-    "titre": "♟️🌍 L’ÉCHIQUIER AFRICAIN #NIGER, #MALI, #SÉNÉGAL : L’AFRIQUE FACE AUX INGÉRENCES ET AUX PIÈGES DE LA DETTE vk",
-    "published_at": "2026-09-11T20:33:43Z",
-    "added_at": "2026-09-12T01:02:20.339603+00:00"
-  },
-  {
-    "url": "https://x.com/RFIAfrique/status/2098850088961647043",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "Niger: le général Abdourahamane Tiani procède à un remaniement à la tête de l'armée rfi",
-    "published_at": "2026-09-12T19:06:58Z",
-    "added_at": "2026-09-13T00:17:01.363262+00:00"
-  },
-  {
-    "url": "https://x.com/RFIAfrique/status/2098764337343283390",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "Milices numériques anti-journalistes au Burkina Faso rfi",
-    "published_at": "2026-09-12T14:06:58Z",
-    "added_at": "2026-09-13T00:17:05.517602+00:00"
-  },
-  {
-    "url": "https://x.com/RTenfrancais/status/2098867997024870901",
-    "media": "RT en français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "🇸🇳 🔥Pape Ibrahima Ndiaye revient sur la présentation de la flamme des Jeux olympiques de la jeunesse de #Dakar",
-    "published_at": "2026-09-12T20:17:58Z",
-    "added_at": "2026-09-13T00:17:09.267092+00:00"
-  },
-  {
-    "url": "https://x.com/sputnik_afrique/status/2098849626455507038",
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF",
-      "NE"
-    ],
-    "titre": "L'Ukraine forme des terroristes au Mali et au Soudan, selon un média américain Une quinzaine d’instructeurs ukrainiens déployés au Mali collaborent avec le Front de libération de l’Azawad, indique une",
-    "published_at": "2026-09-12T19:06:58Z",
-    "added_at": "2026-09-13T00:17:12.946612+00:00"
-  },
-  {
-    "url": "https://x.com/trtafrikaFR/status/2098803864795255130",
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "Au Niger, le général Abdourahamane Tiani réorganise la haute hiérarchie militaire, deux semaines après les événements survenus à la base 101 de Niamey",
-    "published_at": "2026-09-12T16:06:58Z",
-    "added_at": "2026-09-13T00:17:16.877550+00:00"
-  },
-  {
-    "url": "https://www.tiktok.com/@brutafrique/video/7684725754055183638",
-    "media": "Brut Afrique",
-    "plateforme": "TikTok",
-    "pays": [
-      "BF"
-    ],
-    "titre": "\"On avait un modèle parfait de féminisme, ici-même, au Burkina Faso",
-    "published_at": "2026-09-12T19:00:02Z",
-    "added_at": "2026-09-13T00:17:21.913598+00:00"
-  },
-  {
     "url": "https://x.com/RFIAfrique/status/2099179128776020214",
     "media": "RFI Afrique",
     "plateforme": "X",
@@ -191,5 +88,137 @@
     "titre": "Édouard Mendy était sans club en 2014 et envisageait sérieusement d’abandonner le football",
     "published_at": "2026-09-14T18:06:01Z",
     "added_at": "2026-09-15T00:57:49.912063+00:00"
+  },
+  {
+    "url": "https://x.com/RFIAfrique/status/2099924229747814611",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Un riche homme d'affaires malien victime du cambriolage au palace parisien Plaza Athénée rfi",
+    "published_at": "2026-09-15T19:05:39Z",
+    "added_at": "2026-09-16T00:35:38.808335+00:00"
+  },
+  {
+    "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
+    "media": "Le Monde Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
+    "published_at": "2024-11-28T12:00:00Z",
+    "added_at": "2026-09-16T00:35:42.540320+00:00"
+  },
+  {
+    "url": "https://x.com/thomasdietrich0/status/2097050430299926855",
+    "media": "Thomas Dietrich",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "Une pensée émue pour Moussa Kaka, journaliste très probablement enlevé au #Niger et dont nous sommes sans nouvelles depuis fin août",
+    "published_at": "2026-09-07T12:00:00Z",
+    "added_at": "2026-09-16T00:35:46.395613+00:00"
+  },
+  {
+    "url": "https://x.com/thomasdietrich0/status/2090507383944380429",
+    "media": "Thomas Dietrich",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "#Sénégal : l’avion du président Bassirou Diomaye Faye est en train de rentrer sur Dakar",
+    "published_at": "2026-08-20T12:00:00Z",
+    "added_at": "2026-09-16T00:35:52.868415+00:00"
+  },
+  {
+    "url": "https://x.com/FranklinNYAMSI/status/1864241491104686274",
+    "media": "Franklin Nyamsi",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "URGENT 🚨 Le Niger nationalise la multinationale française Orano sur son territoire, afin que l’Uranium du Niger 🇳🇪 profite prioritairement au Peuple du Niger 🇳🇪",
+    "published_at": "2024-12-04T12:00:00Z",
+    "added_at": "2026-09-16T00:35:59.448671+00:00"
+  },
+  {
+    "url": "https://x.com/MENASTREAM/status/2081486464978698603",
+    "media": "MENASTREAM (Héni Nsaibia)",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
+    "published_at": "2026-07-26T12:00:00Z",
+    "added_at": "2026-09-16T00:36:03.406427+00:00"
+  },
+  {
+    "url": "https://x.com/MENASTREAM/status/2076587629089378735",
+    "media": "MENASTREAM (Héni Nsaibia)",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
+    "published_at": "2026-07-13T12:00:00Z",
+    "added_at": "2026-09-16T00:36:06.991105+00:00"
+  },
+  {
+    "url": "https://x.com/MENASTREAM/status/2041449927641837812",
+    "media": "MENASTREAM (Héni Nsaibia)",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "#Sahel: A quite significant development that the inter-jihadist conflict between #JNIM and #ISSP in the course of three days have spread to both #Niger and #Nigeria as per the two groups' own claims a",
+    "published_at": "2026-04-07T12:00:00Z",
+    "added_at": "2026-09-16T00:36:10.492507+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_africa/status/2099964472064430350",
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "🇧🇫 Burkina Faso's Fight Against Terrorism: Key Achievements Under Traoré President Ibrahim Traoré says the end of the terrorist threat is near, four years after he came to power",
+    "published_at": "2026-09-15T20:54:39Z",
+    "added_at": "2026-09-16T00:36:18.672530+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2099883045276774781",
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Le protocole entre l’Etat sénégalais et la société italienne ENI constitue une étape préalable d’études géologiques et d’évaluation technique",
+    "published_at": "2026-09-15T16:05:39Z",
+    "added_at": "2026-09-16T00:36:22.514855+00:00"
+  },
+  {
+    "url": "https://www.tiktok.com/@trtafrika/video/7685770889736064263",
+    "media": "TRT Afrika",
+    "plateforme": "TikTok",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Africa's wealthiest person, Aliko Dangote, says ordinary Africans are now free to become co-owners of his mega oil refinery with as little as $4",
+    "published_at": "2026-09-15T14:36:28Z",
+    "added_at": "2026-09-16T00:36:53.507926+00:00"
+  },
+  {
+    "url": "https://www.tiktok.com/@ajplusfrancais/video/7680578982722473237",
+    "media": "AJ+ français",
+    "plateforme": "TikTok",
+    "pays": [
+      "SN"
+    ],
+    "titre": "“On est vraiment fatigués",
+    "published_at": "2026-09-01T17:55:00Z",
+    "added_at": "2026-09-16T00:51:15.125767+00:00"
   }
 ]
