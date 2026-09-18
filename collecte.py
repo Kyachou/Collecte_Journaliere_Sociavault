@@ -43,6 +43,21 @@ REQUEST_TIMEOUT = 30
 SLEEP_BETWEEN_REQUESTS = 1
 RATE_LIMIT_BACKOFF_SECONDS = [5, 10, 15]
 
+# Seuil de conservation au moment de la revarification du pending : un post
+# qui n'a toujours pas plus de ce nombre de commentaires est abandonne
+# (retire du pending SANS etre ajoute au corpus). Au-dela, ses commentaires
+# sont pris, puis il est retire du pending lui aussi -- dans les deux cas,
+# le pending ne grossit plus indefiniment.
+PENDING_MIN_COMMENTS_TO_KEEP = 5
+
+# Marge de securite avant la limite dure de 6h de GitHub Actions (runners
+# heberges, non modifiable). On s'arrete proprement a 5h20 plutot que
+# d'attendre que la plateforme tue le job en pleine collecte -- ce qui
+# perdrait TOUT (aucun commit, aucun upload Drive) meme si des credits ont
+# ete depenses, puisque ces etapes n'arrivent qu'apres la fin de main().
+RUN_TIME_BUDGET_HOURS = 5.33  # 5h20
+
+
 def api_get(endpoint, params=None, timeout=None):
     if timeout is None:
         timeout = REQUEST_TIMEOUT
@@ -298,7 +313,7 @@ def get_all_facebook_comments(post_url):
     seen_ids = set()
     cursor = None
     page = 1
- 
+
     while True:
         params = {"url": post_url}
         if cursor:
@@ -317,14 +332,14 @@ def get_all_facebook_comments(post_url):
                 if page == 1:
                     return None
                 break
- 
+
             response = res.json()
             if not response.get("success"):
                 print("       Sociavault success=false")
                 if page == 1:
                     return None
                 break
- 
+
             data = response.get("data", {})
             comments_data = data.get("comments", {})
             if isinstance(comments_data, dict):
@@ -333,7 +348,7 @@ def get_all_facebook_comments(post_url):
                 comments_batch = comments_data
             else:
                 comments_batch = []
- 
+
             print(f"          {len(comments_batch)} commentaire(s)")
             for c in comments_batch:
                 cid = c.get("id")
@@ -342,7 +357,7 @@ def get_all_facebook_comments(post_url):
                 if cid:
                     seen_ids.add(cid)
                 all_comments.append(c)
- 
+
             has_next_page = data.get("has_next_page", False)
             next_cursor = data.get("cursor")
             if not has_next_page:
@@ -354,7 +369,7 @@ def get_all_facebook_comments(post_url):
             cursor = next_cursor
             page += 1
             time.sleep(SLEEP_BETWEEN_REQUESTS)
- 
+
         except requests.RequestException as e:
             print(f"       Erreur reseau commentaires : {e}")
             if page == 1:
@@ -365,10 +380,9 @@ def get_all_facebook_comments(post_url):
             if page == 1:
                 return None
             break
- 
+
     return enrich_comments_with_replies(all_comments)
- 
- 
+
 
 def get_comment_replies(feedback_id, expansion_token):
     endpoint = f"{BASE_URL}/scrape/facebook/comment/replies"
@@ -574,7 +588,7 @@ def get_tweet_replies(tweet_id):
     seen_ids = set()
     cursor = None
     page = 1
- 
+
     while page <= MAX_TWITTER_REPLIES_PAGES:
         params = {"query": f"conversation_id:{tweet_id}"}
         if cursor:
@@ -593,14 +607,14 @@ def get_tweet_replies(tweet_id):
                 if page == 1:
                     return None
                 break
- 
+
             payload = res.json()
             data = payload.get("data", {})
             batch = extract_tweets_from_timeline(data)
             if not batch:
                 print("          Fin des reponses")
                 break
- 
+
             for tweet in batch:
                 legacy = tweet.get("legacy", {}) or {}
                 rest_id = tweet.get("rest_id") or legacy.get("id_str")
@@ -611,24 +625,24 @@ def get_tweet_replies(tweet_id):
                 if rest_id:
                     seen_ids.add(rest_id)
                 all_replies.append(tweet)
- 
+
             print(f"          {len(all_replies)} reponse(s) cumulee(s)")
- 
+
             cursor_data = data.get("cursor", {})
             cursor = cursor_data.get("bottom") if isinstance(cursor_data, dict) else None
             if not cursor:
                 break
             page += 1
             time.sleep(SLEEP_BETWEEN_REQUESTS)
- 
+
         except Exception as e:
             print(f"       Erreur replies Twitter : {e}")
             if page == 1:
                 return None
             break
- 
+
     return all_replies
- 
+
 def tweet_to_comment_like(tweet):
     legacy = tweet.get("legacy", {}) or {}
     user = (
@@ -688,7 +702,7 @@ def fetch_comments_for(platform, post):
             return None
         return [tweet_to_comment_like(r) for r in replies]
     return []
- 
+
 def process_item(post, target_name, target_url, platform, pending, target_data):
     post_id = get_post_id(post)
     post_url = get_post_url(post)
@@ -725,7 +739,7 @@ def process_item(post, target_name, target_url, platform, pending, target_data):
         "recheck_status": "initial"
     })
 
-    print(f"       Revérification programmée dans ~{RECHECK_DELAY_HOURS}h")
+    print("       Revérification programmée au prochain run")
     add_to_pending(pending, post, target_name, platform, target_url,country_code)
 
 
@@ -761,13 +775,26 @@ def commit_pending_item_to_corpus(corpus, item, post, comments, current_count, s
 
 
 def process_pending(pending, corpus):
+    """
+    Revarification du pending -- s'execute a CHAQUE run, sans attendre de
+    delai (RECHECK_DELAY_HOURS n'est plus utilise ici). Pour chaque post en
+    attente :
+      - <= PENDING_MIN_COMMENTS_TO_KEEP commentaires -> abandonne (retire du
+        pending, jamais ajoute au corpus).
+      - > PENDING_MIN_COMMENTS_TO_KEEP commentaires -> ses commentaires sont
+        pris (ajoutes au corpus, status "final"), puis il est retire du
+        pending lui aussi.
+    Dans les deux cas, l'item est retire du pending a la fin de ce passage
+    (sauf en cas d'echec reseau, voir plus bas) -- le pending ne grossit
+    donc plus jamais au-dela d'une seule journee de nouvelles captures.
+    """
     if not pending:
         print(" Aucun post à revérifier.")
         return
 
     print()
     print("====================================================")
-    print(" REVÉRIFICATION DES POSTS PROGRAMMÉS")
+    print(" REVÉRIFICATION DU PENDING (a chaque run)")
     print("====================================================")
 
     for item in list(pending):
@@ -787,32 +814,25 @@ def process_pending(pending, corpus):
             remove_from_pending(pending, pending_key(item))
             continue
 
-        added_at = parse_datetime(item.get("added_at")) or now_utc()
-        age = now_utc() - added_at
-        age_hours = age.total_seconds() / 3600
-        delai_ecoule = age >= timedelta(hours=RECHECK_DELAY_HOURS)
-
-        print(f"    Capturé il y a {age_hours:.1f}h "
-              f"({'délai atteint' if delai_ecoule else f'< {RECHECK_DELAY_HOURS}h, on patiente'})")
-
-        if not delai_ecoule:
-            continue
-
-        print(f"    Revérification finale ({platform})")
+        print(f"    Revérification ({platform})")
         comments = fetch_comments_for(platform, post)
 
         if comments is None:
-            print("    Echec reseau au recheck -- on reessaiera au prochain run, "
-          "pas retire du pending.")
+            print("    Echec reseau -- on reessaiera au prochain run, pas retire du pending.")
             time.sleep(SLEEP_BETWEEN_REQUESTS)
             continue
 
         current_count = len(comments)
-        print(f"    Commentaires/réponses au final : {current_count}")
+        print(f"    Commentaires au moment de la revérification : {current_count}")
 
-        commit_pending_item_to_corpus(corpus, item, post, comments, current_count, status="final")
+        if current_count > PENDING_MIN_COMMENTS_TO_KEEP:
+            commit_pending_item_to_corpus(corpus, item, post, comments, current_count, status="final")
+            print(f"    > {PENDING_MIN_COMMENTS_TO_KEEP} commentaires → conservé dans le corpus.")
+        else:
+            print(f"    <= {PENDING_MIN_COMMENTS_TO_KEEP} commentaires → abandonné, non conservé.")
+
         remove_from_pending(pending, pending_key(item))
-        print("    Revérifié une fois → retiré de la file définitivement")
+        print("    Retiré de la file de revérification.")
         time.sleep(SLEEP_BETWEEN_REQUESTS)
 
 def process_facebook_target(target, pending, corpus):
@@ -895,7 +915,8 @@ def main():
     print(" SOCIAVAULT COLLECTOR")
     print("====================================================")
     print(f"Fenêtre : dernières {WINDOW_HOURS}h")
-    print(f"Revérification unique : ~{RECHECK_DELAY_HOURS}h après capture")
+    print("Revérification du pending : à chaque run")
+    print(f"Budget de temps interne : {RUN_TIME_BUDGET_HOURS:.2f}h")
     print("====================================================")
 
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -905,6 +926,15 @@ def main():
     else:
         alternative_yaml = os.path.join(DATA_DIR, "targets.yaml")
         targets = load_targets(alternative_yaml) if os.path.exists(alternative_yaml) else []
+
+    # Rotation quotidienne de l'ordre des cibles : si le budget de temps
+    # coupe un jour avant d'avoir traite toute la liste, on ne veut pas que
+    # ce soit TOUJOURS les memes cibles en fin de liste qui trinquent.
+    if targets:
+        rotation = int(now_utc().timestamp() // 86400) % len(targets)
+        if rotation:
+            targets = targets[rotation:] + targets[:rotation]
+            print(f" Rotation appliquee : demarrage a l'index {rotation}/{len(targets)}.")
 
     print(f"\n {len(targets)} cible(s) trouvée(s).")
 
@@ -917,7 +947,19 @@ def main():
     save_pending(pending)
     save_corpus(corpus)
 
+    run_started_at = now_utc()
+
     for idx, target in enumerate(targets, 1):
+        elapsed_hours = (now_utc() - run_started_at).total_seconds() / 3600
+        if elapsed_hours >= RUN_TIME_BUDGET_HOURS:
+            print()
+            print("====================================================")
+            print(f" BUDGET DE TEMPS ATTEINT ({RUN_TIME_BUDGET_HOURS:.2f}h)")
+            print(f" Arrêt propre après {idx - 1}/{len(targets)} cible(s) traitée(s).")
+            print(" Les cibles restantes seront traitées au prochain run.")
+            print("====================================================")
+            break
+
         name = target.get("name", f"Cible {idx}")
         platform = str(target.get("platform", "")).lower()
 
@@ -946,7 +988,7 @@ def main():
     print(" COLLECTE TERMINÉE")
     print("====================================================")
     print(f" Posts/tweets dans le raw Json : {total_posts}")
-    print(f" Posts en attente de revérification (~{RECHECK_DELAY_HOURS}h) : {len(pending)}")
+    print(f" Posts en attente de revérification (prochain run) : {len(pending)}")
     print(f" Sociavault_raw : {OUTPUT_JSON}")
     print(f" File de revérification : {PENDING_FILE}")
     print("====================================================")
