@@ -28,11 +28,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Lancer la collecte
+        timeout-minutes: 240
         env:
           SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         run: python collecte.py
         
       - name: Lancer la collecte internationale
+        timeout-minutes: 80
         env:
           SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         run: python collecte_international.py
