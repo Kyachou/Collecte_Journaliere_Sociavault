@@ -1,14 +1,27 @@
 [
   {
-    "url": "https://x.com/RFIAfrique/status/2099924229747814611",
+    "url": "https://x.com/RFIAfrique/status/2101240784003682582",
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "ML",
+      "BF",
+      "NE"
     ],
-    "titre": "Un riche homme d'affaires malien victime du cambriolage au palace parisien Plaza Athénée rfi",
-    "published_at": "2026-09-15T19:05:39Z",
-    "added_at": "2026-09-16T00:35:38.808335+00:00"
+    "titre": "L'AES, une case française à logiciel russe rfi",
+    "published_at": "2026-09-19T10:05:26Z",
+    "added_at": "2026-09-20T20:25:14.743541+00:00"
+  },
+  {
+    "url": "https://x.com/RFIAfrique/status/2101212765352518137",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Sénégal: l’État se donne trois ans pour apurer la dette aux entreprises, le secteur privé grince des dents rfi",
+    "published_at": "2026-09-19T08:05:26Z",
+    "added_at": "2026-09-20T20:25:18.669678+00:00"
   },
   {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
@@ -19,40 +32,7 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-09-16T00:35:42.540320+00:00"
-  },
-  {
-    "url": "https://x.com/thomasdietrich0/status/2097050430299926855",
-    "media": "Thomas Dietrich",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "Une pensée émue pour Moussa Kaka, journaliste très probablement enlevé au #Niger et dont nous sommes sans nouvelles depuis fin août",
-    "published_at": "2026-09-07T12:00:00Z",
-    "added_at": "2026-09-16T00:35:46.395613+00:00"
-  },
-  {
-    "url": "https://x.com/thomasdietrich0/status/2090507383944380429",
-    "media": "Thomas Dietrich",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "#Sénégal : l’avion du président Bassirou Diomaye Faye est en train de rentrer sur Dakar",
-    "published_at": "2026-08-20T12:00:00Z",
-    "added_at": "2026-09-16T00:35:52.868415+00:00"
-  },
-  {
-    "url": "https://x.com/FranklinNYAMSI/status/1864241491104686274",
-    "media": "Franklin Nyamsi",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "URGENT 🚨 Le Niger nationalise la multinationale française Orano sur son territoire, afin que l’Uranium du Niger 🇳🇪 profite prioritairement au Peuple du Niger 🇳🇪",
-    "published_at": "2024-12-04T12:00:00Z",
-    "added_at": "2026-09-16T00:35:59.448671+00:00"
+    "added_at": "2026-09-20T20:25:22.793844+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -63,7 +43,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-09-16T00:36:03.406427+00:00"
+    "added_at": "2026-09-20T20:25:30.615220+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -74,7 +54,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-09-16T00:36:06.991105+00:00"
+    "added_at": "2026-09-20T20:25:34.512864+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2041449927641837812",
@@ -85,85 +65,39 @@
     ],
     "titre": "#Sahel: A quite significant development that the inter-jihadist conflict between #JNIM and #ISSP in the course of three days have spread to both #Niger and #Nigeria as per the two groups' own claims a",
     "published_at": "2026-04-07T12:00:00Z",
-    "added_at": "2026-09-16T00:36:10.492507+00:00"
+    "added_at": "2026-09-20T20:25:38.115439+00:00"
   },
   {
-    "url": "https://x.com/sputnik_africa/status/2099964472064430350",
-    "media": "Sputnik Africa",
+    "url": "https://x.com/sputnik_afrique/status/2101416540385988870",
+    "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
       "BF"
     ],
-    "titre": "🇧🇫 Burkina Faso's Fight Against Terrorism: Key Achievements Under Traoré President Ibrahim Traoré says the end of the terrorist threat is near, four years after he came to power",
-    "published_at": "2026-09-15T20:54:39Z",
-    "added_at": "2026-09-16T00:36:18.672530+00:00"
+    "titre": "\"Répondre toujours OUI à l’appel de la Patrie\": le Burkina Faso vise un million de volontaires réservistes d'ici cinq ans Ces citoyens, formés et encadrés, pourront être mobilisés en cas d’urgence san",
+    "published_at": "2026-09-19T21:04:26Z",
+    "added_at": "2026-09-20T20:25:41.899780+00:00"
   },
   {
-    "url": "https://x.com/trtafrikaFR/status/2099883045276774781",
-    "media": "TRT Afrika Français",
+    "url": "https://x.com/sputnik_africa/status/2101415029858058432",
+    "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "ML"
     ],
-    "titre": "Le protocole entre l’Etat sénégalais et la société italienne ENI constitue une étape préalable d’études géologiques et d’évaluation technique",
-    "published_at": "2026-09-15T16:05:39Z",
-    "added_at": "2026-09-16T00:36:22.514855+00:00"
+    "titre": "🇷🇺🇲🇱 Russian Africa Corps anti-tank missile crew conducts live-fire training at Mali polygon 00:24 Sputnik Africa @sputnik_africa Sep 15 00:32 🇷🇺🇲🇱 Russian Africa Corps Drones Strike Fuel Point of FLA",
+    "published_at": "2026-09-19T20:58:26Z",
+    "added_at": "2026-09-20T20:25:46.501400+00:00"
   },
   {
-    "url": "https://www.tiktok.com/@trtafrika/video/7685770889736064263",
-    "media": "TRT Afrika",
-    "plateforme": "TikTok",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Africa's wealthiest person, Aliko Dangote, says ordinary Africans are now free to become co-owners of his mega oil refinery with as little as $4",
-    "published_at": "2026-09-15T14:36:28Z",
-    "added_at": "2026-09-16T00:36:53.507926+00:00"
-  },
-  {
-    "url": "https://www.tiktok.com/@ajplusfrancais/video/7680578982722473237",
-    "media": "AJ+ français",
-    "plateforme": "TikTok",
-    "pays": [
-      "SN"
-    ],
-    "titre": "“On est vraiment fatigués",
-    "published_at": "2026-09-01T17:55:00Z",
-    "added_at": "2026-09-16T00:51:15.125767+00:00"
-  },
-  {
-    "url": "https://x.com/thomasdietrich0/status/2100658329206903262",
-    "media": "Thomas Dietrich",
+    "url": "https://x.com/sputnik_africa/status/2099842670004781200",
+    "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF",
-      "NE"
+      "ML"
     ],
-    "titre": "France 24 traite à longueur de journée les régimes de l’AES de « putschistes » et de « juntes » soumises aux Russes… mais la chaîne publique s’excuse pour avoir fait de même avec Mamadi Doumbouya, dic",
-    "published_at": "2026-09-17T19:07:38Z",
-    "added_at": "2026-09-18T09:35:52.496410+00:00"
-  },
-  {
-    "url": "https://x.com/RTenfrancais/status/2100676161361612889",
-    "media": "RT en français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "⚡️Le premier ministre sénégalais a lancé, ce jeudi 17 septembre,les concertations avec le secteur privé national",
-    "published_at": "2026-09-17T20:07:38Z",
-    "added_at": "2026-09-18T09:35:56.792183+00:00"
-  },
-  {
-    "url": "https://x.com/sputnik_afrique/status/2100669115182768331",
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "\"L'Afrique est l'avenir de demain\" et son atout est sa jeunesse, estime Babacar Gueye, militant sénégalais Pour actionner ce \"levier de l'économie\" il faut que le continent s'approprie les politiques",
-    "published_at": "2026-09-17T20:07:38Z",
-    "added_at": "2026-09-18T09:36:00.850614+00:00"
+    "titre": "00:32 🇷🇺🇲🇱 Russian Africa Corps Drones Strike Fuel Point of FLA & JNIM* Coalition in Mali * JNIM affiliated with international terrorist organization al-Qaeda",
+    "published_at": "2026-09-15T12:00:00Z",
+    "added_at": "2026-09-20T20:25:51.091285+00:00"
   }
 ]
