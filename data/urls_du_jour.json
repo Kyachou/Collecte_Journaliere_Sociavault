@@ -1,5 +1,25 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Fête de l’indépendance au Mali: l'opposant Fakaba Sissoko demande «des comptes à ceux qui ont accaparé le pouvoir» rfi",
+    "url": "https://x.com/RFIAfrique/status/2102414651007152134",
+    "published_at": "2026-09-22T16:10:09Z"
+  },
+  {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "Disparition de Moussa Kaka au Niger: le président Tiani doit «nous donner des informations concrètes» rfi",
+    "url": "https://x.com/RFIAfrique/status/2102372252214067461",
+    "published_at": "2026-09-22T13:10:09Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -8,36 +28,6 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "Point de situation au Mali en 15 secondes 00:15 4 14 112 9",
-    "url": "https://x.com/SimNasr/status/2102094064191414757",
-    "published_at": "2026-09-21T18:07:30Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "#Mali Au moins 150 morts dans le centre du pays, qu’est ce qu’on retient des attaques du JNIM à Dioura et Sévaré, l’Africa Corps russe qui s’embourbe, des dizaines de militaires otages appellent depui",
-    "url": "https://x.com/SimNasr/status/2102045232074228028",
-    "published_at": "2026-09-21T15:07:30Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "#Mali JNIM revendique le bombardement de Sévaré aux obus de mortiers & roquettes SPG9 et affirme que « 4 drones de fabrication turque et des hélicoptères ont été touchés et la destruction de la base d",
-    "url": "https://x.com/SimNasr/status/2101730192326869477",
-    "published_at": "2026-09-20T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -60,16 +50,6 @@
     "titre": "URGENT 🚨 Le Niger nationalise la multinationale française Orano sur son territoire, afin que l’Uranium du Niger 🇳🇪 profite prioritairement au Peuple du Niger 🇳🇪",
     "url": "https://x.com/FranklinNYAMSI/status/1864241491104686274",
     "published_at": "2024-12-04T12:00:00Z"
-  },
-  {
-    "media": "Crisis Group",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "With the help of African mediators, Algiers and Bamako should deepen their rapprochement, moving to secure the Algeria-Mali border",
-    "url": "https://x.com/CrisisGroup/status/2102061599154401443",
-    "published_at": "2026-09-21T16:07:30Z"
   },
   {
     "media": "MENASTREAM (Héni Nsaibia)",
@@ -102,26 +82,24 @@
     "published_at": "2026-04-07T12:00:00Z"
   },
   {
-    "media": "RT en français",
+    "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "🇲🇱 Inauguration du Centre d’intelligence artificielle et de robotique évalué à 3,3 milliards de FCFA Le #Mali ne reste pas à l'écart des progrès technologiques : ce 21 septembre, Assimi #Goïta, a offi",
-    "url": "https://x.com/RTenfrancais/status/2102140816638496944",
-    "published_at": "2026-09-21T21:02:30Z"
+    "titre": "Anniversaire d’indépendance du Mali: Assimi Goïta félicite l’armée et l’Africa Corps russe pour leurs succès contre le terrorisme Après 66 ans, les défis persistent: les ennemis du Mali visent à compr",
+    "url": "https://x.com/sputnik_afrique/status/2102499425331605916",
+    "published_at": "2026-09-22T20:48:09Z"
   },
   {
-    "media": "Sputnik Africa",
+    "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF",
-      "NE"
+      "BF"
     ],
-    "titre": "🌍 Mali, Burkina Faso, and Niger must stop exporting raw materials and process them locally, Malian delegation member Boureima Jiguiba told Sputnik Africa",
-    "url": "https://x.com/sputnik_africa/status/2102128984582500515",
-    "published_at": "2026-09-21T20:15:30Z"
+    "titre": "Burkina Faso: nouveau complexe hôtelier et sportif Un projet de plus de 8 hectares sera terminé dans 15 mois, selon la primature",
+    "url": "https://x.com/sputnik_afrique/status/2102488604383781033",
+    "published_at": "2026-09-22T20:10:09Z"
   },
   {
     "media": "TRT Afrika Français",
@@ -129,9 +107,9 @@
     "pays": [
       "SN"
     ],
-    "titre": "Le footballeur sénégalais Sadio Mane a lancé samedi un projet de parc agro-industriel dans son village natal Bambali, dans la région de Casamance dans le sud du pays Dénommé SM10 Agro, le projet repré",
-    "url": "https://x.com/trtafrikaFR/status/2102035223730868346",
-    "published_at": "2026-09-21T14:07:30Z"
+    "titre": "Les autorités sénégalaises annoncent un épisode de fortes pluies et d’orages sur une grande partie du Sénégal du 24 au 26 septembre 2026, avec des cumuls pouvant dépasser 100 millimètres dans plusieur",
+    "url": "https://x.com/trtafrikaFR/status/2102457998354346070",
+    "published_at": "2026-09-22T18:10:09Z"
   },
   {
     "media": "AJ+ français",
