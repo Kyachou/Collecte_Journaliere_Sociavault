@@ -5,9 +5,9 @@
     "pays": [
       "SN"
     ],
-    "titre": "Bassirou Diomaye Faye sur RFI et France 24: «Qui de mieux que Macky Sall pour défendre la place de l'Afrique à l’ONU?» rfi",
-    "url": "https://x.com/RFIAfrique/status/2103215942847357010",
-    "published_at": "2026-09-24T20:15:09Z"
+    "titre": "Éliminatoires CAN 2027: le Sénégal tenu en échec pour la première de Patrick Vieira rfi",
+    "url": "https://x.com/RFIAfrique/status/2103502212827857027",
+    "published_at": "2026-09-25T16:07:26Z"
   },
   {
     "media": "RFI Afrique",
@@ -15,19 +15,9 @@
     "pays": [
       "SN"
     ],
-    "titre": "Bassirou Diomaye Faye sur RFI et France 24: «Qui de mieux que Macky Sall pour défendre la place de l'Afrique à l’ONU?» rfi",
-    "url": "https://x.com/RFIAfrique/status/2103215196114464995",
-    "published_at": "2026-09-24T20:12:09Z"
-  },
-  {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "🇸🇳 Le président de la république du #Sénégal, Bassirou Diomaye Faye s'exprime sur son soutien à l'ancien président, Macky Sall, au poste de secrétaire général des Nations unies",
-    "url": "https://x.com/RFIAfrique/status/2103179489576448209",
-    "published_at": "2026-09-24T18:08:09Z"
+    "titre": "À la Une: le président sénégalais Diomaye Faye à la tribune de l’ONU rfi",
+    "url": "https://x.com/RFIAfrique/status/2103487902873456970",
+    "published_at": "2026-09-25T15:07:26Z"
   },
   {
     "media": "Le Monde Afrique",
@@ -92,14 +82,46 @@
     "published_at": "2026-04-07T12:00:00Z"
   },
   {
-    "media": "MFA Russia",
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "♟️🌍 L’ÉCHIQUIER AFRICAIN #AES, Niger, #Ukraine : les trois dossiers qui défient l’Occident Dans ce nouveau numéro de L’Échiquier africain le professeur Franklin Nyamsi décrypte trois dossiers au cœur",
+    "url": "https://x.com/RTenfrancais/status/2103582815640231951",
+    "published_at": "2026-09-25T20:32:26Z"
+  },
+  {
+    "media": "RT en français",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "🇷🇺🇲🇱 Russia’s FM Sergey #Lavrov & Minister for Foreign Affairs & International Cooperation of Mali @AbdoulayeDiop8 hold a meeting on the sidelines of the High-Level Week of the 81st Session of the UN",
-    "url": "https://x.com/mfa_russia/status/2103229333238317459",
-    "published_at": "2026-09-24T21:07:09Z"
+    "titre": "🇷🇺🇲🇱 Le ministre russe des Affaires étrangères, Sergueï #Lavrov, a rencontré le ministre malien des Affaires étrangères et de la Coopération internationale, Abdoulaye #Diop, en marge de la 81e session",
+    "url": "https://x.com/RTenfrancais/status/2103581437450719723",
+    "published_at": "2026-09-25T20:27:26Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "⚽️ Une nouvelle compétition pour révéler \"les jeunes talents du football\" se tiendra au Burkina Faso Cette première édition de la Ligue de l’Espoir (LIDE), destinée aux joueurs de moins de 17 ans, déb",
+    "url": "https://x.com/sputnik_afrique/status/2103575768089411924",
+    "published_at": "2026-09-25T20:07:26Z"
+  },
+  {
+    "media": "Anadolu Français",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "🟠 Mali : Les FAMa frappent un regroupement de 200 à 300 combattants terroristes v",
+    "url": "https://x.com/anadolufrancais/status/2103560699943235695",
+    "published_at": "2026-09-25T19:07:26Z"
   },
   {
     "media": "FRANCE 24",
@@ -107,9 +129,19 @@
     "pays": [
       "SN"
     ],
-    "titre": "En marge de l'Assemblée générale des Nations unies à New York, le président sénégalais a accordé une interview à France 24 et RFI",
-    "url": "https://www.tiktok.com/@france24/video/7689168523465100576",
-    "published_at": "2026-09-24T18:20:59Z"
+    "titre": "🇸🇳 En marge de l’Assemblée générale des Nations unies à New York, le président sénégalais Bassirou Diomaye Faye a accordé une interview à France 24 et RFI",
+    "url": "https://www.tiktok.com/@france24/video/7689518246927551766",
+    "published_at": "2026-09-25T19:00:00Z"
+  },
+  {
+    "media": "Brut Afrique",
+    "plateforme": "TikTok",
+    "pays": [
+      "SN"
+    ],
+    "titre": "🇸🇳Au #Sénégal, Serigne Mbacké Mar, double champion national de motocross, est décédé ce mardi 22 septembre",
+    "url": "https://www.tiktok.com/@brutafrique/video/7689565610979659030",
+    "published_at": "2026-09-25T20:01:02Z"
   },
   {
     "media": "AJ+ français",
