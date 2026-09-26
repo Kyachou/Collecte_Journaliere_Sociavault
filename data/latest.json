@@ -1,25 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Éliminatoires CAN 2027: le Sénégal tenu en échec pour la première de Patrick Vieira rfi",
-    "url": "https://x.com/RFIAfrique/status/2103502212827857027",
-    "published_at": "2026-09-25T16:07:26Z"
-  },
-  {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "À la Une: le président sénégalais Diomaye Faye à la tribune de l’ONU rfi",
-    "url": "https://x.com/RFIAfrique/status/2103487902873456970",
-    "published_at": "2026-09-25T15:07:26Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -52,6 +32,16 @@
     "published_at": "2024-12-04T12:00:00Z"
   },
   {
+    "media": "Crisis Group",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "With the Malian regime on a precarious path, the apparent thaw between Algiers and Bamako is an encouraging sign",
+    "url": "https://x.com/CrisisGroup/status/2103692336052015398",
+    "published_at": "2026-09-26T04:04:25Z"
+  },
+  {
     "media": "MENASTREAM (Héni Nsaibia)",
     "plateforme": "X",
     "pays": [
@@ -82,66 +72,24 @@
     "published_at": "2026-04-07T12:00:00Z"
   },
   {
-    "media": "RT en français",
+    "media": "China Xinhua News",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF",
-      "NE"
+      "SN"
     ],
-    "titre": "♟️🌍 L’ÉCHIQUIER AFRICAIN #AES, Niger, #Ukraine : les trois dossiers qui défient l’Occident Dans ce nouveau numéro de L’Échiquier africain le professeur Franklin Nyamsi décrypte trois dossiers au cœur",
-    "url": "https://x.com/RTenfrancais/status/2103582815640231951",
-    "published_at": "2026-09-25T20:32:26Z"
+    "titre": "The Chinese People's Liberation Army Navy hospital ship Auspicious Ark arrived in Dakar, the capital of Senegal, on Friday to begin a friendly visit and provide medical services, marking the first vis",
+    "url": "https://x.com/XHNews/status/2103888641944662209",
+    "published_at": "2026-09-26T17:04:25Z"
   },
   {
-    "media": "RT en français",
+    "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "🇷🇺🇲🇱 Le ministre russe des Affaires étrangères, Sergueï #Lavrov, a rencontré le ministre malien des Affaires étrangères et de la Coopération internationale, Abdoulaye #Diop, en marge de la 81e session",
-    "url": "https://x.com/RTenfrancais/status/2103581437450719723",
-    "published_at": "2026-09-25T20:27:26Z"
-  },
-  {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "⚽️ Une nouvelle compétition pour révéler \"les jeunes talents du football\" se tiendra au Burkina Faso Cette première édition de la Ligue de l’Espoir (LIDE), destinée aux joueurs de moins de 17 ans, déb",
-    "url": "https://x.com/sputnik_afrique/status/2103575768089411924",
-    "published_at": "2026-09-25T20:07:26Z"
-  },
-  {
-    "media": "Anadolu Français",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "🟠 Mali : Les FAMa frappent un regroupement de 200 à 300 combattants terroristes v",
-    "url": "https://x.com/anadolufrancais/status/2103560699943235695",
-    "published_at": "2026-09-25T19:07:26Z"
-  },
-  {
-    "media": "FRANCE 24",
-    "plateforme": "TikTok",
-    "pays": [
-      "SN"
-    ],
-    "titre": "🇸🇳 En marge de l’Assemblée générale des Nations unies à New York, le président sénégalais Bassirou Diomaye Faye a accordé une interview à France 24 et RFI",
-    "url": "https://www.tiktok.com/@france24/video/7689518246927551766",
-    "published_at": "2026-09-25T19:00:00Z"
-  },
-  {
-    "media": "Brut Afrique",
-    "plateforme": "TikTok",
-    "pays": [
-      "SN"
-    ],
-    "titre": "🇸🇳Au #Sénégal, Serigne Mbacké Mar, double champion national de motocross, est décédé ce mardi 22 septembre",
-    "url": "https://www.tiktok.com/@brutafrique/video/7689565610979659030",
-    "published_at": "2026-09-25T20:01:02Z"
+    "titre": "La basketteuse Sika Koné porte les Aigles du Mali vers les plus hauts sommets internationaux",
+    "url": "https://x.com/trtafrikaFR/status/2103892353668817318",
+    "published_at": "2026-09-26T17:04:25Z"
   },
   {
     "media": "AJ+ français",
