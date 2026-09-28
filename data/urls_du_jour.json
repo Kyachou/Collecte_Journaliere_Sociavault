@@ -62,13 +62,43 @@
     "published_at": "2026-04-07T12:00:00Z"
   },
   {
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "🇧🇫🟡 Le Burkina Faso inaugure sa première raffinerie d’or Le président burkinabè Ibrahim Traoré a inauguré à #Ouagadougou la première raffinerie d’or du Burkina Faso, RAFFINOR-BF, rapporte l’Agence d’i",
+    "url": "https://x.com/RTenfrancais/status/2104662429686763633",
+    "published_at": "2026-09-28T20:05:09Z"
+  },
+  {
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "BF"
     ],
-    "titre": "\"Pendant plus d'un demi-siècle, l'uranium du Niger a éclairé les villes d'Europe, tandis que les nôtres restaient dans l'obscurité",
-    "url": "https://x.com/sputnik_afrique/status/2104277894268891332",
-    "published_at": "2026-09-27T19:04:53Z"
+    "titre": "Grâce à sa politique agricole, le Burkina Faso a réalisé en deux ans \"deux à trois fois plus d'aménagements que de toute son histoire\", dit Ibrahim Traoré L’offensive agro-pastorale lancée en 2023 a b",
+    "url": "https://x.com/sputnik_afrique/status/2104670481341391070",
+    "published_at": "2026-09-28T20:35:09Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Sénégal: le train express régional arrive enfin à l'aéroport de Dakar Le Président Bassirou Diomaye Faye a inauguré ce 28 septembre le prolongement de la ligne TER jusqu’à l’aéroport international Bla",
+    "url": "https://x.com/sputnik_afrique/status/2104662931661332520",
+    "published_at": "2026-09-28T20:05:09Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "L’armée malienne souligne toutefois que le bilan demeure provisoire Lire l'article : trtafrika",
+    "url": "https://x.com/trtafrikaFR/status/2104594504237871219",
+    "published_at": "2026-09-28T16:05:09Z"
   }
 ]
