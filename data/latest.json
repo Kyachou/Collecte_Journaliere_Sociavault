@@ -62,33 +62,59 @@
     "published_at": "2026-04-07T12:00:00Z"
   },
   {
-    "media": "RT en français",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "Article Mali, Burkina Faso, Niger à la tribune de l'Onu: trois interventions, un seul message La souveraineté sans concession",
+    "url": "https://x.com/sputnik_afrique/status/2105750882809778203",
+    "published_at": "2026-10-01T20:08:45Z"
+  },
+  {
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "Africa must build stronger economic and institutional capacity to leverage new global opportunities, South Sudanese analyst Malual Bol Kiir told Sputnik Africa, commenting on Russian FM Lavrov's UNGA",
+    "url": "https://x.com/sputnik_africa/status/2105735247254204779",
+    "published_at": "2026-10-01T19:08:45Z"
+  },
+  {
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "01:22 The AES marks Africa's \"awakening\" and the downfall of imperialism, Nigerien analyst Soumana Seydou told Sputnik Africa following the UNGA",
+    "url": "https://x.com/sputnik_africa/status/2105580980484620529",
+    "published_at": "2026-10-01T09:08:45Z"
+  },
+  {
+    "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
       "SN"
     ],
-    "titre": "📎Affaire de la #CAN attribuée au #Maroc : le Tribunal Arbitral du Sport confirme l'audience décisive prévue le 8 octobre prochain, à Lausanne (Suisse), entre les fédérations sénégalaise et marocaine d",
-    "url": "https://x.com/RTenfrancais/status/2105394755664224584",
-    "published_at": "2026-09-30T20:33:09Z"
+    "titre": "Selon plusieurs médias locaux, la compagnie nationale Air Sénégal a suspendu, le 17 septembre, l’ensemble de son personnel navigant affecté à la liaison Dakar-Paris",
+    "url": "https://x.com/trtafrikaFR/status/2105704386345267489",
+    "published_at": "2026-10-01T17:08:45Z"
   },
   {
     "media": "Brut Afrique",
     "plateforme": "TikTok",
     "pays": [
-      "SN"
+      "NE"
     ],
-    "titre": "🇸🇳 Au #Sénégal, le célèbre lutteur et champion de MMA Oumar Kane, alias \"Reug Reug\", a été inculpé le 29 septembre et placé sous contrôle judiciaire dans une affaire présumée de faux billets, estimés",
-    "url": "https://www.tiktok.com/@brutafrique/video/7691436464294481174",
-    "published_at": "2026-09-30T21:01:02Z"
-  },
-  {
-    "media": "TRT Afrika",
-    "plateforme": "TikTok",
-    "pays": [
-      "BF"
-    ],
-    "titre": "Burkina Faso's Ibrahim Traoré marks four years in power",
-    "url": "https://www.tiktok.com/@trtafrika/video/7691332306425990418",
-    "published_at": "2026-09-30T14:17:37Z"
+    "titre": "🇳🇪Pour réduire les dépenses liées au mariage, dans le sud-ouest du pays, des chefs culturels et religieux  ont plafonné la dot à 500 000 francs CFA et une valise vide pour les filles vivant en ville,",
+    "url": "https://www.tiktok.com/@brutafrique/video/7691792272706325782",
+    "published_at": "2026-10-01T20:02:01Z"
   }
 ]
