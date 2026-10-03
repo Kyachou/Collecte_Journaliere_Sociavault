@@ -1,5 +1,16 @@
 [
   {
+    "url": "https://x.com/RFIAfrique/status/2106083849772183691",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Maroc, Burkina Faso, Cisjordanie occupée et expulsion de migrants par les Etats-Unis rfi",
+    "published_at": "2026-10-02T19:07:45Z",
+    "added_at": "2026-10-03T03:26:54.637734+00:00"
+  },
+  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -8,7 +19,7 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-02T04:20:27.902227+00:00"
+    "added_at": "2026-10-03T03:26:58.026033+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -19,7 +30,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-02T04:20:46.550317+00:00"
+    "added_at": "2026-10-03T03:27:11.826830+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -30,7 +41,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-02T04:20:50.302507+00:00"
+    "added_at": "2026-10-03T03:27:15.229670+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2041449927641837812",
@@ -41,23 +52,32 @@
     ],
     "titre": "#Sahel: A quite significant development that the inter-jihadist conflict between #JNIM and #ISSP in the course of three days have spread to both #Niger and #Nigeria as per the two groups' own claims a",
     "published_at": "2026-04-07T12:00:00Z",
-    "added_at": "2026-10-02T04:20:54.115927+00:00"
+    "added_at": "2026-10-03T03:27:18.783286+00:00"
   },
   {
-    "url": "https://x.com/sputnik_afrique/status/2105750882809778203",
+    "url": "https://x.com/RTenfrancais/status/2106118080082673891",
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "🇸🇳 L'équipe de RT en français est au nord du Sénégal De Saint-Louis à Matam, vous aurez toutes les informations liées au séjour de la flamme olympique dans cette partie du pays dans les prochains jour",
+    "published_at": "2026-10-02T20:26:45Z",
+    "added_at": "2026-10-03T03:27:22.403809+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_afrique/status/2106104933355253772",
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF",
-      "NE"
+      "ML"
     ],
-    "titre": "Article Mali, Burkina Faso, Niger à la tribune de l'Onu: trois interventions, un seul message La souveraineté sans concession",
-    "published_at": "2026-10-01T20:08:45Z",
-    "added_at": "2026-10-02T04:20:58.018786+00:00"
+    "titre": "Au Mali, les FAMa déclarent avoir frappé de nombreux regroupements de terroristes, ainsi que leur matériel de guerre et leurs équipements logistiques Les nouvelles étapes de l'opération Dougoukoloko s",
+    "published_at": "2026-10-02T20:07:45Z",
+    "added_at": "2026-10-03T03:27:26.343008+00:00"
   },
   {
-    "url": "https://x.com/sputnik_africa/status/2105735247254204779",
+    "url": "https://x.com/sputnik_africa/status/2106105436563025986",
     "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
@@ -65,32 +85,19 @@
       "BF",
       "NE"
     ],
-    "titre": "Africa must build stronger economic and institutional capacity to leverage new global opportunities, South Sudanese analyst Malual Bol Kiir told Sputnik Africa, commenting on Russian FM Lavrov's UNGA",
-    "published_at": "2026-10-01T19:08:45Z",
-    "added_at": "2026-10-02T04:21:01.996787+00:00"
+    "titre": "Russia fosters partnerships based on mutual development rather than exploitation, Burkinabe activist Nabaloum Abdoulaye told Sputnik Africa, citing relations with the AES nations as an example",
+    "published_at": "2026-10-02T20:07:45Z",
+    "added_at": "2026-10-03T03:27:30.166274+00:00"
   },
   {
-    "url": "https://x.com/sputnik_africa/status/2105580980484620529",
-    "media": "Sputnik Africa",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF",
-      "NE"
-    ],
-    "titre": "01:22 The AES marks Africa's \"awakening\" and the downfall of imperialism, Nigerien analyst Soumana Seydou told Sputnik Africa following the UNGA",
-    "published_at": "2026-10-01T09:08:45Z",
-    "added_at": "2026-10-02T04:21:06.168807+00:00"
-  },
-  {
-    "url": "https://x.com/trtafrikaFR/status/2105704386345267489",
+    "url": "https://x.com/trtafrikaFR/status/2106051679917424871",
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
       "SN"
     ],
-    "titre": "Selon plusieurs médias locaux, la compagnie nationale Air Sénégal a suspendu, le 17 septembre, l’ensemble de son personnel navigant affecté à la liaison Dakar-Paris",
-    "published_at": "2026-10-01T17:08:45Z",
-    "added_at": "2026-10-02T04:21:10.112564+00:00"
+    "titre": "La fermeture de la NBA Academy Africa, lancée au Sénégal en 2018, suscite des critiques et des inquiétudes pour l’avenir des jeunes basketteurs africains",
+    "published_at": "2026-10-02T16:07:45Z",
+    "added_at": "2026-10-03T03:27:33.885807+00:00"
   }
 ]
