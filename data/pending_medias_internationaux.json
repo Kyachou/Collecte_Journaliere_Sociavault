@@ -1,14 +1,25 @@
 [
   {
-    "url": "https://x.com/RFIAfrique/status/2106441557415174502",
+    "url": "https://x.com/RFIAfrique/status/2106726680127852607",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "L'écrivain sénégalais Cheikh Hamidou Kane, auteur de «L'aventure ambiguë», est mort à l'âge de 98 ans rfi",
+    "published_at": "2026-10-04T13:06:49Z",
+    "added_at": "2026-10-05T03:03:40.541402+00:00"
+  },
+  {
+    "url": "https://x.com/RFIAfrique/status/2106655038265598211",
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
       "BF"
     ],
-    "titre": "Vols annulés, départ des cadres",
-    "published_at": "2026-10-03T18:04:29Z",
-    "added_at": "2026-10-04T02:56:44.220615+00:00"
+    "titre": "Football: l'Argentine écrase 7-0 un Burkina Faso dépeuplé de ses joueurs rfi",
+    "published_at": "2026-10-04T08:06:49Z",
+    "added_at": "2026-10-05T03:03:44.522888+00:00"
   },
   {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
@@ -19,7 +30,7 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-04T02:56:47.918221+00:00"
+    "added_at": "2026-10-05T03:03:48.203631+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -30,7 +41,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-04T02:57:04.637242+00:00"
+    "added_at": "2026-10-05T03:04:09.446718+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -41,7 +52,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-04T02:57:08.206613+00:00"
+    "added_at": "2026-10-05T03:04:13.346816+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2041449927641837812",
@@ -52,50 +63,61 @@
     ],
     "titre": "#Sahel: A quite significant development that the inter-jihadist conflict between #JNIM and #ISSP in the course of three days have spread to both #Niger and #Nigeria as per the two groups' own claims a",
     "published_at": "2026-04-07T12:00:00Z",
-    "added_at": "2026-10-04T02:57:11.704139+00:00"
+    "added_at": "2026-10-05T03:04:17.205261+00:00"
   },
   {
-    "url": "https://x.com/RTenfrancais/status/2106474367353827838",
+    "url": "https://x.com/RTenfrancais/status/2106836757207564635",
     "media": "RT en français",
     "plateforme": "X",
     "pays": [
       "SN"
     ],
-    "titre": "🇸🇳 Au #Sénégal, la flamme olympique poursuit sa tournée à un mois des JOJ Dakar 2026 Elle fait étape ce samedi à Saint-Louis, première capitale de l’#Afrique-Occidentale française, alors que la ville",
-    "published_at": "2026-10-03T20:04:29Z",
-    "added_at": "2026-10-04T02:57:15.455653+00:00"
+    "titre": "🇸🇳 JOJ de #Dakar : la flamme olympique fait étape à Saint-Louis Au #Sénégal, Saint-Louis, une ville située au nord du pays, vit au rythme de la flamme olympique",
+    "published_at": "2026-10-04T20:06:49Z",
+    "added_at": "2026-10-05T03:04:21.073167+00:00"
   },
   {
-    "url": "https://x.com/sputnik_afrique/status/2106489970441789908",
+    "url": "https://x.com/sputnik_afrique/status/2106852358386831668",
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "SN"
     ],
-    "titre": "🎧 Sputnik Radio | Enfants soldats: avec l'argent de l'Occident, les terroristes au Sahel recrutent des mineurs - Fousseynou Ouattara, expert malien D'abord, les mineurs sont utilisés dans la mendicité",
-    "published_at": "2026-10-03T21:03:36Z",
-    "added_at": "2026-10-04T02:57:19.094129+00:00"
+    "titre": "L’Égypte, l'Afrique du Sud et le Sénégal unissent leurs voix pour la paix Les Présidents égyptien Abdel Fattah al-Sissi, sud-africain Cyril Ramaphosa et sénégalais Bassirou Diomaye Faye appellent \"sou",
+    "published_at": "2026-10-04T21:04:49Z",
+    "added_at": "2026-10-05T03:04:25.392001+00:00"
   },
   {
-    "url": "https://x.com/sputnik_afrique/status/2106459771431960808",
+    "url": "https://x.com/sputnik_afrique/status/2106837258599051663",
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "BF"
     ],
-    "titre": "🎧 Sputnik Radio | Grâce à Moscou, \"l'Afrique pourra se détacher de cette dépendance qui l'a mise en retard\" - Abdoulaye Diallo, blogueur malien \"La Russie a essayé de comprendre les besoins des pays a",
-    "published_at": "2026-10-03T19:04:29Z",
-    "added_at": "2026-10-04T02:57:22.886342+00:00"
+    "titre": "🎧 Sputnik Radio | Des vaccins occidentaux importés: une solution qui n'est bonne qu'à court terme, selon Zekiba Tarnagda, épidémiologiste burkinabè La production locale est devenue vulnérable et dépen",
+    "published_at": "2026-10-04T20:06:49Z",
+    "added_at": "2026-10-05T03:04:29.217528+00:00"
   },
   {
-    "url": "https://x.com/trtafrikaFR/status/2106444230914617582",
+    "url": "https://x.com/sputnik_africa/status/2106849338282660275",
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Egypt, SA & Senegal Push for Peaceful Conflict Resolution in Africa: Statement 🇿🇦Abdel Fattah el-Sisi, Cyril Ramaphosa, and Bassirou Diomaye Faye have called for preserving the sovereignty and territo",
+    "published_at": "2026-10-04T20:52:49Z",
+    "added_at": "2026-10-05T03:04:33.184706+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2106722069798850931",
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "SN"
     ],
-    "titre": "À Dosso, au Niger, les autorités coutumières veulent lever le poids financier du mariage pour encourager les jeunes à franchir le pas, sans renoncer aux traditions",
-    "published_at": "2026-10-03T18:04:29Z",
-    "added_at": "2026-10-04T02:57:26.521765+00:00"
+    "titre": "Cheikh Hamidou Kane est décédé samedi soir à Dakar, à l’âge de 98 ans",
+    "published_at": "2026-10-04T13:06:49Z",
+    "added_at": "2026-10-05T03:04:37.625292+00:00"
   }
 ]
