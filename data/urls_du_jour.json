@@ -3,11 +3,11 @@
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "ML"
     ],
-    "titre": "Sénégal: des inondations font plusieurs morts et bloquent plusieurs quartiers de Dakar rfi",
-    "url": "https://x.com/RFIAfrique/status/2107213406277411032",
-    "published_at": "2026-10-05T20:59:40Z"
+    "titre": "Mali: le FLA se retire de Kidal et laisse le champ libre à l'armée rfi",
+    "url": "https://x.com/RFIAfrique/status/2107485532842504575",
+    "published_at": "2026-10-06T15:06:09Z"
   },
   {
     "media": "Le Monde Afrique",
@@ -18,6 +18,26 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "#Mali l’EI Sahel revendique une attaque le 26 septembre contre une position du JNIM à proximité d’Adiora « un mort » 1 4 1",
+    "url": "https://x.com/SimNasr/status/2107575010546139497",
+    "published_at": "2026-10-06T20:56:09Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "#Mali le FLA se retire de Kidal @MohmedRAMADANE 30 15 96 10K",
+    "url": "https://x.com/SimNasr/status/2107470351391138116",
+    "published_at": "2026-10-06T14:06:09Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -72,13 +92,33 @@
     "published_at": "2026-04-07T12:00:00Z"
   },
   {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "00:16 \"Les peuples conscients assument eux-mêmes la défense de leur patrie\" Ces paroles de Thomas Sankara résonnent toujours avec la même force",
+    "url": "https://x.com/sputnik_afrique/status/2105961488292962406",
+    "published_at": "2026-10-02T12:00:00Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Mali: le FLA annonce son retrait de Kidal Le Front de libération d'Azawad parle d'un \"repli stratégique et maitrisé\" dans un communiqué",
+    "url": "https://x.com/sputnik_afrique/status/2107562034543956366",
+    "published_at": "2026-10-06T20:06:09Z"
+  },
+  {
     "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "NE"
     ],
-    "titre": "🇸🇳 Several Senegalese Cities Severely Flooded After Heavy Weekend Rains The Ministry of the Interior and Public Safety reported fatalities and injuries, particularly in Dakar and Matam, as rescue oper",
-    "url": "https://x.com/sputnik_africa/status/2107177500451500203",
-    "published_at": "2026-10-05T19:04:40Z"
+    "titre": "🇷🇺🇹🇬 Russia has proposed supplying Togo and Niger with 6-32 MW gas turbine power plants to address regional energy shortages, the United Engine Corporation said",
+    "url": "https://x.com/sputnik_africa/status/2107568325605888124",
+    "published_at": "2026-10-06T20:29:09Z"
   }
 ]
