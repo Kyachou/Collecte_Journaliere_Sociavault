@@ -1,16 +1,5 @@
 [
   {
-    "url": "https://x.com/RFIAfrique/status/2107213406277411032",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Sénégal: des inondations font plusieurs morts et bloquent plusieurs quartiers de Dakar rfi",
-    "published_at": "2026-10-05T20:59:40Z",
-    "added_at": "2026-10-06T04:47:49.012983+00:00"
-  },
-  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -19,7 +8,18 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-06T04:47:53.320309+00:00"
+    "added_at": "2026-10-07T04:05:58.968675+00:00"
+  },
+  {
+    "url": "https://x.com/SimNasr/status/2107575010546139497",
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "#Mali l’EI Sahel revendique une attaque le 26 septembre contre une position du JNIM à proximité d’Adiora « un mort » 1 4 1",
+    "published_at": "2026-10-06T20:56:09Z",
+    "added_at": "2026-10-07T04:06:02.918991+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -30,7 +30,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-06T04:48:09.640292+00:00"
+    "added_at": "2026-10-07T04:06:26.989537+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -41,7 +41,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-06T04:48:13.363347+00:00"
+    "added_at": "2026-10-07T04:06:30.585235+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2041449927641837812",
@@ -52,17 +52,39 @@
     ],
     "titre": "#Sahel: A quite significant development that the inter-jihadist conflict between #JNIM and #ISSP in the course of three days have spread to both #Niger and #Nigeria as per the two groups' own claims a",
     "published_at": "2026-04-07T12:00:00Z",
-    "added_at": "2026-10-06T04:48:17.119619+00:00"
+    "added_at": "2026-10-07T04:06:34.145408+00:00"
   },
   {
-    "url": "https://x.com/sputnik_africa/status/2107177500451500203",
+    "url": "https://x.com/sputnik_afrique/status/2105961488292962406",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "00:16 \"Les peuples conscients assument eux-mêmes la défense de leur patrie\" Ces paroles de Thomas Sankara résonnent toujours avec la même force",
+    "published_at": "2026-10-02T12:00:00Z",
+    "added_at": "2026-10-07T04:06:38.134619+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_afrique/status/2107562034543956366",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Mali: le FLA annonce son retrait de Kidal Le Front de libération d'Azawad parle d'un \"repli stratégique et maitrisé\" dans un communiqué",
+    "published_at": "2026-10-06T20:06:09Z",
+    "added_at": "2026-10-07T04:06:42.174959+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_africa/status/2107568325605888124",
     "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "NE"
     ],
-    "titre": "🇸🇳 Several Senegalese Cities Severely Flooded After Heavy Weekend Rains The Ministry of the Interior and Public Safety reported fatalities and injuries, particularly in Dakar and Matam, as rescue oper",
-    "published_at": "2026-10-05T19:04:40Z",
-    "added_at": "2026-10-06T04:48:21.021788+00:00"
+    "titre": "🇷🇺🇹🇬 Russia has proposed supplying Togo and Niger with 6-32 MW gas turbine power plants to address regional energy shortages, the United Engine Corporation said",
+    "published_at": "2026-10-06T20:29:09Z",
+    "added_at": "2026-10-07T04:06:46.125780+00:00"
   }
 ]
