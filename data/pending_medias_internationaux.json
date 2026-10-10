@@ -1,5 +1,38 @@
 [
   {
+    "url": "https://x.com/RFIAfrique/status/2108653991529775455",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "C'est une information de nos confrères du Monde",
+    "published_at": "2026-10-09T20:24:33Z",
+    "added_at": "2026-10-10T04:23:16.922291+00:00"
+  },
+  {
+    "url": "https://x.com/RFIAfrique/status/2108638897919897732",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Trois jours après leur retour à Kidal, les soldats maliens et leurs partenaires russes de l'Africa Corps sécurisent la ville et ses alentours",
+    "published_at": "2026-10-09T20:04:33Z",
+    "added_at": "2026-10-10T04:23:21.350679+00:00"
+  },
+  {
+    "url": "https://x.com/RFIAfrique/status/2108624074289156437",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Alors que la Guinée-Bissau s'achemine vers un possible report de ses élections présidentielle et législatives prévues le 6 décembre 2026, le Sénégal, qui préside actuellement la Communauté économique",
+    "published_at": "2026-10-09T19:04:33Z",
+    "added_at": "2026-10-10T04:23:25.187512+00:00"
+  },
+  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -8,18 +41,18 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-09T04:37:46.041915+00:00"
+    "added_at": "2026-10-10T04:23:28.792048+00:00"
   },
   {
-    "url": "https://x.com/SimNasr/status/2108270066320208043",
-    "media": "Wassim Nasr",
+    "url": "https://x.com/MENASTREAM/status/2108599151734796303",
+    "media": "MENASTREAM (Héni Nsaibia)",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "BF"
     ],
-    "titre": "L’EI Sahel diffuse l’image des prises d’Adioura après l’attaque contre une position de « la milice apostate d’al-Qaeda […] 1 mort » & « 39 morts » dans les rangs des forces nigériennes « suite à deux",
-    "published_at": "2026-10-08T19:05:23Z",
-    "added_at": "2026-10-09T04:37:49.877655+00:00"
+    "titre": "#BurkinaFaso: #ISSP and #JNIM clashed for more than two hours this morning around Intaylalene, Bangao, Deberé, and Soukoundou, in the Tin-Akoff and Oursi departments, Oudalan province",
+    "published_at": "2026-10-09T17:04:33Z",
+    "added_at": "2026-10-10T04:23:46.610323+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -30,7 +63,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-09T04:38:05.690922+00:00"
+    "added_at": "2026-10-10T04:23:50.129398+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -41,39 +74,63 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-09T04:38:09.398415+00:00"
+    "added_at": "2026-10-10T04:23:53.848789+00:00"
   },
   {
-    "url": "https://x.com/MENASTREAM/status/2041449927641837812",
-    "media": "MENASTREAM (Héni Nsaibia)",
+    "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
+    "media": "U.S. Africa Command",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "SN"
     ],
-    "titre": "#Sahel: A quite significant development that the inter-jihadist conflict between #JNIM and #ISSP in the course of three days have spread to both #Niger and #Nigeria as per the two groups' own claims a",
-    "published_at": "2026-04-07T12:00:00Z",
-    "added_at": "2026-10-09T04:38:12.843452+00:00"
+    "titre": "VCSAF Gen",
+    "published_at": "2026-10-09T18:04:33Z",
+    "added_at": "2026-10-10T04:23:57.998186+00:00"
   },
   {
-    "url": "https://x.com/sputnik_afrique/status/2108286670260858961",
+    "url": "https://x.com/RTenfrancais/status/2108653727704023483",
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "🇲🇱 Le #Mali veut transformer 10 % de son coton sur place Le Mali ambitionne de transformer localement au moins 10 % de sa production de coton fibre afin d’accroître la valeur ajoutée et de stimuler so",
+    "published_at": "2026-10-09T20:22:33Z",
+    "added_at": "2026-10-10T04:24:01.699357+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_afrique/status/2108569557946540395",
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "Article Kidal, ville désormais sous le contrôle de l'État malien: que définit son importance? Le 6 octobre, les Forces armées maliennes ont annoncé la prise de Kidal, qui depuis avril 2026 se trouvait",
-    "published_at": "2026-10-08T20:05:23Z",
-    "added_at": "2026-10-09T04:38:16.343816+00:00"
+    "titre": "Assimi Goïta rend visite au doyen de 114 ans du district de Bamako: un monsieur avec une mémoire vive qui salut la libération de Kidal",
+    "published_at": "2026-10-09T15:04:33Z",
+    "added_at": "2026-10-10T04:24:05.689143+00:00"
   },
   {
-    "url": "https://x.com/sputnik_africa/status/2108267935441527201",
+    "url": "https://x.com/sputnik_afrique/status/2108656747758117191",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Le Burkina Faso investira plus de 67 milliards de francs CFA pour des infrastructures sanitaires, selon le gouvernement Dans le cadre de l’Initiative présidentielle pour la santé et avec le budget de",
+    "published_at": "2026-10-09T20:34:33Z",
+    "added_at": "2026-10-10T04:24:09.404588+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_africa/status/2108627555163025422",
     "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
+      "ML",
+      "BF",
       "NE"
     ],
-    "titre": "🇳🇪🍼 A Nigerien woman gave birth to healthy quintuplets in just four minutes at eight months of pregnancy, local media reported",
-    "published_at": "2026-10-08T19:05:23Z",
-    "added_at": "2026-10-09T04:38:20.023327+00:00"
+    "titre": "The liberation of Kidal is a vital victory for Mali and the deeply interconnected AES, Nigerien lawyer Ibrahima Salou told Sputnik Africa",
+    "published_at": "2026-10-09T19:04:33Z",
+    "added_at": "2026-10-10T04:24:13.276565+00:00"
   }
 ]
