@@ -1,17 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF",
-      "NE"
-    ],
-    "titre": "Il y a une phrase qui a suscité cette chronique",
-    "url": "https://x.com/RFIAfrique/status/2108865396287643889",
-    "published_at": "2026-10-10T11:04:51Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -20,6 +8,27 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF"
+    ],
+    "titre": "Depuis le début du mois de septembre des affrontements d’une ampleur inédite opposent l’EI Sahel au JNIM dans la zone frontalière entre le Mali et le Burkina Faso",
+    "url": "https://x.com/SimNasr/status/2109317006331662446",
+    "published_at": "2026-10-11T17:05:05Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "#Mali l’Africa Corps met des images de Mad Max dans sa vidéo de promo pour la reprise de Kidal",
+    "url": "https://x.com/SimNasr/status/2109263994091671817",
+    "published_at": "2026-10-11T13:05:05Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -89,9 +98,9 @@
     "pays": [
       "ML"
     ],
-    "titre": "Assimi Goïta rend visite au doyen de 114 ans du district de Bamako: un monsieur avec une mémoire vive qui salut la libération de Kidal",
-    "url": "https://x.com/sputnik_afrique/status/2108569557946540395",
-    "published_at": "2026-10-09T12:00:00Z"
+    "titre": "Reconquête de Kidal: les facteurs qui ont permis cette victoire majeure des FAMa Fousseynou Ouattara, vice-président de la Commission de la défense et de la sécurité du Mali, explique à Sputnik Afriqu",
+    "url": "https://x.com/sputnik_afrique/status/2108937827572666503",
+    "published_at": "2026-10-10T12:00:00Z"
   },
   {
     "media": "Sputnik Afrique",
@@ -99,9 +108,39 @@
     "pays": [
       "ML"
     ],
-    "titre": "00:08 Reconquête de Kidal: les facteurs qui ont permis cette victoire majeure des FAMa Fousseynou Ouattara, vice-président de la Commission de la défense et de la sécurité du Mali, explique à Sputnik",
-    "url": "https://x.com/sputnik_afrique/status/2108937827572666503",
-    "published_at": "2026-10-10T16:04:51Z"
+    "titre": "00:56 Mali Kidal repasse sous contrôle des FAMa avec l'appui des partenaires russes 🇲🇱🇷🇺 Les autorités saluent une étape clé pour la souveraineté de l'État et le retour progressif de l'administration",
+    "url": "https://x.com/sputnik_afrique/status/2107708959654097295",
+    "published_at": "2026-10-06T12:00:00Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "🎧 Sputnik Radio | Raffinage du pétrole en Afrique: \"Les Africains doivent se donner la main et soutenir\" les projets tels que ceux de Dangote - président de l’Association pour la promotion des ressour",
+    "url": "https://x.com/sputnik_afrique/status/2109389073362088362",
+    "published_at": "2026-10-11T21:04:05Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Sans des médias comme Sputnik, \"le narratif allait appartenir seulement à la France\" et à d'autres pays occidentaux, affirme le vice-président de la Commission de la défense et de la sécurité du Conse",
+    "url": "https://x.com/sputnik_afrique/status/2109373973826097471",
+    "published_at": "2026-10-11T20:05:05Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Le Burkina Faso suspend jusqu’à nouvel ordre l’exportation des farines de mil, de maïs et de sorgho, ainsi que de leurs dérivés",
+    "url": "https://x.com/trtafrikaFR/status/2109313161539056015",
+    "published_at": "2026-10-11T16:05:05Z"
   },
   {
     "media": "TRT Afrika",
