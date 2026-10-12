@@ -1,18 +1,5 @@
 [
   {
-    "url": "https://x.com/RFIAfrique/status/2108865396287643889",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF",
-      "NE"
-    ],
-    "titre": "Il y a une phrase qui a suscité cette chronique",
-    "published_at": "2026-10-10T11:04:51Z",
-    "added_at": "2026-10-11T03:15:23.138700+00:00"
-  },
-  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -21,7 +8,19 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-11T03:15:26.873469+00:00"
+    "added_at": "2026-10-12T03:03:13.154295+00:00"
+  },
+  {
+    "url": "https://x.com/SimNasr/status/2109317006331662446",
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF"
+    ],
+    "titre": "Depuis le début du mois de septembre des affrontements d’une ampleur inédite opposent l’EI Sahel au JNIM dans la zone frontalière entre le Mali et le Burkina Faso",
+    "published_at": "2026-10-11T17:05:05Z",
+    "added_at": "2026-10-12T03:03:17.413394+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2108599151734796303",
@@ -32,7 +31,7 @@
     ],
     "titre": "#BurkinaFaso: #ISSP and #JNIM clashed for more than two hours this morning around Intaylalene, Bangao, Deberé, and Soukoundou, in the Tin-Akoff and Oursi departments, Oudalan province",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-11T03:15:43.830913+00:00"
+    "added_at": "2026-10-12T03:03:39.878477+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -43,7 +42,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-11T03:15:47.294064+00:00"
+    "added_at": "2026-10-12T03:03:41.478137+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -54,7 +53,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-11T03:15:50.865284+00:00"
+    "added_at": "2026-10-12T03:03:45.144959+00:00"
   },
   {
     "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
@@ -65,17 +64,50 @@
     ],
     "titre": "VCSAF Gen",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-11T03:15:54.747276+00:00"
+    "added_at": "2026-10-12T03:03:49.012527+00:00"
   },
   {
-    "url": "https://x.com/sputnik_afrique/status/2108937827572666503",
+    "url": "https://x.com/sputnik_afrique/status/2107708959654097295",
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "00:08 Reconquête de Kidal: les facteurs qui ont permis cette victoire majeure des FAMa Fousseynou Ouattara, vice-président de la Commission de la défense et de la sécurité du Mali, explique à Sputnik",
-    "published_at": "2026-10-10T16:04:51Z",
-    "added_at": "2026-10-11T03:15:59.021787+00:00"
+    "titre": "00:56 Mali Kidal repasse sous contrôle des FAMa avec l'appui des partenaires russes 🇲🇱🇷🇺 Les autorités saluent une étape clé pour la souveraineté de l'État et le retour progressif de l'administration",
+    "published_at": "2026-10-06T12:00:00Z",
+    "added_at": "2026-10-12T03:03:53.169289+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_afrique/status/2109389073362088362",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "🎧 Sputnik Radio | Raffinage du pétrole en Afrique: \"Les Africains doivent se donner la main et soutenir\" les projets tels que ceux de Dangote - président de l’Association pour la promotion des ressour",
+    "published_at": "2026-10-11T21:04:05Z",
+    "added_at": "2026-10-12T03:03:57.131704+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_afrique/status/2109373973826097471",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Sans des médias comme Sputnik, \"le narratif allait appartenir seulement à la France\" et à d'autres pays occidentaux, affirme le vice-président de la Commission de la défense et de la sécurité du Conse",
+    "published_at": "2026-10-11T20:05:05Z",
+    "added_at": "2026-10-12T03:04:00.848360+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2109313161539056015",
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Le Burkina Faso suspend jusqu’à nouvel ordre l’exportation des farines de mil, de maïs et de sorgho, ainsi que de leurs dérivés",
+    "published_at": "2026-10-11T16:05:05Z",
+    "added_at": "2026-10-12T03:04:04.516167+00:00"
   }
 ]
