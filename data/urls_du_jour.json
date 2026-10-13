@@ -1,15 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Au Sénégal, les élèves doivent reprendre le chemin de l'école ce 12 octobre",
-    "url": "https://x.com/RFIAfrique/status/2109680769807388795",
-    "published_at": "2026-10-12T17:06:41Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -18,6 +8,27 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Plusieurs points importants au delà des images de direction de tirs via drones de nuit comme de jour à Sévaré et Dioura, Abou Yahya nie les pertes dans les rangs annoncées par Bamako et affirme que «",
+    "url": "https://x.com/SimNasr/status/2110089907125223673",
+    "published_at": "2026-10-13T20:06:24Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF"
+    ],
+    "titre": "L’EI Sahel revendique « plus de 400 morts y compris des commandants » dans les rangs du JNIM suite à la bataille de Gonadaouri dans l’Oudalan vendredi Wassim Nasr @SimNasr Oct 11 Depuis le début du mo",
+    "url": "https://x.com/SimNasr/status/2109752466162188773",
+    "published_at": "2026-10-12T22:06:24Z"
   },
   {
     "media": "Wassim Nasr",
@@ -91,5 +102,25 @@
     "titre": "VCSAF Gen",
     "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
     "published_at": "2026-10-09T12:00:00Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Ousmane Sonko appelle au respect effectif de la transparence au-delà des discours et des promesses",
+    "url": "https://x.com/trtafrikaFR/status/2110083315495490004",
+    "published_at": "2026-10-13T19:06:24Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "Une éruption de pétrole brut et de gaz se poursuit depuis le 25 septembre sur le site pétrolier d’Agadem, dans le nord-est du Niger",
+    "url": "https://x.com/trtafrikaFR/status/2110051806948515884",
+    "published_at": "2026-10-13T17:06:24Z"
   }
 ]
