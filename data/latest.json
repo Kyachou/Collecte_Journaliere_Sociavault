@@ -1,5 +1,15 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "En décrochant l’organisation des Jeux de la Francophonie 2031, le Sénégal ajoute un nouveau rendez-vous majeur à son calendrier sportif et culturel, dans le sillage des Jeux olympiques de la jeunesse",
+    "url": "https://x.com/RFIAfrique/status/2110405561087058102",
+    "published_at": "2026-10-14T17:06:15Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -15,31 +25,29 @@
     "pays": [
       "ML"
     ],
+    "titre": "لفتة لمن لم ينتبه، لأول مرة نشيد لأحرار الشام في إصدار لجماعة نصرة الإسلام والمسلمين Wassim Nasr @SimNasr 10h #Mali Abou Mokhtar al-Ansari, commandant militaire du JNIM dans le centre, a visiblement c",
+    "url": "https://x.com/SimNasr/status/2110395880272781513",
+    "published_at": "2026-10-14T16:06:15Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "#Mali Abou Mokhtar al-Ansari, commandant militaire du JNIM dans le centre, a visiblement commandé l’attaque de Dioura le 10 septembre, pour l’attaque de mai 2025 il était aussi aux commandes 00:13",
+    "url": "https://x.com/SimNasr/status/2110315960859042082",
+    "published_at": "2026-10-14T11:06:15Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
     "titre": "Plusieurs points importants au delà des images de direction de tirs via drones de nuit comme de jour à Sévaré et Dioura, Abou Yahya nie les pertes dans les rangs annoncées par Bamako et affirme que «",
     "url": "https://x.com/SimNasr/status/2110089907125223673",
-    "published_at": "2026-10-13T20:06:24Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF"
-    ],
-    "titre": "L’EI Sahel revendique « plus de 400 morts y compris des commandants » dans les rangs du JNIM suite à la bataille de Gonadaouri dans l’Oudalan vendredi Wassim Nasr @SimNasr Oct 11 Depuis le début du mo",
-    "url": "https://x.com/SimNasr/status/2109752466162188773",
-    "published_at": "2026-10-12T22:06:24Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF"
-    ],
-    "titre": "Depuis le début du mois de septembre des affrontements d’une ampleur inédite opposent l’EI Sahel au JNIM dans la zone frontalière entre le Mali et le Burkina Faso",
-    "url": "https://x.com/SimNasr/status/2109317006331662446",
-    "published_at": "2026-10-11T12:00:00Z"
+    "published_at": "2026-10-13T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -104,23 +112,65 @@
     "published_at": "2026-10-09T12:00:00Z"
   },
   {
-    "media": "TRT Afrika Français",
+    "media": "RT en français",
     "plateforme": "X",
     "pays": [
       "SN"
     ],
-    "titre": "Ousmane Sonko appelle au respect effectif de la transparence au-delà des discours et des promesses",
-    "url": "https://x.com/trtafrikaFR/status/2110083315495490004",
-    "published_at": "2026-10-13T19:06:24Z"
+    "titre": "🌍 VOIR L’AFRIQUE Matam : la flamme olympique fait vibrer le Sénégal vk",
+    "url": "https://x.com/RTenfrancais/status/2110468183660405078",
+    "published_at": "2026-10-14T20:32:15Z"
+  },
+  {
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "▶️Cheikhou Oumar Seck, ministre sénégalais des Mines et de la Géologie, revient sur les objectifs principaux à atteindre à travers la participation au Dialogue russo-africain sur les matières première",
+    "url": "https://x.com/RTenfrancais/status/2110464408950554689",
+    "published_at": "2026-10-14T20:17:15Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "🎧 Sputnik Radio | L'AES porte \"un idéal panafricain\", souligne Patient Parfait Ndom, géopolitologue camerounais Les discours panafricains sont aujourd'hui multiples et parfois traversé de contradictio",
+    "url": "https://x.com/sputnik_afrique/status/2110468687107133733",
+    "published_at": "2026-10-14T20:34:15Z"
+  },
+  {
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "🇷🇺🇲🇱 Russia's Africa Corps Releases Footage of Artillery Strikes Against Terrorists in Mali 00:40 Sputnik Africa @sputnik_africa Oct 13 00:44 🇲🇱 'We Will Not Stop at Kidal; It's Just a Stage,' Says Ma",
+    "url": "https://x.com/sputnik_africa/status/2110465918601982418",
+    "published_at": "2026-10-14T20:23:15Z"
+  },
+  {
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "⚽️🇧🇫 \"We must give identity to our sport\": Burkina Faso's Traoré outlines guidelines for the new football Sovereignty League 👇 🔸 Regions must be involved in sport to provide support for athletes and t",
+    "url": "https://x.com/sputnik_africa/status/2110450819145601510",
+    "published_at": "2026-10-14T20:06:15Z"
   },
   {
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "SN"
     ],
-    "titre": "Une éruption de pétrole brut et de gaz se poursuit depuis le 25 septembre sur le site pétrolier d’Agadem, dans le nord-est du Niger",
-    "url": "https://x.com/trtafrikaFR/status/2110051806948515884",
-    "published_at": "2026-10-13T17:06:24Z"
+    "titre": "Le Sénégal accueille, du 13 au 15 octobre 2026, l’Organisation des Premières Dames d’Afrique pour le Développement (OPDAD), à l’occasion du lancement officiel de la campagne \"Building Resilience\"",
+    "url": "https://x.com/trtafrikaFR/status/2110400515683074528",
+    "published_at": "2026-10-14T16:06:15Z"
   }
 ]
