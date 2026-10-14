@@ -28,14 +28,14 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Lancer la collecte
-        timeout-minutes: 240
+        timeout-minutes: 260   # watchdog du script = 250 min (4h10)
         continue-on-error: true   # NOUVEAU : un timeout/échec ici ne bloque plus les steps suivants
         env:
           SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         run: python collecte.py
 
       - name: Lancer la collecte internationale
-        timeout-minutes: 80
+        timeout-minutes: 70    # watchdog du script international = 60 min
         continue-on-error: true   # NOUVEAU : idem
         env:
           SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}

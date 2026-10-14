@@ -30,16 +30,18 @@ OUTPUT_JSON = os.path.join(
 )
 
 # --- NOUVEAU : plafonds anti-boucle-infinie sur la pagination TikTok ---
-MAX_TIKTOK_COMMENT_PAGES = 20
-MAX_TIKTOK_REPLY_PAGES = 5
+# Garde-fous contre une vraie boucle infinie uniquement : le vrai frein est le
+# watchdog de durée (vérifié à chaque page), pas un plafond de collecte.
+MAX_TIKTOK_COMMENT_PAGES = 1000
+MAX_TIKTOK_REPLY_PAGES = 100
 
 # --- NOUVEAU : seuil pour aller directement au raw JSON sans passer par le pending ---
 INITIAL_DIRECT_THRESHOLD = 10
 
 # --- NOUVEAU : watchdog de durée globale ---
 # IMPORTANT : doit rester INFÉRIEUR au "timeout-minutes" du step correspondant
-# dans cron_collecte.yml (80 min pour "Lancer la collecte internationale").
-RUN_TIME_BUDGET_HOURS = 1.0  # 60 min, marge de 20 min sous le timeout YAML
+# dans cron_collecte.yml (70 min pour "Lancer la collecte internationale").
+RUN_TIME_BUDGET_HOURS = 1.0  # 60 min, marge de 10 min sous le timeout YAML (70 min)
 MAX_RUNTIME_SECONDS = RUN_TIME_BUDGET_HOURS * 3600
 SCRIPT_START = time.time()
 
@@ -178,6 +180,8 @@ def get_tiktok_comment_replies(video_url, comment_id):
     page = 1
 
     while page <= MAX_TIKTOK_REPLY_PAGES:
+        if runtime_budget_exceeded():
+            break
         params = {"comment_id": comment_id, "url": video_url, "cursor": cursor}
         try:
             res = api_get(endpoint, params=params, timeout=30)
@@ -318,6 +322,9 @@ def get_all_tiktok_comments(video_url):
     first_response_logged = False
 
     while page <= MAX_TIKTOK_COMMENT_PAGES:
+        if runtime_budget_exceeded():
+            print("          Budget de temps atteint — arret de la pagination (commentaires deja recuperes conserves).")
+            break
         params = {"url": video_url, "cursor": cursor}
         try:
             print(f"       TikTok commentaires page {page}")
@@ -394,6 +401,8 @@ def get_all_tiktok_comments(video_url):
         cid = c.get("cid") or c.get("comment_id") or c.get("id")
         if not cid:
             continue
+        if runtime_budget_exceeded():
+            break
         print(f"       {reply_total} reponse(s) annoncee(s) pour le commentaire {cid}")
         replies = get_tiktok_comment_replies(video_url, cid)
         if replies is None:

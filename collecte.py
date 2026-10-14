@@ -35,24 +35,27 @@ WINDOW_HOURS = 24
 RECHECK_DELAY_HOURS = 72
 MAX_FACEBOOK_PAGES = 200
 MAX_OLD_CONSECUTIVE = 1
-REPLIES_MIN_COUNT = 5
+REPLIES_MIN_COUNT = 5  # réponses récupérées seulement si le commentaire en a >= 5
 MAX_TWITTER_TWEET_PAGES = 200
-MAX_TWITTER_REPLIES_PAGES = 3
+MAX_TWITTER_REPLIES_PAGES = 100
 TWITTER_REPLIES_MIN_COUNT = 3
 REQUEST_TIMEOUT = 30
 SLEEP_BETWEEN_REQUESTS = 1
 RATE_LIMIT_BACKOFF_SECONDS = [5, 10, 15]
 
-# --- NOUVEAU : plafonds anti-boucle-infinie sur la pagination des commentaires ---
-MAX_FACEBOOK_COMMENT_PAGES = 20
-MAX_REPLY_PAGES = 5
+# --- Pagination des commentaires : on veut TOUT récupérer ---
+# Ces valeurs ne sont plus des limites de collecte mais de simples garde-fous
+# contre une vraie boucle infinie (1000 pages ≈ 10 000 commentaires par post).
+# Le vrai frein est le watchdog de durée ci-dessous, vérifié à CHAQUE page.
+MAX_FACEBOOK_COMMENT_PAGES = 1000
+MAX_REPLY_PAGES = 100
 
 # --- Watchdog de durée globale ---
 # IMPORTANT : cette valeur doit rester INFÉRIEURE au "timeout-minutes" du step
-# correspondant dans cron_collecte.yml (240 min pour ce script), sinon GitHub
+# correspondant dans cron_collecte.yml (260 min pour ce script), sinon GitHub
 # tue le process de force avant que le watchdog n'ait pu s'arrêter proprement.
 # (anciennement RUN_TIME_BUDGET_HOURS = 5.33, trop élevé par rapport au timeout YAML)
-RUN_TIME_BUDGET_HOURS = 3.5  # 3h30
+RUN_TIME_BUDGET_HOURS = 250 / 60  # 4h10 (250 min)
 MAX_RUNTIME_SECONDS = RUN_TIME_BUDGET_HOURS * 3600
 
 # --- NOUVEAU : seuil de faible engagement pour le nettoyage du pending ---
@@ -326,6 +329,9 @@ def get_all_facebook_comments(post_url):
 
     # NOUVEAU : plafond de pages pour éviter une pagination infinie sur un post à gros volume
     while page <= MAX_FACEBOOK_COMMENT_PAGES:
+        if runtime_budget_exceeded():
+            print("          Budget de temps atteint — arrêt de la pagination (commentaires déjà récupérés conservés).")
+            break
         params = {"url": post_url}
         if cursor:
             params["cursor"] = cursor
@@ -407,6 +413,8 @@ def get_comment_replies(feedback_id, expansion_token):
 
     # NOUVEAU : plafond de pages pour les réponses à un commentaire
     while page <= MAX_REPLY_PAGES:
+        if runtime_budget_exceeded():
+            break
         params = {"feedback_id": feedback_id, "expansion_token": expansion_token}
         if cursor:
             params["cursor"] = cursor
@@ -465,6 +473,9 @@ def enrich_comments_with_replies(comments):
     for c in comments:
         reply_count = c.get("reply_count", 0) or 0
         if reply_count < REPLIES_MIN_COUNT:
+            c["replies"] = []
+            continue
+        if runtime_budget_exceeded():
             c["replies"] = []
             continue
         feedback_id = c.get("feedback_id")
@@ -609,6 +620,9 @@ def get_tweet_replies(tweet_id):
     page = 1
 
     while page <= MAX_TWITTER_REPLIES_PAGES:
+        if runtime_budget_exceeded():
+            print("          Budget de temps atteint — arrêt de la pagination des réponses Twitter.")
+            break
         params = {"query": f"conversation_id:{tweet_id}"}
         if cursor:
             params["cursor"] = cursor
