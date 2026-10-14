@@ -1,27 +1,5 @@
 [
   {
-    "url": "https://x.com/MENASTREAM/status/2076587629089378735",
-    "media": "MENASTREAM (Héni Nsaibia)",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
-    "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-12T03:03:45.144959+00:00"
-  },
-  {
-    "url": "https://x.com/RFIAfrique/status/2109680769807388795",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Au Sénégal, les élèves doivent reprendre le chemin de l'école ce 12 octobre",
-    "published_at": "2026-10-12T17:06:41Z",
-    "added_at": "2026-10-13T15:49:08.924190+00:00"
-  },
-  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -30,7 +8,19 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-13T15:49:13.084221+00:00"
+    "added_at": "2026-10-14T03:47:59.656294+00:00"
+  },
+  {
+    "url": "https://x.com/SimNasr/status/2109317006331662446",
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF"
+    ],
+    "titre": "Depuis le début du mois de septembre des affrontements d’une ampleur inédite opposent l’EI Sahel au JNIM dans la zone frontalière entre le Mali et le Burkina Faso",
+    "published_at": "2026-10-11T12:00:00Z",
+    "added_at": "2026-10-14T03:48:15.101712+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2108599151734796303",
@@ -41,7 +31,7 @@
     ],
     "titre": "#BurkinaFaso: #ISSP and #JNIM clashed for more than two hours this morning around Intaylalene, Bangao, Deberé, and Soukoundou, in the Tin-Akoff and Oursi departments, Oudalan province",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-13T15:49:16.874278+00:00"
+    "added_at": "2026-10-14T03:48:31.806438+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -52,7 +42,18 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-13T15:49:20.752846+00:00"
+    "added_at": "2026-10-14T03:48:35.559388+00:00"
+  },
+  {
+    "url": "https://x.com/MENASTREAM/status/2076587629089378735",
+    "media": "MENASTREAM (Héni Nsaibia)",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
+    "published_at": "2026-07-13T12:00:00Z",
+    "added_at": "2026-10-14T03:48:39.120098+00:00"
   },
   {
     "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
@@ -63,6 +64,28 @@
     ],
     "titre": "VCSAF Gen",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-13T15:49:24.705621+00:00"
+    "added_at": "2026-10-14T03:48:43.064492+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2110083315495490004",
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Ousmane Sonko appelle au respect effectif de la transparence au-delà des discours et des promesses",
+    "published_at": "2026-10-13T19:06:24Z",
+    "added_at": "2026-10-14T03:48:47.079666+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2110051806948515884",
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "Une éruption de pétrole brut et de gaz se poursuit depuis le 25 septembre sur le site pétrolier d’Agadem, dans le nord-est du Niger",
+    "published_at": "2026-10-13T17:06:24Z",
+    "added_at": "2026-10-14T03:48:50.997059+00:00"
   }
 ]
