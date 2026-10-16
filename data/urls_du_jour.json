@@ -10,6 +10,16 @@
     "published_at": "2024-11-28T12:00:00Z"
   },
   {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "#Niger l’EI Afrique de l’ouest revendique « un IED votre un véhicule de l’armée à proximité de Diffa […] 7 morts […] dimanche dernier » 2 4 22 6",
+    "url": "https://x.com/SimNasr/status/2111122366247952846",
+    "published_at": "2026-10-16T16:02:48Z"
+  },
+  {
     "media": "Thomas Dietrich",
     "plateforme": "X",
     "pays": [
@@ -30,16 +40,6 @@
     "titre": "URGENT 🚨 Le Niger nationalise la multinationale française Orano sur son territoire, afin que l’Uranium du Niger 🇳🇪 profite prioritairement au Peuple du Niger 🇳🇪",
     "url": "https://x.com/FranklinNYAMSI/status/1864241491104686274",
     "published_at": "2024-12-04T12:00:00Z"
-  },
-  {
-    "media": "Crisis Group",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "With the Malian regime on a precarious path, the apparent thaw between Algiers and Bamako is an encouraging sign",
-    "url": "https://x.com/CrisisGroup/status/2110688436701073489",
-    "published_at": "2026-10-15T12:04:14Z"
   },
   {
     "media": "MENASTREAM (Héni Nsaibia)",
@@ -80,5 +80,17 @@
     "titre": "VCSAF Gen",
     "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
     "published_at": "2026-10-09T12:00:00Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "Éducation et souveraineté au Sahel: Ouagadougou abrite la 2e Conférence des responsables de l’enseignement supérieur de l’AES Au cœur des échanges: 🔹l’harmonisation des systèmes universitaires; 🔹la fo",
+    "url": "https://x.com/sputnik_afrique/status/2111178363247407551",
+    "published_at": "2026-10-16T20:02:48Z"
   }
 ]
