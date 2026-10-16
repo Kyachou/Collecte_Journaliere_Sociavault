@@ -1,27 +1,5 @@
 [
   {
-    "url": "https://x.com/RFIAfrique/status/2110405561087058102",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "En décrochant l’organisation des Jeux de la Francophonie 2031, le Sénégal ajoute un nouveau rendez-vous majeur à son calendrier sportif et culturel, dans le sillage des Jeux olympiques de la jeunesse",
-    "published_at": "2026-10-14T17:06:15Z",
-    "added_at": "2026-10-15T04:01:45.448425+00:00"
-  },
-  {
-    "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
-    "media": "Le Monde Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
-    "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-15T04:01:49.288683+00:00"
-  },
-  {
     "url": "https://x.com/MENASTREAM/status/2108599151734796303",
     "media": "MENASTREAM (Héni Nsaibia)",
     "plateforme": "X",
@@ -33,6 +11,28 @@
     "added_at": "2026-10-15T04:02:20.639540+00:00"
   },
   {
+    "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
+    "media": "Le Monde Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
+    "published_at": "2024-11-28T12:00:00Z",
+    "added_at": "2026-10-16T03:20:16.505021+00:00"
+  },
+  {
+    "url": "https://x.com/CrisisGroup/status/2110688436701073489",
+    "media": "Crisis Group",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "With the Malian regime on a precarious path, the apparent thaw between Algiers and Bamako is an encouraging sign",
+    "published_at": "2026-10-15T12:04:14Z",
+    "added_at": "2026-10-16T03:20:34.866788+00:00"
+  },
+  {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
     "media": "MENASTREAM (Héni Nsaibia)",
     "plateforme": "X",
@@ -41,7 +41,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-15T04:02:24.205883+00:00"
+    "added_at": "2026-10-16T03:20:38.641511+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -52,7 +52,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-15T04:02:27.948402+00:00"
+    "added_at": "2026-10-16T03:20:42.721283+00:00"
   },
   {
     "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
@@ -63,74 +63,6 @@
     ],
     "titre": "VCSAF Gen",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-15T04:02:31.841327+00:00"
-  },
-  {
-    "url": "https://x.com/RTenfrancais/status/2110468183660405078",
-    "media": "RT en français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "🌍 VOIR L’AFRIQUE Matam : la flamme olympique fait vibrer le Sénégal vk",
-    "published_at": "2026-10-14T20:32:15Z",
-    "added_at": "2026-10-15T04:02:35.652047+00:00"
-  },
-  {
-    "url": "https://x.com/RTenfrancais/status/2110464408950554689",
-    "media": "RT en français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "▶️Cheikhou Oumar Seck, ministre sénégalais des Mines et de la Géologie, revient sur les objectifs principaux à atteindre à travers la participation au Dialogue russo-africain sur les matières première",
-    "published_at": "2026-10-14T20:17:15Z",
-    "added_at": "2026-10-15T04:02:39.378197+00:00"
-  },
-  {
-    "url": "https://x.com/sputnik_afrique/status/2110468687107133733",
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF",
-      "NE"
-    ],
-    "titre": "🎧 Sputnik Radio | L'AES porte \"un idéal panafricain\", souligne Patient Parfait Ndom, géopolitologue camerounais Les discours panafricains sont aujourd'hui multiples et parfois traversé de contradictio",
-    "published_at": "2026-10-14T20:34:15Z",
-    "added_at": "2026-10-15T04:02:43.248102+00:00"
-  },
-  {
-    "url": "https://x.com/sputnik_africa/status/2110465918601982418",
-    "media": "Sputnik Africa",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "🇷🇺🇲🇱 Russia's Africa Corps Releases Footage of Artillery Strikes Against Terrorists in Mali 00:40 Sputnik Africa @sputnik_africa Oct 13 00:44 🇲🇱 'We Will Not Stop at Kidal; It's Just a Stage,' Says Ma",
-    "published_at": "2026-10-14T20:23:15Z",
-    "added_at": "2026-10-15T04:02:47.156076+00:00"
-  },
-  {
-    "url": "https://x.com/sputnik_africa/status/2110450819145601510",
-    "media": "Sputnik Africa",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "⚽️🇧🇫 \"We must give identity to our sport\": Burkina Faso's Traoré outlines guidelines for the new football Sovereignty League 👇 🔸 Regions must be involved in sport to provide support for athletes and t",
-    "published_at": "2026-10-14T20:06:15Z",
-    "added_at": "2026-10-15T04:02:50.987973+00:00"
-  },
-  {
-    "url": "https://x.com/trtafrikaFR/status/2110400515683074528",
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Le Sénégal accueille, du 13 au 15 octobre 2026, l’Organisation des Premières Dames d’Afrique pour le Développement (OPDAD), à l’occasion du lancement officiel de la campagne \"Building Resilience\"",
-    "published_at": "2026-10-14T16:06:15Z",
-    "added_at": "2026-10-15T04:02:55.166421+00:00"
+    "added_at": "2026-10-16T03:20:46.939926+00:00"
   }
 ]
