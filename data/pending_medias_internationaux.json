@@ -1,16 +1,5 @@
 [
   {
-    "url": "https://x.com/MENASTREAM/status/2108599151734796303",
-    "media": "MENASTREAM (Héni Nsaibia)",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "#BurkinaFaso: #ISSP and #JNIM clashed for more than two hours this morning around Intaylalene, Bangao, Deberé, and Soukoundou, in the Tin-Akoff and Oursi departments, Oudalan province",
-    "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-15T04:02:20.639540+00:00"
-  },
-  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -19,18 +8,29 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-16T03:20:16.505021+00:00"
+    "added_at": "2026-10-17T03:05:50.652480+00:00"
   },
   {
-    "url": "https://x.com/CrisisGroup/status/2110688436701073489",
-    "media": "Crisis Group",
+    "url": "https://x.com/SimNasr/status/2111122366247952846",
+    "media": "Wassim Nasr",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "NE"
     ],
-    "titre": "With the Malian regime on a precarious path, the apparent thaw between Algiers and Bamako is an encouraging sign",
-    "published_at": "2026-10-15T12:04:14Z",
-    "added_at": "2026-10-16T03:20:34.866788+00:00"
+    "titre": "#Niger l’EI Afrique de l’ouest revendique « un IED votre un véhicule de l’armée à proximité de Diffa […] 7 morts […] dimanche dernier » 2 4 22 6",
+    "published_at": "2026-10-16T16:02:48Z",
+    "added_at": "2026-10-17T03:05:54.314303+00:00"
+  },
+  {
+    "url": "https://x.com/MENASTREAM/status/2108599151734796303",
+    "media": "MENASTREAM (Héni Nsaibia)",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "#BurkinaFaso: #ISSP and #JNIM clashed for more than two hours this morning around Intaylalene, Bangao, Deberé, and Soukoundou, in the Tin-Akoff and Oursi departments, Oudalan province",
+    "published_at": "2026-10-09T12:00:00Z",
+    "added_at": "2026-10-17T03:06:10.325494+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -41,7 +41,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-16T03:20:38.641511+00:00"
+    "added_at": "2026-10-17T03:06:13.701851+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -52,7 +52,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-16T03:20:42.721283+00:00"
+    "added_at": "2026-10-17T03:06:16.982847+00:00"
   },
   {
     "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
@@ -63,6 +63,19 @@
     ],
     "titre": "VCSAF Gen",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-16T03:20:46.939926+00:00"
+    "added_at": "2026-10-17T03:06:20.629032+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_afrique/status/2111178363247407551",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "Éducation et souveraineté au Sahel: Ouagadougou abrite la 2e Conférence des responsables de l’enseignement supérieur de l’AES Au cœur des échanges: 🔹l’harmonisation des systèmes universitaires; 🔹la fo",
+    "published_at": "2026-10-16T20:02:48Z",
+    "added_at": "2026-10-17T03:06:24.287286+00:00"
   }
 ]
