@@ -1,5 +1,15 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Quasiment un an après la finale de la CAN 2025, le Tribunal arbitral du sport (TAS) annoncera « fin novembre » sa décision sur le recours sénégalais contre la victoire du Maroc sur tapis vert, a indiq",
+    "url": "https://x.com/RFIAfrique/status/2112232599217123474",
+    "published_at": "2026-10-19T18:06:55Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -8,16 +18,6 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "#Niger l’EI Afrique de l’ouest revendique « un IED votre un véhicule de l’armée à proximité de Diffa […] 7 morts […] dimanche dernier » 3 6 72 11K",
-    "url": "https://x.com/SimNasr/status/2111122366247952846",
-    "published_at": "2026-10-16T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -39,7 +39,7 @@
     ],
     "titre": "📍 Golfe de Guinée | 🚢🇸🇳 Mission CORYMBE : ensemble pour la sécurité maritime 🔍 Aux côtés des forces sénégalaises, nos marins réalisent des exercices d'évolution tactique en mer avec un patrouilleur de",
     "url": "https://x.com/EtatMajorFR/status/2111765600540246136",
-    "published_at": "2026-10-18T11:06:41Z"
+    "published_at": "2026-10-18T12:00:00Z"
   },
   {
     "media": "Franklin Nyamsi",
@@ -82,33 +82,25 @@
     "published_at": "2026-07-13T12:00:00Z"
   },
   {
-    "media": "U.S. Africa Command",
+    "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
       "SN"
     ],
-    "titre": "VCSAF Gen",
-    "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
-    "published_at": "2026-10-09T12:00:00Z"
+    "titre": "Le Tribunal arbitral du sport va annoncer \"fin novembre\" sa décision sur le recours sénégalais contre la victoire du Maroc sur tapis vert, a indiqué lundi cette juridiction \"La Formation arbitrale a e",
+    "url": "https://x.com/trtafrikaFR/status/2112257679963885844",
+    "published_at": "2026-10-19T19:06:55Z"
   },
   {
-    "media": "RT en français",
-    "plateforme": "X",
+    "media": "TRT Afrika",
+    "plateforme": "TikTok",
     "pays": [
-      "BF"
+      "ML",
+      "BF",
+      "NE"
     ],
-    "titre": "Au Burkina Faso, la dynamique de refondation nationale touche désormais le cœur du système éducatif Le chef du gouvernement a présidé à Kaya le lancement officiel du Pacte NEKRE pour la refondation de",
-    "url": "https://x.com/RTenfrancais/status/2111916394409247070",
-    "published_at": "2026-10-18T20:26:41Z"
-  },
-  {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "À Bamako, trois centres de santé communautaires équipés d’installations solaires Elles ont été officiellement mises en service le 17 octobre dans les CSCOM de Darsalam, Médina Coura et Bagadadji, selo",
-    "url": "https://x.com/sputnik_afrique/status/2111918238506553798",
-    "published_at": "2026-10-18T20:33:41Z"
+    "titre": "Burkina Faso, Mali, and Nigerien states have resumed talks with the West African regional bloc, ECOWAS, on a \"cooperation framework\" that would guide their relations, moving forward",
+    "url": "https://www.tiktok.com/@trtafrika/video/7698356903994215701",
+    "published_at": "2026-10-19T17:00:00Z"
   }
 ]
