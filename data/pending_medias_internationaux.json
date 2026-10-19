@@ -1,30 +1,5 @@
 [
   {
-    "url": "https://x.com/RFIAfrique/status/2111500594716332484",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN",
-      "ML",
-      "BF",
-      "NE"
-    ],
-    "titre": "C'est au Sénégal qu'ont débuté, samedi 17 octobre, les premières discussions entre l'Alliance des États du Sahel (AES) et la Communauté économique des États de l'Afrique de l'Ouest (Cédéao) depuis l'a",
-    "published_at": "2026-10-17T17:06:54Z",
-    "added_at": "2026-10-18T03:53:28.742094+00:00"
-  },
-  {
-    "url": "https://x.com/RFIAfrique/status/2111455249156259950",
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Ce retrait de la candidature de Macky Sall intervient samedi 17 octobre, au lendemain d'un vote indicatif où les sept candidats encore en lice ont tous reçu au moins un avis défavorable d'un membre pe",
-    "published_at": "2026-10-17T14:06:54Z",
-    "added_at": "2026-10-18T03:53:32.554572+00:00"
-  },
-  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -33,7 +8,7 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-10-18T03:53:35.972311+00:00"
+    "added_at": "2026-10-19T01:54:47.904297+00:00"
   },
   {
     "url": "https://x.com/SimNasr/status/2111122366247952846",
@@ -42,9 +17,20 @@
     "pays": [
       "NE"
     ],
-    "titre": "#Niger l’EI Afrique de l’ouest revendique « un IED votre un véhicule de l’armée à proximité de Diffa […] 7 morts […] dimanche dernier » 3 6 68 10K",
+    "titre": "#Niger l’EI Afrique de l’ouest revendique « un IED votre un véhicule de l’armée à proximité de Diffa […] 7 morts […] dimanche dernier » 3 6 72 11K",
     "published_at": "2026-10-16T12:00:00Z",
-    "added_at": "2026-10-18T03:53:40.097266+00:00"
+    "added_at": "2026-10-19T01:54:51.373954+00:00"
+  },
+  {
+    "url": "https://x.com/EtatMajorFR/status/2111765600540246136",
+    "media": "Armée française · Opérations (EMA)",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "📍 Golfe de Guinée | 🚢🇸🇳 Mission CORYMBE : ensemble pour la sécurité maritime 🔍 Aux côtés des forces sénégalaises, nos marins réalisent des exercices d'évolution tactique en mer avec un patrouilleur de",
+    "published_at": "2026-10-18T11:06:41Z",
+    "added_at": "2026-10-19T01:55:01.201701+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2108599151734796303",
@@ -55,7 +41,7 @@
     ],
     "titre": "#BurkinaFaso: #ISSP and #JNIM clashed for more than two hours this morning around Intaylalene, Bangao, Deberé, and Soukoundou, in the Tin-Akoff and Oursi departments, Oudalan province",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-18T03:53:55.995878+00:00"
+    "added_at": "2026-10-19T01:55:11.774517+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -66,7 +52,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-10-18T03:53:59.291794+00:00"
+    "added_at": "2026-10-19T01:55:15.135094+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -77,7 +63,7 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-10-18T03:54:02.738693+00:00"
+    "added_at": "2026-10-19T01:55:18.648593+00:00"
   },
   {
     "url": "https://x.com/USAfricaCommand/status/2108609181741977760",
@@ -88,41 +74,28 @@
     ],
     "titre": "VCSAF Gen",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-10-18T03:54:06.225378+00:00"
+    "added_at": "2026-10-19T01:55:22.076046+00:00"
   },
   {
-    "url": "https://x.com/sputnik_afrique/status/2111548301070016588",
-    "media": "Sputnik Afrique",
+    "url": "https://x.com/RTenfrancais/status/2111916394409247070",
+    "media": "RT en français",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF",
-      "NE"
+      "BF"
     ],
-    "titre": "\"Il n'en est rien\": la diplomatie burkinabè dépend les rumeurs de réintégration de l'AES à la CEDEAO La rencontre des ministres des Affaires étrangères de la Confédération vise à se préparer aux premi",
-    "published_at": "2026-10-17T20:06:54Z",
-    "added_at": "2026-10-18T03:54:07.753599+00:00"
+    "titre": "Au Burkina Faso, la dynamique de refondation nationale touche désormais le cœur du système éducatif Le chef du gouvernement a présidé à Kaya le lancement officiel du Pacte NEKRE pour la refondation de",
+    "published_at": "2026-10-18T20:26:41Z",
+    "added_at": "2026-10-19T01:55:25.582901+00:00"
   },
   {
-    "url": "https://x.com/sputnik_afrique/status/2111533201373978853",
+    "url": "https://x.com/sputnik_afrique/status/2111918238506553798",
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "Découvrez le drapeau russe déployé à Bamako en l'honneur de la reprise de Kidal par les FAMa appuyé par l'Africa Corps russe L'action a été organisée par le Mouvement populaire des jeunes et associati",
-    "published_at": "2026-10-17T19:06:54Z",
-    "added_at": "2026-10-18T03:54:11.524146+00:00"
-  },
-  {
-    "url": "https://x.com/sputnik_africa/status/2111535969350324652",
-    "media": "Sputnik Africa",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "Russian Africa Corps Drone Destroys Pickup Fuel Truck of JNIM* and FLA Terrorist Coalition in Mali: Report *affiliated with international terrorist organization al-Qaeda",
-    "published_at": "2026-10-17T20:06:54Z",
-    "added_at": "2026-10-18T03:54:15.181276+00:00"
+    "titre": "À Bamako, trois centres de santé communautaires équipés d’installations solaires Elles ont été officiellement mises en service le 17 octobre dans les CSCOM de Darsalam, Médina Coura et Bagadadji, selo",
+    "published_at": "2026-10-18T20:33:41Z",
+    "added_at": "2026-10-19T01:55:29.470084+00:00"
   }
 ]
