@@ -17,7 +17,7 @@
     ],
     "titre": "Le JNIM admet que ses jihadistes ont conduit des exécutions sommaires de militaires maliens à Tabrichat, dans la région de Gao, à la suite de l'attaque d'un convoi parti d'Anefis, en juillet dernier",
     "url": "https://x.com/SimNasr/status/2112546877480517655",
-    "published_at": "2026-10-20T15:07:50Z"
+    "published_at": "2026-10-20T12:00:00Z"
   },
   {
     "media": "Wassim Nasr",
@@ -62,16 +62,6 @@
     "published_at": "2024-12-04T12:00:00Z"
   },
   {
-    "media": "Crisis Group",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "🔴 We are looking to hire a Senior Communications Officer to coordinate and support @CrisisGroup’s media outreach in Africa",
-    "url": "https://x.com/CrisisGroup/status/2112574877274128755",
-    "published_at": "2026-10-20T16:07:50Z"
-  },
-  {
     "media": "MENASTREAM (Héni Nsaibia)",
     "plateforme": "X",
     "pays": [
@@ -102,47 +92,55 @@
     "published_at": "2026-07-13T12:00:00Z"
   },
   {
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "🇸🇳 JOJ #Dakar 2026 : La #Russie concourra avec son hymne et son drapeau, une première depuis 2014 Les athlètes russes s'apprêtent à défendre les couleurs de leur pays aux Jeux olympiques de la jeuness",
+    "url": "https://x.com/RTenfrancais/status/2113012454963765514",
+    "published_at": "2026-10-21T21:01:31Z"
+  },
+  {
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "🌍 VOIR L’AFRIQUE Fildac 2026 : Dakar, cœur palpitant du livre Dans ce nouveau numéro de Voir l’Afrique, direction Dakar, où la 18e édition de la Foire internationale du livre et du matériel didactique",
+    "url": "https://x.com/RTenfrancais/status/2113004899466383781",
+    "published_at": "2026-10-21T20:31:31Z"
+  },
+  {
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "📢« C’est la sagesse des dirigeants politiques des quatre pays » qui est le facteur clé de la normalisation des relations entre l’#Algérie et les pays de l’#AES, selon Tatiana Dovgalenko",
+    "url": "https://x.com/RTenfrancais/status/2112997349668901258",
+    "published_at": "2026-10-21T20:06:31Z"
+  },
+  {
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF",
-      "NE"
+      "ML"
     ],
-    "titre": "Les États-Unis déconseillent à leurs ressortissants de se rendre dans 11 pays africains, placés au niveau 4 de leur système d’alerte aux voyageurs, le plus élevé",
-    "url": "https://x.com/trtafrikaFR/status/2112620036636438530",
-    "published_at": "2026-10-20T19:07:50Z"
+    "titre": "Le Mali passe à l’offensive pour récupérer son patrimoine culturel",
+    "url": "https://x.com/trtafrikaFR/status/2112936952328528232",
+    "published_at": "2026-10-21T16:06:31Z"
   },
   {
-    "media": "RFI Afrique",
+    "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "SN"
-    ],
-    "titre": "Au Sénégal, la tension sociale monte d'un cran, à quelques jours seulement de l'ouverture des Jeux olympiques de la jeunesse (du 31 octobre au 13 novembre)",
-    "url": "https://x.com/RFIAfrique/status/2112625180086251826",
-    "published_at": "2026-10-20T20:07:50Z"
-  },
-  {
-    "media": "TRT Afrika",
-    "plateforme": "TikTok",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Senegal’s President Bassirou Diomaye Faye and National Assembly Speaker Ousmane Sonko are clashing again over economic policy amid IMF loan talks",
-    "url": "https://www.tiktok.com/@trtafrika/video/7698742189433818369",
-    "published_at": "2026-10-20T14:00:00Z"
-  },
-  {
-    "media": "TRT Afrika",
-    "plateforme": "TikTok",
-    "pays": [
-      "ML",
-      "BF",
       "NE"
     ],
-    "titre": "Burkina Faso, Mali, and Nigerien states have resumed talks with the West African regional bloc, ECOWAS, on a \"cooperation framework\" that would guide their relations, moving forward",
-    "url": "https://www.tiktok.com/@trtafrika/video/7698356903994215701",
-    "published_at": "2026-10-19T17:00:00Z"
+    "titre": "Pour mettre fin à l’éruption, le ministère du Pétrole prévoit de forer un puits de secours entre le 24 octobre et le 26 décembre",
+    "url": "https://x.com/trtafrikaFR/status/2112929456142635381",
+    "published_at": "2026-10-21T16:06:31Z"
   }
 ]
