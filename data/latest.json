@@ -3,11 +3,13 @@
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "ML",
+      "BF",
+      "NE"
     ],
-    "titre": "Radio France Internationale a appris ce vendredi 23 octobre 2026 dans la matinée la disparition de l'une de ses anciennes voix avec le décès de Benson Diakité à Bamako, au Mali",
-    "url": "https://x.com/RFIAfrique/status/2113712301564142079",
-    "published_at": "2026-10-23T20:06:10Z"
+    "titre": "Les infiltrations des manifestations des lycéens en France ont occasionné des chaos dans les rues de plusieurs grandes villes françaises",
+    "url": "https://x.com/RFIAfrique/status/2114089824928092465",
+    "published_at": "2026-10-24T20:23:04Z"
   },
   {
     "media": "Le Monde Afrique",
@@ -72,34 +74,44 @@
     "published_at": "2026-07-13T12:00:00Z"
   },
   {
-    "media": "Sputnik Afrique",
+    "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
       "NE"
     ],
-    "titre": "🇩🇿🇳🇪 L'accord de défense Algérie-Niger est \"inédit dans la lutte contre l'insécurité au Sahel\", selon Alassane Aboubakar, directeur de la Compagnie sahélienne d'études et de réalisation d'infrastructu",
-    "url": "https://x.com/sputnik_afrique/status/2113730177800802710",
-    "published_at": "2026-10-23T20:33:10Z"
+    "titre": "The new Algeria-Niger military pact will boost regional counter-terrorism cooperation across West and North Africa, Algerian researcher Ahmed Rouadjia told Sputnik Africa",
+    "url": "https://x.com/sputnik_africa/status/2114093068974424482",
+    "published_at": "2026-10-24T20:35:04Z"
   },
   {
-    "media": "Sputnik Afrique",
+    "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "BF"
+      "NE"
     ],
-    "titre": "Après avoir relancé la filière de bière, le Burkina Faso se tourne vers la production de son propre vin La Société viticole du Burkina Faso (SOVIB) est née par décret ministériel adopté lors du dernie",
-    "url": "https://x.com/sputnik_afrique/status/2113707529075044427",
-    "published_at": "2026-10-23T19:06:10Z"
+    "titre": "🇩🇿🇳🇪 The new Algeria-Niger defense pact is a vital return to regional security, Alassane Aboubakar, director of a Sahelian infrastructure company, told Sputnik Africa",
+    "url": "https://x.com/sputnik_africa/status/2113926219821388094",
+    "published_at": "2026-10-24T10:06:04Z"
   },
   {
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "BF"
+      "SN"
     ],
-    "titre": "Conduite par le lieutenant général Aykut Tanriverdi, commandant adjoint de la Gendarmerie turque, une délégation turque a été reçue les 20 et 21 octobre 2026 à Ouagadougou par les responsables burkina",
-    "url": "https://x.com/trtafrikaFR/status/2113631663582290423",
-    "published_at": "2026-10-23T14:06:10Z"
+    "titre": "Le parti PASTEF du Sénégal, qui détient la majorité parlementaire, a rejeté en commission un projet de loi de finances rectificative 2026, alors que le pays peine à faire face à une dette publique éle",
+    "url": "https://x.com/trtafrikaFR/status/2114054515225682008",
+    "published_at": "2026-10-24T18:06:04Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "À Bamako, \"le mariage mondial\" de la famille Diallo a réuni 13 couples, avec des bijoux en or estimés à plus d’un milliard de FCFA",
+    "url": "https://x.com/trtafrikaFR/status/2113993916257022116",
+    "published_at": "2026-10-24T14:06:04Z"
   },
   {
     "media": "TRT Afrika",
