@@ -3,13 +3,11 @@
     "media": "RFI Afrique",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF",
       "NE"
     ],
-    "titre": "Les infiltrations des manifestations des lycéens en France ont occasionné des chaos dans les rues de plusieurs grandes villes françaises",
-    "url": "https://x.com/RFIAfrique/status/2114089824928092465",
-    "published_at": "2026-10-24T20:23:04Z"
+    "titre": "Le Parlement algérien a voté ce dimanche 25 octobre 2026 l'envoi des troupes au Niger voisin, confronté à divers défis sécuritaires",
+    "url": "https://x.com/RFIAfrique/status/2114460097686675533",
+    "published_at": "2026-10-25T20:54:14Z"
   },
   {
     "media": "Le Monde Afrique",
@@ -20,6 +18,17 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "NE"
+    ],
+    "titre": "Ces avions nécessitent une logistique et des équipes logistiques sur place, qui à leur tour ont besoin de dispositifs adaptés",
+    "url": "https://x.com/SimNasr/status/2094129713002291245",
+    "published_at": "2026-08-30T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -74,34 +83,34 @@
     "published_at": "2026-07-13T12:00:00Z"
   },
   {
-    "media": "Sputnik Africa",
+    "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
       "NE"
     ],
-    "titre": "The new Algeria-Niger military pact will boost regional counter-terrorism cooperation across West and North Africa, Algerian researcher Ahmed Rouadjia told Sputnik Africa",
-    "url": "https://x.com/sputnik_africa/status/2114093068974424482",
-    "published_at": "2026-10-24T20:35:04Z"
+    "titre": "🇩🇿🇳🇪 La chambre haute du Parlement algérien approuve l'envoi de troupes au Niger, selon les médias locaux Le vote final reste à la chambre basse",
+    "url": "https://x.com/sputnik_afrique/status/2114424755864695255",
+    "published_at": "2026-10-25T19:06:14Z"
   },
   {
     "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "BF"
     ],
-    "titre": "🇩🇿🇳🇪 The new Algeria-Niger defense pact is a vital return to regional security, Alassane Aboubakar, director of a Sahelian infrastructure company, told Sputnik Africa",
-    "url": "https://x.com/sputnik_africa/status/2113926219821388094",
-    "published_at": "2026-10-24T10:06:04Z"
+    "titre": "🇷🇺🇧🇫 Russian Southern Federal University will open a branch at the Polytechnic School in Ouagadougou, Burkina Faso, ambassador Igor Martynov announced head of the Russia-Africa Summit",
+    "url": "https://x.com/sputnik_africa/status/2114438344012861773",
+    "published_at": "2026-10-25T20:06:14Z"
   },
   {
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "NE"
     ],
-    "titre": "Le parti PASTEF du Sénégal, qui détient la majorité parlementaire, a rejeté en commission un projet de loi de finances rectificative 2026, alors que le pays peine à faire face à une dette publique éle",
-    "url": "https://x.com/trtafrikaFR/status/2114054515225682008",
-    "published_at": "2026-10-24T18:06:04Z"
+    "titre": "Le Conseil de la Nation, chambre haute du parlement algérien, a approuvé dimanche l'envoi d'une unité de l'armée au Niger, dans une démarche sans précédent depuis la guerre d'octobre 1973 entre l'Égyp",
+    "url": "https://x.com/trtafrikaFR/status/2114371441197977981",
+    "published_at": "2026-10-25T15:06:14Z"
   },
   {
     "media": "TRT Afrika Français",
@@ -109,9 +118,29 @@
     "pays": [
       "ML"
     ],
-    "titre": "À Bamako, \"le mariage mondial\" de la famille Diallo a réuni 13 couples, avec des bijoux en or estimés à plus d’un milliard de FCFA",
-    "url": "https://x.com/trtafrikaFR/status/2113993916257022116",
-    "published_at": "2026-10-24T14:06:04Z"
+    "titre": "Le salon BAMEX 2026, devenu un rendez-vous international incontournable du secteur de la défense et de la sécurité, se tiendra au Mali du 9 au 13 novembre",
+    "url": "https://x.com/trtafrikaFR/status/2114360255580684595",
+    "published_at": "2026-10-25T15:06:14Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Un monument à l’effigie de l’ancien président burkinabè Thomas Sankara a été inauguré samedi dans un parc de Rome, en Italie, en présence du ministre burkinabè de la Culture, Pingdwendé Gilbert Ouédra",
+    "url": "https://x.com/trtafrikaFR/status/2114311037008691306",
+    "published_at": "2026-10-25T11:06:14Z"
+  },
+  {
+    "media": "Anadolu Français",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "🔴 Algérie : après l’approbation du Conseil de la nation, l’Assemblée populaire nationale valide à son tour l’envoi d’une unité militaire au Niger 🔗v",
+    "url": "https://x.com/anadolufrancais/status/2114452702138941520",
+    "published_at": "2026-10-25T20:24:14Z"
   },
   {
     "media": "TRT Afrika",
