@@ -1,5 +1,15 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Au Burkina Faso, l'imam Mohamed Ishaq Kindo a été remis en liberté, selon plusieurs sources, au sein de la communauté sunnite",
+    "url": "https://x.com/RFIAfrique/status/2117321120001274194",
+    "published_at": "2026-11-02T19:06:08Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -13,11 +23,31 @@
     "media": "Wassim Nasr",
     "plateforme": "X",
     "pays": [
+      "NE"
+    ],
+    "titre": "Rencontre avec le maréchal Haftar Wassim Nasr @SimNasr 11h Le Général Saddam Haftar & le Premier ministre de la République du Niger, Ali Mahamane Lamine Zeine signent \"un protocole de coopération stra",
+    "url": "https://x.com/SimNasr/status/2117313889436328416",
+    "published_at": "2026-11-02T18:06:08Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "Le Général Saddam Haftar & le Premier ministre de la République du Niger, Ali Mahamane Lamine Zeine signent \"un protocole de coopération stratégique pour renforcer leurs relations bilatérales\"",
+    "url": "https://x.com/SimNasr/status/2117183835561508965",
+    "published_at": "2026-11-02T10:06:08Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
       "BF"
     ],
     "titre": "#BurkinaFaso l’EI Sahel diffuse les images des combats de Gonadaouri début octobre avec le JNIM",
     "url": "https://x.com/SimNasr/status/2116859481711694205",
-    "published_at": "2026-11-01T12:05:52Z"
+    "published_at": "2026-11-01T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -77,68 +107,8 @@
     "pays": [
       "SN"
     ],
-    "titre": "❗️ Nous poursuivons notre couverture spéciale des Jeux olympiques de la jeunesse au #Sénégal",
-    "url": "https://x.com/RTenfrancais/status/2116963777233223840",
-    "published_at": "2026-11-01T19:05:52Z"
-  },
-  {
-    "media": "RT en français",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "⏺ Le #Burkina Faso a commémoré le 66ᵉ anniversaire de la création de ses Forces armées nationales 04:29 1 308",
-    "url": "https://x.com/RTenfrancais/status/2116960967129239980",
-    "published_at": "2026-11-01T19:05:52Z"
-  },
-  {
-    "media": "Sputnik Africa",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "🚴‍♀️ Algerian cyclist Hamza Yacine won the second stage of the 37th Tour du Faso, completing the 129",
-    "url": "https://x.com/sputnik_africa/status/2116978078723211614",
-    "published_at": "2026-11-01T20:05:52Z"
-  },
-  {
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Les premières médailles des JOJ Dakar 2026 ont été décernées dimanche à l'issue des finales de natation",
-    "url": "https://x.com/trtafrikaFR/status/2116983743466373570",
-    "published_at": "2026-11-01T20:05:52Z"
-  },
-  {
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "La Türkiye décroche sa toute première médaille d’or aux Jeux Olympiques de la Jeunesse de Dakar 2026",
-    "url": "https://x.com/trtafrikaFR/status/2116968621880545408",
-    "published_at": "2026-11-01T19:05:52Z"
-  },
-  {
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Le judo sénégalais tient son héros",
-    "url": "https://x.com/trtafrikaFR/status/2116966850152046899",
-    "published_at": "2026-11-01T19:05:52Z"
-  },
-  {
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "L’Égyptien Ali Zain (17 ans) a aisément remporté le 100m nage papillon en 52",
-    "url": "https://x.com/trtafrikaFR/status/2116957211268206949",
-    "published_at": "2026-11-01T19:05:52Z"
+    "titre": "⭕Bogdan Toropkine a remporté la deuxième médaille d'or de la #Russie dans les JOJ Dakar 2026",
+    "url": "https://x.com/RTenfrancais/status/2117330909041197306",
+    "published_at": "2026-11-02T19:06:08Z"
   }
 ]
