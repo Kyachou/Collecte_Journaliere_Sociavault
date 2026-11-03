@@ -1,15 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "Au Burkina Faso, l'imam Mohamed Ishaq Kindo a été remis en liberté, selon plusieurs sources, au sein de la communauté sunnite",
-    "url": "https://x.com/RFIAfrique/status/2117321120001274194",
-    "published_at": "2026-11-02T19:06:08Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -18,36 +8,6 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "Rencontre avec le maréchal Haftar Wassim Nasr @SimNasr 11h Le Général Saddam Haftar & le Premier ministre de la République du Niger, Ali Mahamane Lamine Zeine signent \"un protocole de coopération stra",
-    "url": "https://x.com/SimNasr/status/2117313889436328416",
-    "published_at": "2026-11-02T18:06:08Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "Le Général Saddam Haftar & le Premier ministre de la République du Niger, Ali Mahamane Lamine Zeine signent \"un protocole de coopération stratégique pour renforcer leurs relations bilatérales\"",
-    "url": "https://x.com/SimNasr/status/2117183835561508965",
-    "published_at": "2026-11-02T10:06:08Z"
-  },
-  {
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "#BurkinaFaso l’EI Sahel diffuse les images des combats de Gonadaouri début octobre avec le JNIM",
-    "url": "https://x.com/SimNasr/status/2116859481711694205",
-    "published_at": "2026-11-01T12:00:00Z"
   },
   {
     "media": "Thomas Dietrich",
@@ -107,8 +67,48 @@
     "pays": [
       "SN"
     ],
-    "titre": "⭕Bogdan Toropkine a remporté la deuxième médaille d'or de la #Russie dans les JOJ Dakar 2026",
-    "url": "https://x.com/RTenfrancais/status/2117330909041197306",
-    "published_at": "2026-11-02T19:06:08Z"
+    "titre": "🇷🇺🥈 Argent pour la judokate russe Anastassia #Dobrovolskaïa à #Dakar La judokate russe Anastassia Dobrovolskaïa décroche l’argent dans la catégorie des moins de 78 kg",
+    "url": "https://x.com/RTenfrancais/status/2117700844590363116",
+    "published_at": "2026-11-03T20:06:11Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Le Néo-Zélandais Ariel Muchirahondo poursuit son parcours remarquable aux Jeux olympiques de la jeunesse Dakar 2026",
+    "url": "https://x.com/trtafrikaFR/status/2117708428646793689",
+    "published_at": "2026-11-03T20:06:11Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Pour Amadou Gallo Fall, Président de la Basketball Africa League, les JOJ Dakar 2026 sont une vitrine pour tout le continent africain",
+    "url": "https://x.com/trtafrikaFR/status/2117663100694393195",
+    "published_at": "2026-11-03T17:06:11Z"
+  },
+  {
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Le jeune Sud-Africain Callum Dreyer, a remporté la médaille d’or aux Jeux olympiques de la jeunesse Dakar 2026",
+    "url": "https://x.com/trtafrikaFR/status/2117661823428128941",
+    "published_at": "2026-11-03T17:06:11Z"
+  },
+  {
+    "media": "TRT Afrika",
+    "plateforme": "TikTok",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Guinea has launched a massive gold refinery aiming to become a West African gold-processing hub, barely a month after Burkina Faso inaugurated its own",
+    "url": "https://www.tiktok.com/@trtafrika/video/7703966602366176530",
+    "published_at": "2026-11-03T15:25:10Z"
   }
 ]
