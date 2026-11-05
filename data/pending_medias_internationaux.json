@@ -1,16 +1,5 @@
 [
   {
-    "url": "https://x.com/SimNasr/status/2116859481711694205",
-    "media": "Wassim Nasr",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "#BurkinaFaso l’EI Sahel diffuse les images des combats de Gonadaouri début octobre avec le JNIM",
-    "published_at": "2026-11-01T12:00:00Z",
-    "added_at": "2026-11-03T06:25:12.929478+00:00"
-  },
-  {
     "url": "https://x.com/RTenfrancais/status/2117330909041197306",
     "media": "RT en français",
     "plateforme": "X",
@@ -22,6 +11,17 @@
     "added_at": "2026-11-03T06:25:38.457482+00:00"
   },
   {
+    "url": "https://x.com/RFIAfrique/status/2117993331506475083",
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Au Sénégal, l’Assemblée nationale, dominée par l’opposition, a rejeté mardi 3 novembre le budget rectificatif 2026 proposé par le gouvernement",
+    "published_at": "2026-11-04T15:06:27Z",
+    "added_at": "2026-11-05T06:09:05.905573+00:00"
+  },
+  {
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "media": "Le Monde Afrique",
     "plateforme": "X",
@@ -30,7 +30,7 @@
     ],
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "published_at": "2024-11-28T12:00:00Z",
-    "added_at": "2026-11-04T05:16:20.532204+00:00"
+    "added_at": "2026-11-05T06:09:10.238424+00:00"
   },
   {
     "url": "https://x.com/thomasdietrich0/status/2115122700347658478",
@@ -43,7 +43,7 @@
     ],
     "titre": "Le rapport de Viginum a fort opportunément ciblé deux pays, le Cameroun et la République du Congo, où la France est en nette perte d’influence face à la Russie",
     "published_at": "2026-10-27T12:00:00Z",
-    "added_at": "2026-11-04T05:16:24.619486+00:00"
+    "added_at": "2026-11-05T06:09:14.107705+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2108599151734796303",
@@ -54,7 +54,7 @@
     ],
     "titre": "#BurkinaFaso: #ISSP and #JNIM clashed for more than two hours this morning around Intaylalene, Bangao, Deberé, and Soukoundou, in the Tin-Akoff and Oursi departments, Oudalan province",
     "published_at": "2026-10-09T12:00:00Z",
-    "added_at": "2026-11-04T05:16:34.819264+00:00"
+    "added_at": "2026-11-05T06:09:24.868547+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2081486464978698603",
@@ -65,7 +65,7 @@
     ],
     "titre": "#Niger: Another clash between #JNIM and #ISSP as JNIM claims ambush in the Sambera area, #Dosso region",
     "published_at": "2026-07-26T12:00:00Z",
-    "added_at": "2026-11-04T05:16:38.342660+00:00"
+    "added_at": "2026-11-05T06:09:28.704477+00:00"
   },
   {
     "url": "https://x.com/MENASTREAM/status/2076587629089378735",
@@ -76,50 +76,94 @@
     ],
     "titre": "#BurkinaFaso: #JNIM claimed to have assassinated defector Sadou, named as \"Saad Fada\" and described as a \"khariji [ISSP] commander",
     "published_at": "2026-07-13T12:00:00Z",
-    "added_at": "2026-11-04T05:16:42.069865+00:00"
+    "added_at": "2026-11-05T06:09:30.367899+00:00"
   },
   {
-    "url": "https://x.com/RTenfrancais/status/2117700844590363116",
+    "url": "https://x.com/RTenfrancais/status/2118086841119175110",
     "media": "RT en français",
     "plateforme": "X",
     "pays": [
       "SN"
     ],
-    "titre": "🇷🇺🥈 Argent pour la judokate russe Anastassia #Dobrovolskaïa à #Dakar La judokate russe Anastassia Dobrovolskaïa décroche l’argent dans la catégorie des moins de 78 kg",
-    "published_at": "2026-11-03T20:06:11Z",
-    "added_at": "2026-11-04T05:16:45.814687+00:00"
+    "titre": "⭕L’équipe masculine de futsal du Sénégal décroche sa première victoire aux JOJ Dakar 2026 en s’imposant (5-4) face au Panama, dans le groupe A",
+    "published_at": "2026-11-04T21:05:27Z",
+    "added_at": "2026-11-05T06:09:34.203651+00:00"
   },
   {
-    "url": "https://x.com/trtafrikaFR/status/2117708428646793689",
+    "url": "https://x.com/sputnik_afrique/status/2118071282847674445",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "L'Ukraine est utilisée comme \"bélier pour contenir, épuiser et démembrer la Russie\" - Abdoulaye Diallo, blogueur malien \"Les puissances extérieures creusent délibérément la fracture entre deux peuples",
+    "published_at": "2026-11-04T20:06:27Z",
+    "added_at": "2026-11-05T06:09:38.076403+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_afrique/status/2118063732748063109",
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "🎧 Sputnik Radio | \"Le Burkina Faso est en train de devenir la Corée du Nord\": la comparaison faite par le journaliste Ahmed Newton Barry suscite des discussions Il \"croit enfoncer le Burkina Faso alor",
+    "published_at": "2026-11-04T20:06:27Z",
+    "added_at": "2026-11-05T06:09:41.974458+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_africa/status/2118085626914385934",
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "🇷🇺 'Russian Language Does Not Carry Colonial Legacy,' Says Malian Cultural NCO Leader It arrived as a \"liberating language\" through Soviet technological aid in the 1960s, Amadou Sekou Gambi told Sputn",
+    "published_at": "2026-11-04T21:00:27Z",
+    "added_at": "2026-11-05T06:09:45.935617+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_africa/status/2118064739289030882",
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "🇧🇫 Burkina Faso Claims First Stage Victory at 37th Tour du Faso: Sports Ministry Cyclist Saturnin Yaméogo won the fifth of the race’s 10 stages, covering 131",
+    "published_at": "2026-11-04T20:06:27Z",
+    "added_at": "2026-11-05T06:09:49.948737+00:00"
+  },
+  {
+    "url": "https://x.com/sputnik_africa/status/2116978078723211614",
+    "media": "Sputnik Africa",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "00:15 🚴‍♀️ Algerian cyclist Hamza Yacine won the second stage of the 37th Tour du Faso, completing the 129",
+    "published_at": "2026-11-01T12:00:00Z",
+    "added_at": "2026-11-05T06:09:53.844701+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2117987778675757498",
+    "media": "TRT Afrika Français",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Des milliers de Burkinabè quittent la Guinée à la suite des mesures contre l'orpaillage illégal",
+    "published_at": "2026-11-04T15:06:27Z",
+    "added_at": "2026-11-05T06:09:58.008370+00:00"
+  },
+  {
+    "url": "https://x.com/trtafrikaFR/status/2117980190835896442",
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
       "SN"
     ],
-    "titre": "Le Néo-Zélandais Ariel Muchirahondo poursuit son parcours remarquable aux Jeux olympiques de la jeunesse Dakar 2026",
-    "published_at": "2026-11-03T20:06:11Z",
-    "added_at": "2026-11-04T05:16:49.415024+00:00"
-  },
-  {
-    "url": "https://x.com/trtafrikaFR/status/2117663100694393195",
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Pour Amadou Gallo Fall, Président de la Basketball Africa League, les JOJ Dakar 2026 sont une vitrine pour tout le continent africain",
-    "published_at": "2026-11-03T17:06:11Z",
-    "added_at": "2026-11-04T05:16:53.018312+00:00"
-  },
-  {
-    "url": "https://x.com/trtafrikaFR/status/2117661823428128941",
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Le jeune Sud-Africain Callum Dreyer, a remporté la médaille d’or aux Jeux olympiques de la jeunesse Dakar 2026",
-    "published_at": "2026-11-03T17:06:11Z",
-    "added_at": "2026-11-04T05:16:56.788619+00:00"
+    "titre": "À Dakar 2026, l’ambiance dépasse les stades et les podiums",
+    "published_at": "2026-11-04T14:06:27Z",
+    "added_at": "2026-11-05T06:10:02.015549+00:00"
   }
 ]
