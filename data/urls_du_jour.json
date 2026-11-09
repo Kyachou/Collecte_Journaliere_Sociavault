@@ -1,15 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Au Sénégal, les recherches se poursuivent pour retrouver d’éventuels survivants après le naufrage d’une pirogue de migrants, au large de Kébémer, sur la côte nord-ouest du pays",
-    "url": "https://x.com/RFIAfrique/status/2119435015020851662",
-    "published_at": "2026-11-08T15:05:50Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -75,12 +65,11 @@
     "media": "RT en français",
     "plateforme": "X",
     "pays": [
-      "ML",
-      "BF"
+      "SN"
     ],
-    "titre": "⚡️Orpaillage clandestin en #Guinée : 160 000 personnes expulsées vers le #Mali En Guinée, l'opération contre l'orpaillage clandestin tourne au drame",
-    "url": "https://x.com/RTenfrancais/status/2119535434187301205",
-    "published_at": "2026-11-08T21:01:50Z"
+    "titre": "⛹️‍♂️ Basket-ball à 3 chez les hommes Le #Sénégal remporte la finale face à la Lituanie sur le score de 14-13",
+    "url": "https://x.com/RTenfrancais/status/2119882720369361073",
+    "published_at": "2026-11-09T20:06:28Z"
   },
   {
     "media": "RT en français",
@@ -88,58 +77,38 @@
     "pays": [
       "SN"
     ],
-    "titre": "🇸🇳📢Jour 8 de la compétition : bilan des médailles remportées par le #Sénégal et la #Russie Nouvelle journée, nouvelles médailles",
-    "url": "https://x.com/RTenfrancais/status/2119520337079546134",
-    "published_at": "2026-11-08T20:05:50Z"
-  },
-  {
-    "media": "RT en français",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "🇲🇱🎤L'hôpital de l'Africa Corps du ministère russe de la Défense à #Bamako fournit des soins médicaux à tous Ne faire aucune distinction entre les leurs et les autres : c’est la devise de l’hôpital de",
-    "url": "https://x.com/RTenfrancais/status/2119512783079522523",
-    "published_at": "2026-11-08T20:05:50Z"
+    "titre": "00:19 00:25 00:14 🏀 Résultat basket-ball à trois Le #Sénégal domine l'#Allemagne chez les hommes sur le score de 16 à 15 et se qualifie pour la finale",
+    "url": "https://x.com/RTenfrancais/status/2119792130419822965",
+    "published_at": "2026-11-09T14:06:28Z"
   },
   {
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "BF"
+      "NE"
     ],
-    "titre": "\"Consommer burkinabè pour une souveraineté vraie\": Ouagadougou accueille une foire des produits locaux C’est la 5e édition de l’événement, portée par le groupe Savane Média",
-    "url": "https://x.com/sputnik_afrique/status/2119498184598946238",
-    "published_at": "2026-11-08T19:05:50Z"
+    "titre": "Coopérer avec la Libye permettra au Niger de mieux lutter contre le terrorisme et les trafics d'armes, a déclaré Abdou Moumouni Dandossa, analyste nigérien Cet accord est crucial car une coordination",
+    "url": "https://x.com/sputnik_afrique/status/2119883222095892842",
+    "published_at": "2026-11-09T20:06:28Z"
   },
   {
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Au moins vingt-et-une personnes sont mortes dans le naufrage d’une pirogue de migrants au large de Kébémer, dans le nord-ouest du Sénégal, ont indiqué samedi soir les autorités “Au soir du 7 novembre",
-    "url": "https://x.com/trtafrikaFR/status/2119376908588577129",
-    "published_at": "2026-11-08T11:05:50Z"
-  },
-  {
-    "media": "TRT Afrika Français",
+    "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "Le Mali a annoncé samedi avoir accueilli environ 160 000 personnes refoulées de Guinée après des opérations menées par Conakry contre l'orpaillage illégal, précisant avoir enregistré six décès et s'in",
-    "url": "https://x.com/trtafrikaFR/status/2119346701882290675",
-    "published_at": "2026-11-08T09:05:50Z"
+    "titre": "🇲🇱Malian President Celebrates Birthday—Sputnik Africa Recalls His Most Memorable Statements Assimi Goïta celebrates his 43rd birthday on November 9",
+    "url": "https://x.com/sputnik_africa/status/2119871897102066136",
+    "published_at": "2026-11-09T20:06:28Z"
   },
   {
-    "media": "TRT Afrika Français",
+    "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "NE"
     ],
-    "titre": "JOJ Dakar 2026 : Elizabeth Diatta et Maguette Diop offrent au Sénégal ses deux premières médailles d’or",
-    "url": "https://x.com/trtafrikaFR/status/2119159639518454157",
-    "published_at": "2026-11-07T12:00:00Z"
+    "titre": "A strategic security agreement with eastern Libya is a crucial step for Niger's national defense, political analyst Abdou Moumouni Dandossa told Sputnik Africa",
+    "url": "https://x.com/sputnik_africa/status/2119861830680199566",
+    "published_at": "2026-11-09T19:06:28Z"
   }
 ]
