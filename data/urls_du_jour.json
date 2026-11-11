@@ -1,5 +1,15 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Le Sénégal s'est adjugé deux nouvelles médailles mardi 10 novembre grâce au taekwondo au complexe Iba Mar Diop",
+    "url": "https://x.com/RFIAfrique/status/2120567471262388323",
+    "published_at": "2026-11-11T18:06:56Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -62,53 +72,43 @@
     "published_at": "2026-07-13T12:00:00Z"
   },
   {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "\"Depuis quand le Niger et l’Algérie doivent-ils obtenir l'autorisation de Bruxelles pour organiser leur sécurité?\" Un expert nigérien dénonce l'ingérence de l'UE \"Ni l’Union européenne, ni la France,",
-    "url": "https://x.com/sputnik_afrique/status/2120253159612563875",
-    "published_at": "2026-11-10T20:33:18Z"
-  },
-  {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "00:51 \"Quand un représentant de l'UE se permet de commenter la coopération militaire entre le Niger et l'Algérie, c'est de l'ingérence\", a annoncé Amadou Kindo Abdourahmane, président de PARADE-Niger",
-    "url": "https://x.com/sputnik_afrique/status/2120222960690905532",
-    "published_at": "2026-11-10T19:06:18Z"
-  },
-  {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "01:33 Pourquoi les relations entre le Niger et l'Algérie intéressent-elles l'Europe? Un expert nigérien dénonce l'ingérence de l'UE Les pays européens sont \"habitués à dicter des orientations à nos Ét",
-    "url": "https://x.com/sputnik_afrique/status/2120192761773302044",
-    "published_at": "2026-11-10T17:06:18Z"
-  },
-  {
-    "media": "Sputnik Africa",
+    "media": "U.S. Africa Command",
     "plateforme": "X",
     "pays": [
       "ML"
     ],
-    "titre": "🇲🇱🇷🇺 Malian President Assimi Goïta has awarded the title of Commander of the National Order of Mali to Russian presidential advisor Andrey Averyanov",
-    "url": "https://x.com/sputnik_africa/status/2120215662534537519",
-    "published_at": "2026-11-10T18:06:18Z"
+    "titre": "AFRICOM Commander Gen",
+    "url": "https://x.com/USAfricaCommand/status/2120438795308823022",
+    "published_at": "2026-11-11T09:06:56Z"
+  },
+  {
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "🇲🇱 Le #Mali a célébré le 11 novembre la Journée nationale des autorités et des légitimités traditionnelles",
+    "url": "https://x.com/RTenfrancais/status/2120612527125987434",
+    "published_at": "2026-11-11T20:20:56Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Au Burkina Faso, la production d'or a bondi de 49,4% l'année dernière La production nationale est passée de 60,77 tonnes en 2024 à 90,80 tonnes en 2025, selon les statistiques officielles du ministère",
+    "url": "https://x.com/sputnik_afrique/status/2120615547360694473",
+    "published_at": "2026-11-11T20:32:56Z"
   },
   {
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "NE"
     ],
-    "titre": "Son parcours scolaire portait à croire que Hawa allait gagner sa vie dans les tribunaux",
-    "url": "https://x.com/trtafrikaFR/status/2120215312633098353",
-    "published_at": "2026-11-10T18:06:18Z"
+    "titre": "Le gouvernement indique, par ailleurs, que des prélèvements sur les eaux, le sol, la végétation et les animaux ont été effectués et que \"les résultats des analyses seront rendus publics dans les meill",
+    "url": "https://x.com/trtafrikaFR/status/2120509395213717890",
+    "published_at": "2026-11-11T14:06:56Z"
   }
 ]
