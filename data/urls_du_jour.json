@@ -1,15 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "Le Sénégal s'est adjugé deux nouvelles médailles mardi 10 novembre grâce au taekwondo au complexe Iba Mar Diop",
-    "url": "https://x.com/RFIAfrique/status/2120567471262388323",
-    "published_at": "2026-11-11T18:06:56Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -77,38 +67,48 @@
     "pays": [
       "ML"
     ],
+    "titre": "Gen",
+    "url": "https://x.com/USAfricaCommand/status/2120848730609815962",
+    "published_at": "2026-11-12T12:06:23Z"
+  },
+  {
+    "media": "U.S. Africa Command",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
     "titre": "AFRICOM Commander Gen",
     "url": "https://x.com/USAfricaCommand/status/2120438795308823022",
-    "published_at": "2026-11-11T09:06:56Z"
+    "published_at": "2026-11-11T12:00:00Z"
   },
   {
     "media": "RT en français",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "SN"
     ],
-    "titre": "🇲🇱 Le #Mali a célébré le 11 novembre la Journée nationale des autorités et des légitimités traditionnelles",
-    "url": "https://x.com/RTenfrancais/status/2120612527125987434",
-    "published_at": "2026-11-11T20:20:56Z"
+    "titre": "⚡️Le Comité international olympique dresse un bilan satisfaisant des #JOJ Dakar 2026 Les dirigeants du CIO ont salué le succès de l’organisation et de la mobilisation tout au long de l'événement",
+    "url": "https://x.com/RTenfrancais/status/2120980072513560899",
+    "published_at": "2026-11-12T20:41:23Z"
   },
   {
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "BF"
+      "NE"
     ],
-    "titre": "Au Burkina Faso, la production d'or a bondi de 49,4% l'année dernière La production nationale est passée de 60,77 tonnes en 2024 à 90,80 tonnes en 2025, selon les statistiques officielles du ministère",
-    "url": "https://x.com/sputnik_afrique/status/2120615547360694473",
-    "published_at": "2026-11-11T20:32:56Z"
+    "titre": "Article Coopération militaire Algérie-Niger: en dix jours, l’UE fait un virage à 180 degrés Des exigences d'\"éclaircissements\" à la \"non-ingérence\": il aura fallu dix jours et une ferme réaction diplo",
+    "url": "https://x.com/sputnik_afrique/status/2120551344926781642",
+    "published_at": "2026-11-11T12:00:00Z"
   },
   {
     "media": "TRT Afrika Français",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "ML"
     ],
-    "titre": "Le gouvernement indique, par ailleurs, que des prélèvements sur les eaux, le sol, la végétation et les animaux ont été effectués et que \"les résultats des analyses seront rendus publics dans les meill",
-    "url": "https://x.com/trtafrikaFR/status/2120509395213717890",
-    "published_at": "2026-11-11T14:06:56Z"
+    "titre": "Le BAMEX 2026, l’un des principaux rendez-vous de l’industrie de la défense en Afrique, a ouvert ses portes à Bamako, la capitale malienne",
+    "url": "https://x.com/trtafrikaFR/status/2120939692132569236",
+    "published_at": "2026-11-12T18:06:23Z"
   }
 ]
