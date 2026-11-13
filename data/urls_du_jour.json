@@ -1,5 +1,25 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "Premier événement olympique organisé sur le sol africain, les Jeux olympiques de la jeunesse de Dakar 2026 se sont terminés, ce vendredi 13 novembre, par une cérémonie de clôture strictement protocola",
+    "url": "https://x.com/RFIAfrique/status/2121322473945719262",
+    "published_at": "2026-11-13T20:06:28Z"
+  },
+  {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "Au Burkina Faso, le procureur général Désiré Sawadogo a fait le point ce vendredi sur les procédures engagées dans le cadre de la lutte contre le terrorisme",
+    "url": "https://x.com/RFIAfrique/status/2121307383158734970",
+    "published_at": "2026-11-13T19:06:28Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -65,11 +85,21 @@
     "media": "U.S. Africa Command",
     "plateforme": "X",
     "pays": [
+      "SN"
+    ],
+    "titre": "Gen",
+    "url": "https://x.com/USAfricaCommand/status/2121279813000593835",
+    "published_at": "2026-11-13T17:06:28Z"
+  },
+  {
+    "media": "U.S. Africa Command",
+    "plateforme": "X",
+    "pays": [
       "ML"
     ],
     "titre": "Gen",
     "url": "https://x.com/USAfricaCommand/status/2120848730609815962",
-    "published_at": "2026-11-12T12:06:23Z"
+    "published_at": "2026-11-12T12:00:00Z"
   },
   {
     "media": "U.S. Africa Command",
@@ -85,11 +115,11 @@
     "media": "RT en français",
     "plateforme": "X",
     "pays": [
-      "SN"
+      "ML"
     ],
-    "titre": "⚡️Le Comité international olympique dresse un bilan satisfaisant des #JOJ Dakar 2026 Les dirigeants du CIO ont salué le succès de l’organisation et de la mobilisation tout au long de l'événement",
-    "url": "https://x.com/RTenfrancais/status/2120980072513560899",
-    "published_at": "2026-11-12T20:41:23Z"
+    "titre": "🇲🇱📢 Le #Mali plaide pour une justice climatique mondiale À la tribune de la #COP31 en #Turquie, le Premier ministre malien Abdoulaye Maïga appelle à davantage de solidarité internationale face au chan",
+    "url": "https://x.com/RTenfrancais/status/2121347372517048435",
+    "published_at": "2026-11-13T21:01:28Z"
   },
   {
     "media": "Sputnik Afrique",
@@ -97,9 +127,9 @@
     "pays": [
       "NE"
     ],
-    "titre": "Article Coopération militaire Algérie-Niger: en dix jours, l’UE fait un virage à 180 degrés Des exigences d'\"éclaircissements\" à la \"non-ingérence\": il aura fallu dix jours et une ferme réaction diplo",
-    "url": "https://x.com/sputnik_afrique/status/2120551344926781642",
-    "published_at": "2026-11-11T12:00:00Z"
+    "titre": "📚 Le Niger cherche à monter en compétences et la Russie pourrait l'accompagner dans cette voix en formant des spécialistes dans les domaines minier et technologique - le politologue Abdoulaye Idrissa",
+    "url": "https://x.com/sputnik_afrique/status/2121347873094955337",
+    "published_at": "2026-11-13T21:03:28Z"
   },
   {
     "media": "TRT Afrika Français",
@@ -107,8 +137,18 @@
     "pays": [
       "ML"
     ],
-    "titre": "Le BAMEX 2026, l’un des principaux rendez-vous de l’industrie de la défense en Afrique, a ouvert ses portes à Bamako, la capitale malienne",
-    "url": "https://x.com/trtafrikaFR/status/2120939692132569236",
-    "published_at": "2026-11-12T18:06:23Z"
+    "titre": "Entre la Russie, les États-Unis, la Türkiye et ses voisins africains, le Mali multiplie les ouvertures diplomatiques",
+    "url": "https://x.com/trtafrikaFR/status/2121236038618165578",
+    "published_at": "2026-11-13T14:06:28Z"
+  },
+  {
+    "media": "Anadolu Français",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "🏅 Sénégal : clôture des Jeux olympiques de la jeunesse de Dakar 2026 🇸🇳 Les Jeux olympiques de la jeunesse de Dakar 2026 se sont achevés vendredi au Sénégal, après deux semaines de compétitions Il s'a",
+    "url": "https://x.com/anadolufrancais/status/2121331298304213112",
+    "published_at": "2026-11-13T20:06:28Z"
   }
 ]
