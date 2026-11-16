@@ -1,5 +1,25 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Les enseignants-chercheurs maliens entament ce 16 novembre leur quatrième semaine de grève",
+    "url": "https://x.com/RFIAfrique/status/2122334175470469275",
+    "published_at": "2026-11-16T15:06:17Z"
+  },
+  {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "À Niamey, la Cour des comptes épingle la gestion de la Nigérienne des eaux, société publique qui a remplacé la SEEN en 2023",
+    "url": "https://x.com/RFIAfrique/status/2122303960660738364",
+    "published_at": "2026-11-16T13:06:17Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -73,20 +93,10 @@
     "media": "Sputnik Afrique",
     "plateforme": "X",
     "pays": [
-      "NE"
+      "ML"
     ],
-    "titre": "Un important arsenal destiné à armer Boko Haram saisi au Niger La Garde nationale a découvert un sac contenant des armes et des munitions dans un buisson, après avoir suivi des traces de véhicule à Bo",
-    "url": "https://x.com/sputnik_afrique/status/2122057549134323718",
-    "published_at": "2026-11-15T20:06:15Z"
-  },
-  {
-    "media": "TRT Afrika Français",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "Le gouvernement du Niger a interdit l’exportation d’arachides sur l’ensemble du territoire national, une mesure visant à garantir un approvisionnement suffisant sur le marché intérieur et à soutenir l",
-    "url": "https://x.com/trtafrikaFR/status/2121894766644244508",
-    "published_at": "2026-11-15T10:06:15Z"
+    "titre": "L'armée malienne reçoit des hélicoptères et un avion russes, selon les médias Ce 16 novembre, à l’aéroport international Président Modibo Keïta de Bamako‑Sénou, les forces armées maliennes ont récepti",
+    "url": "https://x.com/sputnik_afrique/status/2122412387122962585",
+    "published_at": "2026-11-16T20:06:17Z"
   }
 ]
