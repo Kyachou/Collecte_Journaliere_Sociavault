@@ -1,25 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "Au Mali, cela fait tout juste trois ans, ce mardi 17 novembre, que Clément Dembélé est en prison",
-    "url": "https://x.com/RFIAfrique/status/2122590885447602657",
-    "published_at": "2026-11-17T08:06:43Z"
-  },
-  {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "La communauté arabe Mahamid est sommée de quitter le territoire du Niger avant la fin de l'année 2026",
-    "url": "https://x.com/RFIAfrique/status/2122560637700034820",
-    "published_at": "2026-11-17T06:06:43Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -73,30 +53,10 @@
     "media": "U.S. Africa Command",
     "plateforme": "X",
     "pays": [
-      "SN"
-    ],
-    "titre": "Gen",
-    "url": "https://x.com/USAfricaCommand/status/2121279813000593835",
-    "published_at": "2026-11-13T12:00:00Z"
-  },
-  {
-    "media": "U.S. Africa Command",
-    "plateforme": "X",
-    "pays": [
       "ML"
     ],
-    "titre": "Gen",
-    "url": "https://x.com/USAfricaCommand/status/2120848730609815962",
-    "published_at": "2026-11-12T12:00:00Z"
-  },
-  {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "Judo: le Burkina Faso repart avec 13 médailles de la Cup Africa Open, selon les médias Chez les Seniors Cherifa Assita Berthe a décroché le bronze en -63 kg et se qualifie ainsi pour les Jeux olympiqu",
-    "url": "https://x.com/sputnik_afrique/status/2122774774867001811",
-    "published_at": "2026-11-17T20:06:43Z"
+    "titre": "In case you missed it: Gen",
+    "url": "https://x.com/USAfricaCommand/status/2123090959462171110",
+    "published_at": "2026-11-18T17:06:19Z"
   }
 ]
