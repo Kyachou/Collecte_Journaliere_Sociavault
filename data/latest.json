@@ -1,5 +1,35 @@
 [
   {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "SN"
+    ],
+    "titre": "L'affaire provoque une intense émotion au Sénégal : la mort le 13 novembre d'une petite fille âgée de seulement deux jours après avoir été excisée et infibulée par sa grand-mère à Sadatou, une localit",
+    "url": "https://x.com/RFIAfrique/status/2123496825969844333",
+    "published_at": "2026-11-19T20:06:45Z"
+  },
+  {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "BF"
+    ],
+    "titre": "La chaîne de télévision publique burkinabè (RTB) est interdite en Guinée à la suite d'une décision publiée le 19 novembre 2026 par la Haute Autorité de la communication (HAC)",
+    "url": "https://x.com/RFIAfrique/status/2123466614398140842",
+    "published_at": "2026-11-19T18:06:45Z"
+  },
+  {
+    "media": "RFI Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "Au Mali, les enseignants-chercheurs du Syndicat national de la profession (Snesup) ont voté le 18 novembre 2026 « à l'unanimité » la poursuite de la grève enclenchée le 26 octobre et qui paralyse depu",
+    "url": "https://x.com/RFIAfrique/status/2123451506401632260",
+    "published_at": "2026-11-19T17:06:45Z"
+  },
+  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -57,6 +87,38 @@
     ],
     "titre": "In case you missed it: Gen",
     "url": "https://x.com/USAfricaCommand/status/2123090959462171110",
-    "published_at": "2026-11-18T17:06:19Z"
+    "published_at": "2026-11-18T12:00:00Z"
+  },
+  {
+    "media": "RT en français",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "📢 L'armée malienne frappe un grand coup au #Sahel Ce 18 novembre, les #FAMa, épaulées par l'Africa Corps russe, ont mené une opération spéciale d'envergure",
+    "url": "https://x.com/RTenfrancais/status/2123516663316337038",
+    "published_at": "2026-11-19T20:41:45Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "ML",
+      "BF",
+      "NE"
+    ],
+    "titre": "L'idée de Poutine de favoriser l'émergence d'un nouvel ensemble de pays souverains est accueillie favorablement au sein de l'AES, a indiqué à Sputnik Afrique l'analyste nigérien Ibrahim Bako",
+    "url": "https://x.com/sputnik_afrique/status/2123499550971167019",
+    "published_at": "2026-11-19T20:06:45Z"
+  },
+  {
+    "media": "Sputnik Afrique",
+    "plateforme": "X",
+    "pays": [
+      "NE"
+    ],
+    "titre": "La Russie peut fournir formation militaire et \"solutions de sécurité de pointe\" afin d'appuyer l'Afrique dans sa lutte contre le terrorisme, selon le directeur de recherche à l'Institut nigérien des r",
+    "url": "https://x.com/sputnik_afrique/status/2123484451392942369",
+    "published_at": "2026-11-19T19:06:45Z"
   }
 ]
