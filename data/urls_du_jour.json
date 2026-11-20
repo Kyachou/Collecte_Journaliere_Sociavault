@@ -1,35 +1,5 @@
 [
   {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "SN"
-    ],
-    "titre": "L'affaire provoque une intense émotion au Sénégal : la mort le 13 novembre d'une petite fille âgée de seulement deux jours après avoir été excisée et infibulée par sa grand-mère à Sadatou, une localit",
-    "url": "https://x.com/RFIAfrique/status/2123496825969844333",
-    "published_at": "2026-11-19T20:06:45Z"
-  },
-  {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "BF"
-    ],
-    "titre": "La chaîne de télévision publique burkinabè (RTB) est interdite en Guinée à la suite d'une décision publiée le 19 novembre 2026 par la Haute Autorité de la communication (HAC)",
-    "url": "https://x.com/RFIAfrique/status/2123466614398140842",
-    "published_at": "2026-11-19T18:06:45Z"
-  },
-  {
-    "media": "RFI Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML"
-    ],
-    "titre": "Au Mali, les enseignants-chercheurs du Syndicat national de la profession (Snesup) ont voté le 18 novembre 2026 « à l'unanimité » la poursuite de la grève enclenchée le 26 octobre et qui paralyse depu",
-    "url": "https://x.com/RFIAfrique/status/2123451506401632260",
-    "published_at": "2026-11-19T17:06:45Z"
-  },
-  {
     "media": "Le Monde Afrique",
     "plateforme": "X",
     "pays": [
@@ -38,6 +8,16 @@
     "titre": "📽️ ENQUÊTE @LeMonde_Afrique | Massacre de Thiaroye : enquête vidéo sur la mort de dizaines de tirailleurs sénégalais, le 1ᵉʳ décembre 1944 « Le Monde » a pu croiser les rapports d’officiers et les rar",
     "url": "https://x.com/LeMonde_Afrique/status/1862194752545767878",
     "published_at": "2024-11-28T12:00:00Z"
+  },
+  {
+    "media": "Wassim Nasr",
+    "plateforme": "X",
+    "pays": [
+      "ML"
+    ],
+    "titre": "#Mali le JNIM dénonce des frappes russes contre des campements de civils à Tamaradjant au nord de Kidal aujourd’hui 2 8 26 5",
+    "url": "https://x.com/SimNasr/status/2123841210632773977",
+    "published_at": "2026-11-20T19:06:19Z"
   },
   {
     "media": "Franklin Nyamsi",
@@ -90,35 +70,13 @@
     "published_at": "2026-11-18T12:00:00Z"
   },
   {
-    "media": "RT en français",
+    "media": "Sputnik Africa",
     "plateforme": "X",
     "pays": [
-      "ML"
+      "BF"
     ],
-    "titre": "📢 L'armée malienne frappe un grand coup au #Sahel Ce 18 novembre, les #FAMa, épaulées par l'Africa Corps russe, ont mené une opération spéciale d'envergure",
-    "url": "https://x.com/RTenfrancais/status/2123516663316337038",
-    "published_at": "2026-11-19T20:41:45Z"
-  },
-  {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "ML",
-      "BF",
-      "NE"
-    ],
-    "titre": "L'idée de Poutine de favoriser l'émergence d'un nouvel ensemble de pays souverains est accueillie favorablement au sein de l'AES, a indiqué à Sputnik Afrique l'analyste nigérien Ibrahim Bako",
-    "url": "https://x.com/sputnik_afrique/status/2123499550971167019",
-    "published_at": "2026-11-19T20:06:45Z"
-  },
-  {
-    "media": "Sputnik Afrique",
-    "plateforme": "X",
-    "pays": [
-      "NE"
-    ],
-    "titre": "La Russie peut fournir formation militaire et \"solutions de sécurité de pointe\" afin d'appuyer l'Afrique dans sa lutte contre le terrorisme, selon le directeur de recherche à l'Institut nigérien des r",
-    "url": "https://x.com/sputnik_afrique/status/2123484451392942369",
-    "published_at": "2026-11-19T19:06:45Z"
+    "titre": "🇧🇫 Burkina Faso Restarts Zinc Mining Operations After Four-Year Hiatus: Energy Minister Key facts: 🔹 The Perkoa site aims to generate nearly $160",
+    "url": "https://x.com/sputnik_africa/status/2123852123624649139",
+    "published_at": "2026-11-20T19:06:19Z"
   }
 ]
