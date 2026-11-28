@@ -1,0 +1,492 @@
+[
+  {
+    "target_name": "Leral",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/leralpointnet",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Seneweb",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/Senewebcom",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Dakarbuzz",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/Dakarbuzz",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Senegal7",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/senegal7officiel",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "2STV",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/2stvsenegal",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Sans Limites",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/sanslimitesn",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Telefutursmedias TFM",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/TelefutursmediasTFM",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Sonko Officiel",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/SonkoOfficiel",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "PR Diomaye",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/PRDiomaye",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Koulouba Actu",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/Koulouba1",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Mali Actu",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/maliactu",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "ORTM",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/ortmofficiel",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Bamako Bamada",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/Bamada.net",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "AIB Burkina",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/aib.infos",
+    "country_code": "BF",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Sidwaya",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/ESidwaya",
+    "country_code": "BF",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "BF1 TV",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/BF1TV",
+    "country_code": "BF",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "RTN",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/rtnniger",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Studio Kalangou",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/StudioKalangou",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Air Info Agadez",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/PAirInfoAgadez",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "L'Essor",
+    "platform": "twitter",
+    "target_url": "https://x.com/l_essor",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Journal du Mali",
+    "platform": "twitter",
+    "target_url": "https://x.com/jourdumali",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Lefaso.net",
+    "platform": "twitter",
+    "target_url": "https://x.com/lefaso_net",
+    "country_code": "BF",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Burkina 24",
+    "platform": "twitter",
+    "target_url": "https://x.com/burkina24",
+    "country_code": "BF",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Malick Konate",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/malick.konate.56",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Quotidien du Mali",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/QuotidienDuMali",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Info du Desert",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/infodudesert",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Abdoulaye Traore",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/abdoulaye.traore.927980",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Kisaitigui",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/Kisaitigui",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Cheick Oumar Doumbia",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/CheickOumarDoumbiaCOD",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "NGTV Officielle",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/ngtvofficielle",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Jeremie Dione",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/jeremiedione",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Panafricanoste",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/Panafricanoste",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Master Infos",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/mastertinfos",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Fama Info",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/famainfo",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Dicko Oumou",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/dicko.oumou.96",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Forces Armees Maliennes",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/LesForcesArmeesMaliennes",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Choguel Kokalla Maiga",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/ChoguelKokallaMaiga",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Appels Sur L'Actualite",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/AppelsSurLactualite",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Niger CNSP",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/Nigercnsp",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Actu Niger",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/actuniger",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Mohamed Yahaya",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/mohamed.yahaya.3",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Wadata Radio",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/WadataRadio",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "KAZA2016",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/KAZA2016",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Samira Sabou (Officiel)",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/OfficielSamiraSabou",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Tarka Fadama",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/tarka.fadama",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Hamid Amadou Ngade",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/hamid.amadoungade",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Youssouphe Makhmar Maiga",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=100064853173690",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Arouna le sage malien",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=100069582473978",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Kamite Media",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=100063983201742",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "CDR Media",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=100063624447238",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "La Joie d'Afrique",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=61553098517812",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Mali Jolies Dew",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=61565489733828",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Free Africa",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=61552420807255",
+    "country_code": "ML",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "La Voix de l'AES",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=100057323505032",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "L'Oeil Nigerien",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=100063485029483",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Presi Lota",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=61563239229422",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Mu Duba Mu Gani",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=61552513198266",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Hamza Malam Oumarou",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=61563450733480",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Abdou Pagoui",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/profile.php?id=1330466339",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Boubacar Seyni Souley",
+    "platform": "facebook",
+    "target_url": "https://www.facebook.com/share/19UfRBjyz2",
+    "country_code": "NE",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Macky Sall",
+    "platform": "twitter",
+    "target_url": "https://x.com/Macky_Sall",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "PunchTchineur",
+    "platform": "twitter",
+    "target_url": "https://x.com/Nabyleu",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "RTS Senegal",
+    "platform": "twitter",
+    "target_url": "https://x.com/RTS1_Senegal",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Dior Gueye Senegal",
+    "platform": "twitter",
+    "target_url": "https://x.com/DiorfallGueye2",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Pape Ale Niang",
+    "platform": "twitter",
+    "target_url": "https://x.com/papealeniang",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Lady Evah",
+    "platform": "twitter",
+    "target_url": "https://x.com/mc_evah",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Latyr Diouf",
+    "platform": "twitter",
+    "target_url": "https://x.com/LatyrDiouff",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Abdou Toure",
+    "platform": "twitter",
+    "target_url": "https://x.com/TontonVert",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Alioune Tine",
+    "platform": "twitter",
+    "target_url": "https://x.com/aliounetine16",
+    "country_code": "SN",
+    "posts_collectes": []
+  },
+  {
+    "target_name": "Demba Gueye",
+    "platform": "twitter",
+    "target_url": "https://x.com/dembagueye",
+    "country_code": "SN",
+    "posts_collectes": []
+  }
+]
